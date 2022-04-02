@@ -3,13 +3,10 @@
 // Search-box
 
 let navbar = document.querySelector('.navbar');
-let navbarBlock = document.querySelector('.navbar_search');
-
 let searchBtn = document.querySelector('.search-btn');
 
 searchBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  navbarBlock.classList.toggle('on-search');
   navbar.classList.toggle('on-search');
   searchBtn.classList.toggle('on-search');
 });
