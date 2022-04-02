@@ -59,10 +59,29 @@
         margin-right: 20px;
     }
 
+    /* ============================================1 часть */
     .header {
         padding-top: 40px;
         padding-right: 0;
         padding-left: 0;
+    }
+
+    .header-nav_link {
+        font-size: 15px;
+    }
+
+    .header-nav {
+        margin-right: 45px;
+        gap: 20px;
+    }
+
+    .title-hero {
+        font-size: 64.9171px;
+        line-height: 113%;
+        max-width: 600px;
+        margin-top: 130px;
+        margin-left: 40px;
+        margin-bottom: 130px;
     }
 
 }
