@@ -55,13 +55,12 @@
 }
 
 .hero_swip-box {
-    /* display: flex; */
-    justify-content: end;
+    position: relative;
 }
 
 .hero_swiper {
     width: 100%;
-    max-width: 720px;
+    max-width: 740px;
     height: 283px;
     padding-bottom: 2px;
 }
@@ -70,6 +69,7 @@
 .swiper-pagination-progressbar.swiper-pagination-horizontal {
     top: inherit;
     bottom: 0;
+    width: 48%;
 }
 
 .swiper-button-next {
@@ -83,7 +83,7 @@
     /* height: 58px; */
     top: inherit;
     opacity: 1;
-    right: 23%;
+    right: 26%;
     bottom: 69px;
 }
 
@@ -130,7 +130,7 @@
     width: 58px;
     height: 58px;
     opacity: 1;
-    right: 33%;
+    right: 35.6%;
     bottom: 69px;
 }
 
@@ -150,6 +150,22 @@
     height: 352px;
 }
 
+.swiper-pagination-progressbar {
+    background: #fff;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: #fff;
+    top: -2px;
+}
+
+.white_phone-index {
+    top: inherit;
+    bottom: -63px;
+    right: 0;
+    z-index: 3;
+}
+
 /* слайдер выше  */
 .title-hero {
     font-size: 64.9171px;
@@ -157,7 +173,7 @@
     max-width: 600px;
     margin-top: 130px;
     margin-left: 20px;
-    margin-bottom: 130px;
+    margin-bottom: 125px;
     color: #fff;
 }
 
