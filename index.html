@@ -7,8 +7,13 @@
     <title>Thai Smile SPA</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/swiper.js"></script>
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="style/style.css">
+
 </head>
 <body>
     <div class="main-bg">
@@ -39,6 +44,7 @@
                             <li class="header-nav_list"><a class="header-nav_link" href="certificate.html">Сертификаты</a></li>
                             <li class="header-nav_list"><a class="header-nav_link" href="contacts.html">Контакты</a></li>
                         </ul>
+                        <div class="menu-budddddddddddddddddddddddr"></div>
                         <form class="search-box" action="" method="get">
                             <input class="search-txt" name="" placeholder="" type="search">
                             
@@ -51,20 +57,76 @@
         <section class="hero">
             <div class="container">
                 <h1 class="title-hero">Добро пожаловать в Thai Smile Spa!</h1>
-                <div class="hero-content">
-                    <div class="hero-visual"></div>
-                    <div class="hero-text">
-                        <p class="hero-subheading">Новая программа</p>
-                        <h3 class="hero-heading">Стратегия прекрасного&nbsp;тела</h3>
-                        <div class="hero-icons">
-                            <img src="./img/arrow-left.svg" class="arrow-left">
-                            <img src="./img/arrow-right.svg" class="arrow-right">
+                <!-- =============================== 1 слайдер -->
+                <div class="hero_swip-box">
+                    <!-- Swiper -->
+                    <div class="swiper hero_swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <!-- 1 sl -->
+                            <div class="swiper-slide">
+                                <div class="hero_wrap">
+                                    <div class="hero_visual"></div>
+                                    <div class="hero-text">
+                                        <p class="hero-subheading">Новая программа</p>
+                                        <h3 class="hero-heading">Стратегия прекрасного&nbsp;тела</h3>                        
+                                    </div>                    
+                                </div>
+                            </div>
+                            <!-- 2 sl  -->
+                            <div class="swiper-slide">
+                                <div class="hero_wrap">
+                                    <div class="hero_visual"></div>
+                                    <div class="hero-text">
+                                        <p class="hero-subheading">Новая программа</p>
+                                        <h3 class="hero-heading">Стратегия прекрасного&nbsp;тела</h3>                        
+                                    </div>                    
+                                </div>
+                            </div>
+                            <!-- 3 sl  -->
+                            <div class="swiper-slide">
+                                <div class="hero_wrap">
+                                    <div class="hero_visual"></div>
+                                    <div class="hero-text">
+                                        <p class="hero-subheading">Новая программа</p>
+                                        <h3 class="hero-heading">Стратегия прекрасного&nbsp;тела</h3>                        
+                                    </div>                    
+                                </div>
+                            </div>
+                            <!-- 4 sl  -->
+                            <div class="swiper-slide">
+                                <div class="hero_wrap">
+                                    <div class="hero_visual"></div>
+                                    <div class="hero-text">
+                                        <p class="hero-subheading">Новая программа</p>
+                                        <h3 class="hero-heading">Стратегия прекрасного&nbsp;тела</h3>                        
+                                    </div>                    
+                                </div>
+                            </div>
+                            <!-- 5 sl  -->
+                            <div class="swiper-slide">
+                                <div class="hero_wrap">
+                                    <div class="hero_visual"></div>
+                                    <div class="hero-text">
+                                        <p class="hero-subheading">Новая программа</p>
+                                        <h3 class="hero-heading">Стратегия прекрасного&nbsp;тела</h3>                        
+                                    </div>                    
+                                </div>
+                            </div>
+                            
                         </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <a href="tel:+79250332100" class="white-phone-index white-phone-btn"></a>               
+                    <a href="tel:+79250332100" class="white_phone-index white_phone-btn"></a>               
                 </div>
+                <!-- ========= copi -->
+                
+                <!-- ==== copy up -->
+                
             </div>
         </section>
+          <!-- ==== copy up -->
         <section class="services">
             <div class="wrap-services">
                 <div class="services-text">
@@ -74,8 +136,8 @@
                         <div class="btn-bg btn-bg_services"></div>
                         <a href="services.html" class="btn-text btn-text_services">Все услуги</a>
                     </div>
+                </div>
             </div>
-               
             
     <!-- Swiper2 -->
   
@@ -230,7 +292,8 @@
       <!-- Swiper JS -->
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>			
-    <script src="./js/slick.min.js"></script>
+    <!-- <script src="./js/slick.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
