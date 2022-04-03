@@ -1,5 +1,3 @@
-
-
 // Search-box
 
 let navbar = document.querySelector('.navbar');
@@ -11,8 +9,42 @@ searchBtn.addEventListener('click', (e) => {
   searchBtn.classList.toggle('on-search');
 });
 
+// Initialize Swiper1
 
+$(document).ready(function(){
+  $('.slider1').slick({
+    arrows:true,
+    dots:false,
+    fade:false,
+    adaptiveHeight:true,
+    slidesToShow:1,
+    slidesToScroll:1,
+    speed:500,
+    easing:'ease',
+    infinite:false,
+    initialSlide:0,
+    autoplay:false,
+    autoplaySpeed:2000,
+    pauseOnFocus:true,
+    pauseOnHover:true,
+    pauseOnDotsHover:true,
+    draggable:true,
+    swipe:true,
+    touchThreshold:10,
+    touchMove:true,
+    variableWidth:true,
+    centerMode:false,
+    // centerPadding: '60px',
+    waitForAnimate:false,
+    responsive:[
+      {
+        breakpoint: 768,
+        
+      }
+    ]
+  });
 
+});
 
 // Initialize Swiper2
 
@@ -97,11 +129,11 @@ $(document).ready(function(){
     });
   
   });
- {
+
   function openModal() {
     document.getElementById("modal").style.left = "0px";
 }
 function closeModal() {
     document.getElementById("modal").style.left = "-200%";
 }
- }
+ 
