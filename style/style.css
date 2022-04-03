@@ -74,14 +74,11 @@
 }
 
 .swiper-button-next {
-    background-image: url(../img/arrow-right-green.svg);
-    /* background: url(./img/arrow-right-green.svg); */
+    background-image: url(../img/arrow-right.svg);
     background-repeat: repeat;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    /* width: 58px; */
-    /* height: 58px; */
     top: inherit;
     opacity: 1;
     right: 26%;
@@ -118,9 +115,8 @@
 }
 
 .swiper-button-prev {
-    background-image: url(../img/arrow-left-green.svg);
-    /* background: url(../img/arrow-left-green.svg); */
-    /* background: url(./img/arrow-right-green.svg); */
+    background-image: url(../img/arrow-left.svg);
+
     background-repeat: repeat;
     background-size: auto;
     background-repeat: no-repeat;
@@ -238,13 +234,17 @@
 .wrap_services {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 70px;
 
 }
 
 .slider_2-wrap {
-    position: relative;
+
+    position: absolute;
+    top: -9px;
+    left: 593px;
     height: 400px;
-    max-width: 921px;
+    max-width: 927px;
     margin-top: 5px;
 }
 
