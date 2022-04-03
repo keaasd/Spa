@@ -18,7 +18,7 @@ var swiper = new Swiper(".mySwiper", {
   var swiper = new Swiper(".swiper_services", {
   slidesPerView: 3,
   slidesPerGroup: 1,
-  spaceBetween: 314,
+  spaceBetween: 319,
   loop: true,
   pagination: {
     el: ".swiper-pagination",

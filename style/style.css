@@ -220,7 +220,11 @@
 .services {
     position: relative;
     z-index: 0;
-    margin-top: 170px;
+    margin-top: 166px;
+}
+
+.title-services {
+    margin-bottom: 29px;
 }
 
 .services-text {
@@ -235,21 +239,39 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
-
 }
 
 .slider_2-wrap {
-
     position: absolute;
     top: -9px;
-    left: 593px;
+    right: -0.2%;
     height: 400px;
-    max-width: 927px;
-    margin-top: 5px;
+    max-width: 64vw;
+    margin-top: 18px;
 }
 
 .swiper-text {
-    margin-top: 27px;
+    margin-top: 25px;
+}
+
+.swiper-title::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #D4D626;
+    width: 232px;
+    padding-bottom: 11px;
+}
+
+.swiper-no {
+    font-family: 'Alice';
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 111.8%;
+    text-transform: uppercase;
+}
+
+.btn-text_services {
+    font-size: 17px;
 }
 
 .title-hero {
@@ -274,7 +296,7 @@
         margin-right: 20px;
     }
 
-    /* ============================================1 часть */
+
     .header {
         padding-top: 40px;
         padding-right: 0;
@@ -303,6 +325,21 @@
         margin-bottom: 130px;
     }
 
+    .services-text {
+        max-width: 304px;
+        margin-left: 7.5%;
+    }
+
+    .slider_2-wrap {
+        max-width: 58vw;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .slider_2-wrap {
+        max-width: 58vw;
+    }
 }
 
 @media (max-width: 1040px) {
