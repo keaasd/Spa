@@ -13,6 +13,21 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+// slider 2 services
+{
+  var swiper = new Swiper(".swiper_services", {
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  spaceBetween: 314,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+}
+
+
 
   // автоматически
   // {
