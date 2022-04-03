@@ -168,11 +168,16 @@
 }
 
 .main-bg {
+    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
     box-sizing: border-box;
     margin-bottom: -93px;
+}
+
+.descr-services {
+    margin-bottom: 0;
 }
 
 .main-bg::after {
@@ -184,8 +189,33 @@
     height: 614px;
     left: 0px;
     bottom: 59px;
-    z-index: 36;
+    z-index: -5;
     background: red;
+}
+
+.main-bagraund {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin-bottom: -93px;
+    width: 100%;
+    height: 1270px;
+}
+
+.main_gradient {
+    position: absolute;
+    background: linear-gradient(360deg, #D2D285 11.43%, rgba(210, 210, 133, 0) 100%);
+    background-repeat: repeat;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 63%;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
 }
 
 /* слайдер выше  */
