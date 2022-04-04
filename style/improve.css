@@ -1,24 +1,13 @@
-Изменения!
-4 апреля
+Изменения ! 4 апреля
 
-изменения в файлах: 
+/* https://github.com/Svetkachalina/1.git */
+/* https://github.com/keaasd/Spa.git */
+изменения в файлах: html - внизу мобильное меню и в хедере кнопка мои style.css+(добавил) мобильное меню+в папку img две картинки: close_moby.svg burger_menu.svg:root {
+  --text-size-larg: 16px;
+  --text-size-medium: 11px;
+}
 
-html - внизу мобильное меню и в хедере кнопка
-мои style.css
-
-+ (добавил) мобильное меню
-+ в папку img две картинки: 
-close_moby.svg
-burger_menu.svg
-
-
-
-:root {
-    --text-size-larg: 16px;
-    --text-size-medium: 11px;
-  }
-  
-  .one {    
-    font-size: var(--text-size-medium);   
-    font-size: var(--text-size-larg);
-  }
+.one {
+  font-size: var(--text-size-medium);
+  font-size: var(--text-size-larg);
+}
