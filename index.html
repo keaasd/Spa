@@ -52,7 +52,9 @@
                             
                           </form>
                           <button class="search-btn" type="submit"></button>
+                          <button class="burger-btn header-burger" onclick="openModal()" type="button"></button> 
                     </nav>
+                    
                 </div>
             </div>
         </header>
@@ -309,7 +311,23 @@
             </section>
         </div>
     
-
+        <!-- мобильное меню  -->
+        <div class="modal__mb" id="modal__mb">
+            <div class="modal_window">
+                <div class="modal_box">
+                    <div class="modal_logo"></div>
+                    <button onclick="closeModal()" class="header-modal-close"></button>
+                </div>
+                <div class="burger-link">
+                    <a class="modal_link" href="#special">Услуги</a>
+                    <a class="modal_link" href="#process">Галерея</a>
+                    <a class="modal_link" href="#comand">Акции</a>
+                    <a class="modal_link" href="#comand">сертификаты</a>
+                    <a class="modal_link" href="#comand">Контакты</a>
+                </div>
+            </div>
+        </div>
+    
 
  
       <!-- Swiper JS -->

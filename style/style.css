@@ -28,7 +28,6 @@
     padding-right: 0;
     /* удалить паддинг  */
 }
-
 .header {
     padding-top: 40px;
     padding-right: 7%;
@@ -283,7 +282,74 @@
     margin-bottom: 125px;
     color: #fff;
 }
+.burger-btn {
+    background-image: url(../img/burger_menu.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    height: 16px;
+    border: none;
+    width: 24px;
+    margin-left: 5vw;
+    display: none;
+    height: 9.5px;
+}
+/* стили крестика ======== */
+.header-modal-close {
+    background-image: url(../img/close_moby.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    height: 16.97px;
+    width: 16.97px;
+}
 
+/* бургер меню  */
+  .modal__mb {
+      position: fixed;
+      top: 0;
+      left: -3000px;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+      background: rgba(0, 0, 0, 0.59);
+      z-index: 10;
+      transition: 0.3s ease-in-out;
+  }
+  .modal_window {
+      position: relative;
+      background-color: #515002;
+    padding: 40px 20px;
+      height: 100%;
+      width: 100%;
+      max-width: 500px;
+  }
+  .burger-link {
+      margin-top: 30px;
+  }
+  .modal_link {
+      display: block;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 136.8%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #FFFFFF;
+  }
+  .modal_box {
+      display: flex;
+      justify-content: space-between;      
+  }
+  .modal_logo {
+      display: block;
+      background-image: url(../img/logo_mobile.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 46px;
+      height: 40.89px;
+  }
 @media (max-width: 1360px) {
     .container {
         padding-right: 15px;
@@ -352,6 +418,102 @@
         font-size: 11px;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+    .burger-btn {
+        display: block;
+    }
+    .header-nav {
+        display: none;
+      }
+      .header {
+        padding-top: 21px;
+      }
+      .search-txt {
+        line-height: 0.5;
+        width: 580px;
+        top: 11px;
+        right: -26px;
+        width: 20vw;
+        padding: 10px;
+      }
+      .drop-down {
+        margin-left: 3px;
+        margin-top: 17px;
+      }
+      .menu-select {
+        width: 155px;
+        font-size: 10px;
+        margin-left: 1px;
+      }
+      .pin {
+        Width: 8.86px;
+        Height: 11.65px;
+      }
+      .drop-down::after {
+        left: 15px;
+        top: 22px;
+        width: 106px;
+      }
+}
+@media (max-width: 567px)  {
+    .header {
+        padding-top: 12px;
+      }
+    .logo {
+        background-image: url(../img/logo_mobile.svg);
+        width: 46px;
+        height: 40.89px;
+        margin-right: 0;
+      }
+      .header-flex {
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .header-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .search-box {
+        display: none;
+      }
+      .search-btn {
+          display: none;
+      }
+      .header-logo {
+          text-align: center;
+      }
+      .navbar {
+        position: absolute;
+        top: 3px;
+        right: 24px;
+      }
+      .pin {
+        Width: 9.17px;
+        Height: 12.06px;
+      }
+      .menu-select {
+        width: 186px;
+        margin-left: 3px;
+        font-size: 12px;
+      }
+      .drop-down {
+        margin-left: 44px;
+        margin-top: 6px;
+      }
+      .drop-down::after {
+        top: 19px;
+        width: 128px;
+      }
+}
+
 
 /* @media (max-width: 900px) {} */
 

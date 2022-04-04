@@ -51,9 +51,8 @@ searchBtn.addEventListener('click', (e) => {
   });
 
   function openModal() {
-    document.getElementById("modal").style.left = "0px";
+    document.getElementById("modal__mb").style.left = "0px";
 }
 function closeModal() {
-    document.getElementById("modal").style.left = "-200%";
+    document.getElementById("modal__mb").style.left = "-3000px";
 }
- 
