@@ -52,7 +52,7 @@ h1 {
     position: absolute;
     top: 30%;
     right: 9%;
-    transition: 0.4 ease;
+    transition: 0.4s ease;
     transform: scale(1);
 }
 
