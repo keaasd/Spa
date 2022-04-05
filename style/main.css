@@ -91,10 +91,6 @@ body {
 
 /* ==== первый свайпер */
 /* подключить js css для свайпера */
-.swiper {
-  margin-right: 0;
-  z-index: 1;
-}
 
 .hero_swip-box {
   position: relative;
@@ -107,7 +103,7 @@ body {
   padding-bottom: 2px;
 }
 
-.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-horizontal>.swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-horizontal {
   top: inherit;
   bottom: 0;
@@ -179,9 +175,11 @@ body {
   width: 353px;
   height: 250px;
 }
+
 .contacts {
   display: block;
 }
+
 .hero_wrap {
   /* max-width: 500px; */
   display: flex;
@@ -219,26 +217,28 @@ body {
   margin-bottom: 0;
   line-height: 131%;
 }
+
 .contact-box {
   display: flex;
   justify-content: space-between;
   gap: 85px;
 }
+
 .contact-nav-item {
   display: block;
 }
+
 .contact-title {
   display: block;
 }
+
 .main-bg::after {
   content: "";
   display: block;
   position: absolute;
-  background: linear-gradient(
-    360deg,
-    #d2d285 11.43%,
-    rgba(210, 210, 133, 0) 100%
-  );
+  background: linear-gradient(360deg,
+      #d2d285 11.43%,
+      rgba(210, 210, 133, 0) 100%);
   width: 100%;
   height: 0;
   left: 0px;
@@ -246,6 +246,7 @@ body {
   z-index: -5;
   background: red;
 }
+
 .contact-nav {
   gap: 0;
   max-width: 1029px;
@@ -264,11 +265,9 @@ body {
 
 .main_gradient {
   position: absolute;
-  background: linear-gradient(
-    360deg,
-    #d2d285 11.43%,
-    rgba(210, 210, 133, 0) 100%
-  );
+  background: linear-gradient(360deg,
+      #d2d285 11.43%,
+      rgba(210, 210, 133, 0) 100%);
   background-repeat: repeat;
   background-size: auto;
   background-size: cover;
@@ -305,13 +304,14 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 70px;
+  min-width: 0;
 }
 
 .slider_2-wrap {
   position: absolute;
   top: -9px;
-  right: -0.2%;
-  height: 400px;
+  right: 0;
+  height: 100%;
   max-width: 64vw;
   margin-top: 18px;
 }
@@ -451,11 +451,12 @@ legend {
 input[type="radio"] {
   appearance: none;
 }
+
 input[type="radio"] {
   appearance: none;
 }
 
-input[type="radio"] + label {
+input[type="radio"]+label {
   cursor: pointer;
   position: relative;
   padding-left: 30px;
@@ -466,7 +467,7 @@ input[type="radio"] + label {
   line-height: 18.17px;
 }
 
-input[type="radio"] + label::before {
+input[type="radio"]+label::before {
   content: "";
   display: inline-block;
   width: 15px;
@@ -481,7 +482,7 @@ input[type="radio"] + label::before {
   transition: all 0.3s;
 }
 
-input[type="radio"] + label::after {
+input[type="radio"]+label::after {
   content: "";
   display: inline-block;
   width: 5px;
@@ -497,11 +498,11 @@ input[type="radio"] + label::after {
   transition: all 0.3s;
 }
 
-input[type="radio"]:checked + label::after {
+input[type="radio"]:checked+label::after {
   opacity: 1;
 }
 
-input[type="radio"] + label {
+input[type="radio"]+label {
   cursor: pointer;
   position: relative;
   padding-left: 30px;
@@ -529,7 +530,8 @@ input {
   text-transform: uppercase;
   border-bottom: 1px solid #d4d626;
 }
-input[type="radio"] + label {
+
+input[type="radio"]+label {
   cursor: pointer;
   position: relative;
   padding-left: 30px;
@@ -540,7 +542,7 @@ input[type="radio"] + label {
   line-height: 18.17px;
 }
 
-input[type="radio"] + label::before {
+input[type="radio"]+label::before {
   content: "";
   display: inline-block;
   width: 15px;
@@ -555,7 +557,7 @@ input[type="radio"] + label::before {
   transition: all 0.3s;
 }
 
-input[type="radio"] + label::after {
+input[type="radio"]+label::after {
   content: "";
   display: inline-block;
   width: 5px;
@@ -570,17 +572,21 @@ input[type="radio"] + label::after {
   opacity: 0;
   transition: all 0.3s;
 }
+
 .form-input-name {
   font-weight: 500;
   font-size: 17px;
 }
-input[type="radio"]:checked + label::after {
+
+input[type="radio"]:checked+label::after {
   opacity: 1;
 }
+
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
+
 .online-reg-title {
   margin-bottom: 48px;
 }
@@ -594,9 +600,11 @@ input[type="radio"] {
   margin-top: 24px;
   margin-bottom: 26px;
 }
+
 .online-reg-form {
   width: 100%;
 }
+
 .reg-left-wrapper {
   margin-left: 0;
   margin-top: 0;
@@ -604,15 +612,18 @@ input[type="radio"] {
   padding-top: 65px;
   padding-right: 8.3%;
 }
+
 .social {
   font-size: 12px;
 
   text-align: right;
   letter-spacing: 0.02em;
 }
+
 .footer-social {
   gap: 24px;
 }
+
 @media (max-width: 1360px) {
   .container {
     padding-right: 15px;
@@ -651,25 +662,50 @@ input[type="radio"] {
   }
 
   .services-text {
-    max-width: 304px;
-    margin-left: 7.5%;
+    max-width: 297px;
+    margin-left: 0px;
   }
 
   .slider_2-wrap {
-    max-width: 58vw;
+    max-width: 65vw;
+    right: 0px;
   }
+
   .online-reg-pic {
     object-fit: cover;
     height: 100%;
   }
+
   .contact-box {
     gap: 46px;
   }
+
+
 }
 
 @media (max-width: 1200px) {
   .slider_2-wrap {
-    max-width: 58vw;
+    max-width: 63vw;
+  }
+
+  .services-text {
+    margin-left: 0;
+  }
+
+  .slider2-item img {
+    height: 250px;
+  }
+
+  .swiper-title {
+    font-size: 25px;
+  }
+
+  .swiper-no {
+    font-size: 46px;
+  }
+
+  .slider_2-wrap {
+    top: 66px;
   }
 }
 
@@ -687,24 +723,30 @@ input[type="radio"] {
     font-size: 54px;
     max-width: 472px;
   }
+
   .online-reg-left {
     flex-basis: auto;
   }
+
   .online-reg-right {
     flex: 1;
   }
+
   .online-reg-left {
     flex: 1;
   }
+
   .btn-flex {
     gap: 3%;
     margin-top: 35px;
   }
+
   .online-reg-btn {
     font-size: 14px;
     padding: 6px 15px 7px 15px;
     margin: 0;
   }
+
   .reg-left-wrapper {
     margin-left: 0;
     margin-top: 0;
@@ -714,17 +756,38 @@ input[type="radio"] {
     padding-bottom: 61px;
     padding: 40px 8%;
   }
+
   .contact-content {
     font-size: 22px;
     line-height: 124%;
   }
+
   .contacts {
     font-size: 22px;
     line-height: 124%;
   }
+
   .contact-hours-descr {
     font-size: 12px;
     line-height: 130%;
+  }
+
+  .swiper-title::after {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .slider_2-wrap {
+    max-width: 55vw;
+  }
+
+  .slider2-item img {
+    height: 205px;
+  }
+
+  .swiper-title {
+    font-size: 19px;
   }
 }
 
@@ -758,6 +821,10 @@ input[type="radio"] {
   .drop-down {
     margin-left: 3px;
     margin-top: 17px;
+  }
+
+  .slider2-item img {
+    height: 26.5vw;
   }
 
   .menu-select {
@@ -796,7 +863,7 @@ input[type="radio"] {
   }
 
   .services-text {
-    max-width: 212px;
+    max-width: 27vw;
     margin-left: 7px;
   }
 
@@ -858,7 +925,7 @@ input[type="radio"] {
     flex-basis: 46%;
   }
 
-  .swiper-horizontal > .swiper-pagination-progressbar,
+  .swiper-horizontal>.swiper-pagination-progressbar,
   .swiper-pagination-progressbar.swiper-pagination-horizontal {
     height: 1px;
     width: 45.3%;
@@ -869,11 +936,8 @@ input[type="radio"] {
   }
 
   .slider_2-wrap {
-    max-width: 444px;
-  }
-
-  .slider2-item img {
-    height: 205px;
+    max-width: 64.4vw;
+    top: -9px;
   }
 
   .swiper-title {
@@ -944,95 +1008,125 @@ input[type="radio"] {
     margin: 0;
     padding: 32px 29px;
   }
+
   input {
     font-size: 12px;
   }
+
   .form-input {
     font-size: 12px;
     padding-bottom: 3px;
   }
+
   .form-input-email {
     padding-top: 0;
     margin-top: 2px;
   }
+
   .form-input-name {
     font-size: 12px;
     padding-bottom: 0px;
   }
+
   .form-input-phone {
     margin-bottom: 18px;
   }
+
   legend {
     font-size: 7px;
   }
-  input[type="radio"] + label {
+
+  input[type="radio"]+label {
     font-size: 10px;
   }
+
   .online-reg-btn {
     font-size: 11px;
     padding: 6px 15px 7px 15px;
   }
+
   textarea {
     height: 25px;
   }
+
   .form-input-text {
     margin-bottom: 14px;
   }
+
   .btn-flex {
     margin-top: 32px;
   }
+
   .online-reg-confirm {
     margin-top: 0;
     font-size: 10px;
   }
+
   .main-contact-title {
     font-size: 30px;
     line-height: 121%;
     padding-top: 20px;
     margin-bottom: 24px;
   }
+
   .contact-nav {
     gap: 5%;
     padding-bottom: 30px;
     max-width: 652px;
   }
+
   .contact-title {
     font-size: 12px;
     margin-bottom: 1px;
   }
+
   .contact-content {
     font-size: 17px;
     line-height: 124%;
   }
+
   .contacts {
     font-size: 17px;
     line-height: 124%;
   }
+
   .contact-hours-descr {
     font-size: 10px;
     line-height: 130%;
     margin-top: 4px;
   }
+
   .contact-email {
     margin-top: 0;
   }
+
   .map {
     display: block;
   }
+
   iframe {
     max-height: 310px;
   }
+
   .footer-flex {
     font-size: 12px;
     letter-spacing: 0.02em;
     gap: 20px;
   }
+
   .footer-line {
     margin: 0 20px;
   }
+
   .footer {
     padding-top: 45px;
     padding-bottom: 45px;
+  }
+}
+
+@media (max-width:620px) {
+  .swiper-title {
+    font-size: 16px;
   }
 }
 
@@ -1073,6 +1167,18 @@ input[type="radio"] {
     text-align: center;
   }
 
+  .slider_2-wrap {
+    position: relative;
+    top: -9px;
+    max-width: 100%;
+    margin-top: 18px;
+  }
+
+  .wrap_services {
+    display: block;
+    margin-bottom: 70px;
+  }
+
   .navbar {
     position: absolute;
     top: 3px;
@@ -1099,6 +1205,7 @@ input[type="radio"] {
     top: 19px;
     width: 128px;
   }
+
   /* ====================================== новый файл main.css  */
   .title-hero {
     font-size: 32px;
@@ -1107,23 +1214,35 @@ input[type="radio"] {
     margin-top: 40px;
     margin-bottom: 42px;
   }
+
   .container {
     padding-right: 24px;
     padding-left: 24px;
   }
-  
+
   .hero_wrap {
     height: 100%;
     flex-direction: column;
   }
+
   .hero_visual {
     width: 259px;
     height: 193px;
     margin-top: 4px;
   }
+
   .hero_visual {
     width: auto;
     height: 193px;
+  }
+
+  .slider2-item img {
+    height: 48.9vw;
+  }
+
+  .wrap_services {
+    margin-bottom: 70px;
+    margin-left: 24px;
   }
 }
 
