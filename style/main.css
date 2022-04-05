@@ -1099,6 +1099,32 @@ input[type="radio"] {
     top: 19px;
     width: 128px;
   }
+  /* ====================================== новый файл main.css  */
+  .title-hero {
+    font-size: 32px;
+    line-height: 114%;
+    max-width: 277px;
+    margin-top: 40px;
+    margin-bottom: 42px;
+  }
+  .container {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  
+  .hero_wrap {
+    height: 100%;
+    flex-direction: column;
+  }
+  .hero_visual {
+    width: 259px;
+    height: 193px;
+    margin-top: 4px;
+  }
+  .hero_visual {
+    width: auto;
+    height: 193px;
+  }
 }
 
 /* @media (max-width: 900px) {} */
