@@ -37,16 +37,16 @@ h1 {
   color: #fff;
 }
 input {
-  color: #ffffff;
+  color: #fff;
   padding: 7px 0;
 }
 
 input::placeholder {
-  color: rgba(255, 255, 255, 1);
+  color: #fff;
 }
 
 textarea {
-  color: #ffffff;
+  color: #fff;
   padding: 7px 0;
   height: 37px;
 }
@@ -59,9 +59,9 @@ legend {
   margin-top: 14px;
 }
 
-.form-input-name {
-  font-weight: 500;
-  font-size: 17px;
+.form-input {
+  font-weight: 400;
+  font-size: 1rem;
 }
 .gray-bg {
   background-color: #e5e5e5;
@@ -912,47 +912,52 @@ legend {
 .registration-contacts._gallery .online-reg {
   border: 1px solid #000;
   border-radius: 10px;
+  max-width: 1250px;
 }
 
 .registration-contacts._gallery .online-reg-title {
   color: #000;
 }
-
+.form-input-name_black {
+    padding: 8px 0 14px;
+}
+.form-input-email_black {
+    padding: 26px 0 14px;
+}
+.form-input-phone_black {
+    padding: 26px 0 16px;
+}
+.form-input-text_black {
+    padding: 26px 0 35px;
+}
 .form-input-name_black {
   color: #000;
+  font-size: 1rem;
 }
-
-/*.form-input input[type="text"], 
-input[type="email"], 
-input[type="tel"], 
-textarea[type="text"] { 
+.online-enroll-form textarea::placeholder{
     color: #000;
-    
-   }
-   input[type="text"]::-webkit-input-placeholder {
+    font-size: 1rem;
+}
+.online-enroll-form input::placeholder{
     color: #000;
-   } 
-   input[type="text"]::-moz-placeholder {
+    font-family: inherit;
+    font-size: 1rem;
+}
+.form-input-name_black {
     color: #000;
-   } 
-   input[type="email"]::-webkit-input-placeholder {
+    font-size: 1rem;
+}
+.form-input-email_black {
     color: #000;
-   } 
-   input[type="email"]::-moz-placeholder {
+    font-size: 1rem;
+}
+.form-input-phone_black {
     color: #000;
-   } 
-   input[type="tel"]::-webkit-input-placeholder {
+    font-size: 1rem;
+}
+.form-input-text_black {
     color: #000;
-   } 
-   input[type="tel"]::-moz-placeholder {
-    color: #000;
-   } 
-   textarea[type="text"]::-webkit-input-placeholder {
-    color: #000;
-   } 
-   textarea[type="text"]::-moz-placeholder {
-    color: #000;
-   }  */
+}
 .registration-contacts._gallery .form-input {
   border-bottom: 1px solid #000;
 }
@@ -1013,7 +1018,13 @@ textarea[type="text"] {
 .online-reg-pic {
   border-radius: 0 10px 10px 0;
   width: 100%;
-  max-width: 650px;
+  max-width: 605px;
+  height: 100%;
+}
+.online-reg-pic._border {
+  border-radius: 0 10px 10px 0;
+  width: 100%;
+  max-width: 613px;
   height: 100%;
 }
 
@@ -1488,6 +1499,7 @@ li {
 
 .certificate-form {
   padding-top: 40px;
+  margin: 0 auto;
 }
 
 .certificate-form .online-reg-title {
@@ -1525,7 +1537,15 @@ li {
   display: flex;
   flex-direction: column;
 }
-
+.online-reg-form._enroll-white .form-input-name::placeholder{
+  color: #fff;
+}
+.online-reg-form._enroll-white .form-input-email::placeholder{
+  color: #fff;
+}
+.online-reg-form._enroll-white .form-input-phone::placeholder{
+  color: #fff;
+}
 .certificate-form.online-reg-title {
   color: #000;
 }
@@ -1533,66 +1553,45 @@ li {
 .online-enroll-form {
   display: flex;
   flex-direction: column;
-  max-width: 515px;
+  max-width: 469px;
 }
-
-/* 
-.online-enroll-form input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea[type="text"] {
-    color: #000;
-    padding: 26px 0 12px;
-} */
-
-/* .certificate-form input[type="text"]::-webkit-input-placeholder {
-    color: #000;
-    padding: 26px 0 12px;
-} */
-
-/* .certificate-form input[type="text"]::-moz-placeholder {
-    color: #000;
-    padding: 26px 0 12px;
-} */
-
-/* .certificate-form input[type="email"]::-webkit-input-placeholder {
-    color: #000;
-    padding: 26px 0 12px;
-} */
-
-/* .certificate-form input[type="email"]::-moz-placeholder {
-    color: #000;
-    padding: 26px 0 12px;
-} */
-
-/* .certificate-form input[type="tel"]::-webkit-input-placeholder {
-    color: #000;
-    padding: 26px 0 12px;
-} */
-
-/* .certificate-form input[type="tel"]::-moz-placeholder {
-    color: #000;
-    padding: 26px 0 12px;
-} */
-
-/* .certificate-form textarea[type="text"]::-webkit-input-placeholder {
-    color: #000;
-    padding: 26px 0 12px;
-} */
-
-/* .certificate-form textarea[type="text"]::-moz-placeholder {
-    color: #000;
-    padding: 26px 0 12px;
-} */
 
 .certificate-form_radio {
   color: #000;
 }
-
+.online-reg-form .certificate-form_radio {
+  margin-top: 2px;
+}
+.online-reg-form._white .form-input-name::placeholder{
+  color: #fff;
+}
+.online-reg-form._white .form-input-email::placeholder{
+  color: #fff;
+}
+.online-reg-form._white .form-input-phone::placeholder{
+  color: #fff;
+}
 .certificate-form .form-input {
   border-bottom: 1px solid #000;
 }
-
+.online-reg-form .form-input-name {
+  padding: 22px 0 13px;
+}
+.online-reg-form .form-input-email {
+  padding: 28px 0 13px;
+}
+.online-reg-form .form-input-phone {
+  padding: 10px 0 13px;
+}
+.online-reg-form .form-input-name::placeholder{
+  color: #000;
+}
+.online-reg-form .form-input-email::placeholder{
+  color: #000;
+}
+.online-reg-form .form-input-phone::placeholder{
+  color: #000;
+}
 .certificate-form .online-reg-btn {
   color: #000;
   border: 1px solid #000;
