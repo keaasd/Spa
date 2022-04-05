@@ -6,7 +6,8 @@
   --text-size-larg: 16px;
   --text-size-medium: 11px;
 }
-
+Windows: Shift + Alt + F.
+Чтобы открыть палитру команд, вы можете использовать COMMAND + SHIFT + P в macOS или CTRL + SHIFT + P в Windows.
 .one {
   font-size: var(--text-size-medium);
   font-size: var(--text-size-larg);

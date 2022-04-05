@@ -3,7 +3,7 @@
 /* https://github.com/keaasd/Spa.git */
 
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 :root {
@@ -31,13 +31,8 @@ body {
   width: 140px;
 }
 
-.menu-select {
-  width: 156px;
-}
-
 .header-box {
   display: flex;
-
 }
 
 .header-nav_list {
@@ -47,7 +42,7 @@ body {
 
 .btn-text {
   margin-left: 0px;
-  background: url('../img/button.svg');
+  background: url("../img/button.svg");
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
@@ -112,7 +107,7 @@ body {
   padding-bottom: 2px;
 }
 
-.swiper-horizontal>.swiper-pagination-progressbar,
+.swiper-horizontal > .swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-horizontal {
   top: inherit;
   bottom: 0;
@@ -132,7 +127,7 @@ body {
 }
 
 .hero-subheading {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   color: #fff;
@@ -178,7 +173,7 @@ body {
 }
 
 .hero_visual {
-  background-image: url('../img/hero-pic.png');
+  background-image: url("../img/hero-pic.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 353px;
@@ -222,12 +217,26 @@ body {
   margin-bottom: 0;
   line-height: 131%;
 }
-
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 21%;
+}
+.contact-nav-item {
+  display: block;
+}
+.contact-title {
+  display: block;
+}
 .main-bg::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
-  background: linear-gradient(360deg, #D2D285 11.43%, rgba(210, 210, 133, 0) 100%);
+  background: linear-gradient(
+    360deg,
+    #d2d285 11.43%,
+    rgba(210, 210, 133, 0) 100%
+  );
   width: 100%;
   height: 0;
   left: 0px;
@@ -249,7 +258,11 @@ body {
 
 .main_gradient {
   position: absolute;
-  background: linear-gradient(360deg, #D2D285 11.43%, rgba(210, 210, 133, 0) 100%);
+  background: linear-gradient(
+    360deg,
+    #d2d285 11.43%,
+    rgba(210, 210, 133, 0) 100%
+  );
   background-repeat: repeat;
   background-size: auto;
   background-size: cover;
@@ -302,15 +315,15 @@ body {
 }
 
 .swiper-title::after {
-  content: '';
+  content: "";
   display: block;
-  border-bottom: 1px solid #D4D626;
+  border-bottom: 1px solid #d4d626;
   width: 232px;
   padding-bottom: 11px;
 }
 
 .swiper-no {
-  font-family: 'Alice';
+  font-family: "Alice";
   font-weight: 400;
   font-size: 56px;
   line-height: 111.8%;
@@ -389,7 +402,7 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .modal_box {
@@ -407,7 +420,7 @@ body {
 }
 
 input {
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 7px 0;
 }
 
@@ -416,24 +429,152 @@ input::placeholder {
 }
 
 textarea {
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 7px 0;
   height: 37px;
 }
 
 legend {
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 12px;
   margin-top: 14px;
 }
 
+input[type="radio"] {
+  appearance: none;
+}
+input[type="radio"] {
+  appearance: none;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  line-height: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18.17px;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  aspect-ratio: 1;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+input[type="radio"] + label::after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  aspect-ratio: 1;
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+input[type="radio"]:checked + label::after {
+  opacity: 1;
+}
+
+input[type="radio"] + label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  line-height: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18.17px;
+}
+
+input {
+  font-size: 12px;
+  line-height: 124.8%;
+  color: #ffffff;
+  padding: 0;
+}
+
+.form-input {
+  background: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom-color: currentcolor;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d4d626;
+}
+input[type="radio"] + label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  line-height: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18.17px;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  aspect-ratio: 1;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+input[type="radio"] + label::after {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  aspect-ratio: 1;
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s;
+}
 .form-input-name {
   font-weight: 500;
   font-size: 17px;
 }
-
+input[type="radio"]:checked + label::after {
+  opacity: 1;
+}
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
 .online-reg-title {
   margin-bottom: 48px;
 }
@@ -447,6 +588,19 @@ legend {
   margin-top: 24px;
   margin-bottom: 26px;
 }
+.online-reg-form {
+  width: 100%;
+}
+.reg-left-wrapper {
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 8.3%;
+  padding-top: 65px;
+  padding-right: 8.3%;
+}
+.online-reg-pic {
+  height: 618px;
+}
 
 @media (max-width: 1360px) {
   .container {
@@ -459,7 +613,6 @@ legend {
     height: 44.11px;
     margin-right: 20px;
   }
-
 
   .header {
     padding-top: 40px;
@@ -494,7 +647,10 @@ legend {
   .slider_2-wrap {
     max-width: 58vw;
   }
-
+  .online-reg-pic {
+    object-fit: cover;
+    height: 100%;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -516,6 +672,33 @@ legend {
   .title-hero {
     font-size: 54px;
     max-width: 472px;
+  }
+  .online-reg-left {
+    flex-basis: auto;
+  }
+  .online-reg-right {
+    flex: 1;
+  }
+  .online-reg-left {
+    flex: 1;
+  }
+  .btn-flex {
+    gap: 3%;
+    margin-top: 35px;
+  }
+  .online-reg-btn {
+    font-size: 14px;
+    padding: 6px 15px 7px 15px;
+    margin: 0;
+  }
+  .reg-left-wrapper {
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 8.3%;
+    padding-top: 65px;
+    padding-right: 8.3%;
+    padding-bottom: 61px;
+    padding: 40px 8%;
   }
 }
 
@@ -558,8 +741,8 @@ legend {
   }
 
   .pin {
-    Width: 8.86px;
-    Height: 11.65px;
+    width: 8.86px;
+    height: 11.65px;
   }
 
   .drop-down::after {
@@ -649,7 +832,7 @@ legend {
     flex-basis: 46%;
   }
 
-  .swiper-horizontal>.swiper-pagination-progressbar,
+  .swiper-horizontal > .swiper-pagination-progressbar,
   .swiper-pagination-progressbar.swiper-pagination-horizontal {
     height: 1px;
     width: 45.3%;
@@ -720,7 +903,7 @@ legend {
   }
 
   .registration {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-right: 40px;
     padding-left: 40px;
   }
@@ -733,87 +916,78 @@ legend {
 
   .reg-left-wrapper {
     margin: 0;
-    padding: 30px;
+    padding: 32px 29px;
   }
-
-  input[type="radio"] {
-    appearance: none;
-  }
-
-  input[type="radio"]+label {
-    cursor: pointer;
-    position: relative;
-    padding-left: 30px;
-    line-height: 20px;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 18.17px;
-
-  }
-
-  input[type="radio"]+label::before {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    aspect-ratio: 1;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    opacity: 1;
-    transition: all 0.3s;
-  }
-
-  input[type="radio"]+label::after {
-    content: "";
-    display: inline-block;
-    width: 5px;
-    aspect-ratio: 1;
-    border: 1px solid #fff;
-    background: #fff;
-    border-radius: 50%;
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: all 0.3s;
-  }
-
-  input[type="radio"]:checked+label::after {
-    opacity: 1;
-  }
-
-  input[type="radio"]+label {
-    cursor: pointer;
-    position: relative;
-    padding-left: 30px;
-    line-height: 20px;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 18.17px;
-  }
-
   input {
     font-size: 12px;
-    line-height: 124.8%;
-    color: #FFFFFF;
-    padding: 0;
   }
-
   .form-input {
-    background: transparent;
-    outline: 0;
-    border: 0;
-    border-bottom-color: currentcolor;
-    border-bottom-style: none;
-    border-bottom-width: 0px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #D4D626;
+    font-size: 12px;
+    padding-bottom: 3px;
+  }
+  .form-input-email {
+    padding-top: 0;
+    margin-top: 2px;
+  }
+  .form-input-name {
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  .form-input-phone {
+    margin-bottom: 18px;
+  }
+  legend {
+    font-size: 7px;
+  }
+  input[type="radio"] + label {
+    font-size: 10px;
+  }
+  .online-reg-btn {
+    font-size: 11px;
+    padding: 6px 15px 7px 15px;
+  }
+  textarea {
+    height: 25px;
+  }
+  .form-input-text {
+    margin-bottom: 14px;
+  }
+  .btn-flex {
+    margin-top: 32px;
+  }
+  .online-reg-confirm {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .main-contact-title {
+    font-size: 30px;
+    line-height: 121%;
+    padding-top: 20px;
+    margin-bottom: 24px;
+  }
+  .contact-nav {
+    gap: 5%;
+    padding-bottom: 70px;
+  }
+  .contact-title {
+    font-size: 12px;
+    margin-bottom: 1px;
+  }
+  .contact-content {
+    font-size: 17px;
+    line-height: 124%;
+  }
+  .contacts {
+    font-size: 17px;
+    line-height: 124%;
+  }
+  .contact-hours-descr {
+    font-size: 10px;
+    line-height: 130%;
+    margin-top: 4px;
+  }
+  .contact-email {
+    margin-top: 0;
   }
 }
 
@@ -861,8 +1035,8 @@ legend {
   }
 
   .pin {
-    Width: 9.17px;
-    Height: 12.06px;
+    width: 9.17px;
+    height: 12.06px;
   }
 
   .menu-select {
@@ -881,7 +1055,6 @@ legend {
     width: 128px;
   }
 }
-
 
 /* @media (max-width: 900px) {} */
 
