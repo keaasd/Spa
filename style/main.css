@@ -984,6 +984,7 @@ input[type="radio"] {
   }
 
   .btn-text {
+    position: absolute;
     margin-left: 0px;
     padding: 14px 29px 22px 26px;
   }
