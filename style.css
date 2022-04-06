@@ -752,7 +752,7 @@ legend {
 
 .btn-bg_offers {
   cursor: pointer;
-  transition: 0.4s ease;
+  transition: 0.4s ease-out;
   transform: scale(1);
 }
 
@@ -800,6 +800,12 @@ legend {
 .phone-green {
   width: 75px;
   height: 75px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  transform: scale(1);
+}
+.phone-green:hover {
+  transform: scale(1.1);
 }
 
 .item-title {
@@ -1406,8 +1412,10 @@ li {
   margin-top: 33px;
   margin-bottom: 6px;
 }
-
-.card-link-details {
+.show-more-text {
+  display: none;
+}
+.show-more-btn {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 9px;
@@ -1415,8 +1423,13 @@ li {
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #000;
-  transition: 0.3s ease;
+  transition: 0.3s ease-out;
   margin-bottom: 40px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.show-more-btn:hover {
+  opacity: 1;
 }
 
 .card-item-pic {
