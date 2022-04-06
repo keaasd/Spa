@@ -40,14 +40,14 @@ body {
   /* удалить паддинг  */
 }
 
-.btn-text {
+/* .btn-text {
   margin-left: 0px;
   background: url("../img/button.svg");
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   display: block;
-}
+} */
 
 .btn-services {
   margin-top: 135px;
@@ -72,9 +72,10 @@ body {
   padding-left: 2px;
 }
 
+/* 
 .btn-text_services {
   padding: 23px 43px 26px 40px;
-}
+} */
 
 .btn-bg {
   width: 10px;
@@ -103,7 +104,7 @@ body {
   padding-bottom: 2px;
 }
 
-.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-horizontal>.swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-horizontal {
   top: inherit;
   bottom: 0;
@@ -236,11 +237,9 @@ body {
   content: "";
   display: block;
   position: absolute;
-  background: linear-gradient(
-    360deg,
-    #d2d285 11.43%,
-    rgba(210, 210, 133, 0) 100%
-  );
+  background: linear-gradient(360deg,
+      #d2d285 11.43%,
+      rgba(210, 210, 133, 0) 100%);
   width: 100%;
   height: 0;
   left: 0px;
@@ -267,11 +266,9 @@ body {
 
 .main_gradient {
   position: absolute;
-  background: linear-gradient(
-    360deg,
-    #d2d285 11.43%,
-    rgba(210, 210, 133, 0) 100%
-  );
+  background: linear-gradient(360deg,
+      #d2d285 11.43%,
+      rgba(210, 210, 133, 0) 100%);
   background-repeat: repeat;
   background-size: auto;
   background-size: cover;
@@ -603,8 +600,10 @@ input[type="radio"] {
 }
 
 .form-input-phone {
-  margin-top: 24px;
-  margin-bottom: 26px;
+  /* margin-top: 24px; */
+  /* margin-bottom: 26px; */
+  opacity: 1;
+
 }
 
 .online-reg-form {
@@ -691,6 +690,7 @@ input[type="radio"] {
   .search-txt {
     width: 39vw;
   }
+
   .slider_2-wrap {
     max-width: 63vw;
   }
@@ -788,9 +788,11 @@ input[type="radio"] {
   .header-nav {
     display: none;
   }
+
   .burger-btn {
     display: block;
   }
+
   .slider_2-wrap {
     max-width: 55vw;
   }
@@ -930,7 +932,7 @@ input[type="radio"] {
     flex-basis: 46%;
   }
 
-  .swiper-horizontal > .swiper-pagination-progressbar,
+  .swiper-horizontal>.swiper-pagination-progressbar,
   .swiper-pagination-progressbar.swiper-pagination-horizontal {
     height: 1px;
     width: 45.3%;
@@ -983,6 +985,7 @@ input[type="radio"] {
     gap: 10px;
     margin-top: 0;
   }
+
   .offers {
     padding-top: 71px;
   }
@@ -1045,7 +1048,7 @@ input[type="radio"] {
     font-size: 7px;
   }
 
-  input[type="radio"] + label {
+  input[type="radio"]+label {
     font-size: 10px;
   }
 
@@ -1120,6 +1123,7 @@ input[type="radio"] {
   iframe {
     max-height: 310px;
   }
+
   .offers-grid_item3 {
     display: none;
   }
@@ -1144,9 +1148,11 @@ input[type="radio"] {
   .swiper-button-next {
     right: 19%;
   }
+
   .swiper-button-prev {
     right: 28.6%;
   }
+
   .swiper-title {
     font-size: 16px;
   }
@@ -1247,6 +1253,10 @@ input[type="radio"] {
     display: block;
   }
 
+  .swiper-title::after {
+    padding-bottom: 6px;
+  }
+
   .hero_visual {
     width: 259px;
     height: 193px;
@@ -1275,7 +1285,7 @@ input[type="radio"] {
     height: 100%;
   }
 
-  .swiper-horizontal > .swiper-pagination-progressbar,
+  .swiper-horizontal>.swiper-pagination-progressbar,
   .swiper-pagination-progressbar.swiper-pagination-horizontal {
     width: 44.6%;
     bottom: 108px;
@@ -1351,6 +1361,7 @@ input[type="radio"] {
   .offers {
     position: relative;
   }
+
   .btn-text_offers {
     position: absolute;
     padding: 17px 33px 20px 31px;
@@ -1403,6 +1414,7 @@ input[type="radio"] {
     margin-top: 22px;
     margin-bottom: 9px;
   }
+
   .item2-text {
     max-width: 274px;
     margin-left: 17%;
@@ -1410,16 +1422,23 @@ input[type="radio"] {
     line-height: 150%;
     margin-bottom: 9px;
   }
+
   .grid_item4-pic {
     background-size: cover;
     width: 91%;
     height: 175px;
     margin-bottom: 23px;
   }
+
   .offers-grid_item4 {
     position: relative;
     margin-top: 42px;
   }
+
+  .swiper-no {
+    line-height: 1.2;
+  }
+
   .discount-10 {
     position: absolute;
     top: 99px;
@@ -1428,6 +1447,7 @@ input[type="radio"] {
     right: 4px;
     font-size: 31px;
   }
+
   .grid_item4-pic::after {
     position: absolute;
     width: 85px;
@@ -1436,20 +1456,24 @@ input[type="radio"] {
     top: 78px;
     right: -12px;
   }
+
   .item4-title {
     font-size: 21px;
     line-height: 110%;
     max-width: 272px;
     margin-bottom: 10px;
   }
+
   .item4-text {
     max-width: 220px;
     font-size: 12px;
     line-height: 150%;
   }
+
   .offers-grid_item5 {
     margin: 46px auto 20px;
   }
+
   .grid_item5-pic {
     background-size: cover;
     width: 100%;
@@ -1458,13 +1482,11 @@ input[type="radio"] {
     margin: 0 auto;
   }
 
-  
+
 }
 
 @media (max-width: 375px) {
-  .swiper-no {
-    line-height: 76.8%;
-  }
+
 
   .swiper-button-next {
     right: 0%;
@@ -1492,6 +1514,7 @@ input[type="radio"] {
     margin-top: 34px;
   }
 }
+
 @media (max-width: 320px) {
   .title-hero {
     font-size: 30px;
