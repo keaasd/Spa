@@ -7,7 +7,7 @@
     <title>Коррекция фигуры и похудение</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style/style1.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
     <div class="small-bg">
@@ -83,7 +83,10 @@
                     <div class="line"></div>
                     <p class="card-text">Целебное распаривание в хамам расслабит уставшие мышцы, а очищение тела рукавичкой кессе улучшит кровообращение, обеспечит мягкую детоксикацию и регенерацию кожи. Пенная процедура на горячем мраморном столе снимет напряжение и восстановит силы. Завершает спа-сеанс увлажнение тела молочком.
                     </p>
-                    <a href="#" class="card-link-details">подробнее</a>
+                    <div class="text-hidden">
+                        <p class="show-more-text">some hidden text</p>
+                        <a href="#" class="show-more-btn">подробнее</a>
+                    </div>
                 </div>
             </div>
             <div class="card-item _hamam">
@@ -100,7 +103,10 @@
                         </div>
                         <div class="line"></div>
                         <p class="card-text">Целебное распаривание в хамам расслабит уставшие мышцы, а пилинг рукавичкой кессе улучшит кровообращение, обеспечит мягкую детоксикацию и регенерацию кожи. Пенная процедура на горячем мраморном столе снимет напряжение и восстановит силы. Завершает спа-сеанс ароматическая ойл-процедура с натуральными маслами.</p>
-                        <a href="#" class="card-link-details">подробнее</a>
+                        <div class="text-hidden">
+                            <p class="show-more-text">some hidden text</p>
+                            <a href="#" class="show-more-btn">подробнее</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -146,6 +152,23 @@
             </div>
         </div>
     </footer>
+    <script>
+        const texts = document.querySelectorAll('.text-hidden');
+
+if (texts) {
+  texts.forEach(text => {
+    const moreBtn = text.querySelector('.show-more-btn');
+    const moreText = text.querySelector('.show-more-text');
+    
+    moreText.style.display = 'none';
+
+    moreBtn.addEventListener('click', e => {
+      e.preventDefault();
+      moreText.style.display = 'block';
+    })
+  })
+}
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
