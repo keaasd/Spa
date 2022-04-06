@@ -607,6 +607,28 @@ input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 } */
+.maps-moby {
+
+  display: none;
+  color: #000000;
+  font-size: 12px;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 14px;
+  margin-left: 3px;
+  margin-bottom: 36px;
+}
+
+.maps-moby::before {
+  content: '';
+  background-image: url(../img/pin.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+  margin-right: 10px;
+}
 
 .online-reg-title {
   margin-bottom: 48px;
@@ -1422,8 +1444,18 @@ input[type="radio"] {
 
   .discount-15 {
     top: 227px;
-    left: 9%;
+    left: 24%;
     font-size: 31px;
+  }
+
+  .grid_item5-pic::before {
+    position: absolute;
+    width: 114px;
+    height: 103px;
+    top: inherit;
+    left: -26%;
+    bottom: 21px;
+    background-size: cover;
   }
 
   .item2-title {
@@ -1490,10 +1522,12 @@ input[type="radio"] {
   }
 
   .offers-grid_item5 {
-    margin: 46px auto 20px;
+    margin: 46px auto 0;
+    padding-bottom: 40px;
   }
 
   .grid_item5-pic {
+    position: relative;
     background-size: cover;
     width: 100%;
     height: 275px;
@@ -1501,6 +1535,89 @@ input[type="radio"] {
     margin: 0 auto;
   }
 
+  .item5-title {
+    max-width: 217px;
+    font-size: 21px;
+    line-height: 110%;
+    margin: 20px auto 10px;
+  }
+
+  .item5-text {
+    max-width: 221px;
+    font-size: 12px;
+    margin: 0 auto;
+    line-height: 150%;
+  }
+
+  .wraps_box {
+    display: flex;
+    flex-direction: column;
+    background: white;
+  }
+
+  .online-reg-right,
+  .map,
+  .footer-line {
+    display: none;
+  }
+
+  .registration,
+  .copyright {
+    order: 2;
+  }
+
+  .contact {
+    background: white;
+    margin-top: 21px;
+  }
+
+  .contact-nav {
+    display: block;
+  }
+
+  .contact-content {
+    line-height: 120%;
+    font-size: 25px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .contacts {
+    line-height: 120%;
+    font-size: 25px;
+  }
+
+  .contact-box {
+    display: block;
+  }
+
+  .contact-hours-descr {
+    line-height: 150%;
+    font-size: 12px;
+    max-width: 232px;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+  }
+
+  .footer-social {
+    width: 100%;
+  }
+
+  .offers {
+    padding-bottom: 20px;
+  }
+
+  .maps-moby {
+    display: flex;
+  }
+
+  .contacts_nav-items {
+    margin-bottom: 40px;
+  }
 
 }
 
@@ -1520,8 +1637,7 @@ input[type="radio"] {
   }
 
   .offers {
-    padding-top: 0;
-    padding-bottom: 120px;
+    padding: 0;
   }
 
   .offers-title {
@@ -1531,6 +1647,11 @@ input[type="radio"] {
 
   .offers-grid {
     margin-top: 34px;
+  }
+
+  .discount-15 {
+    top: 227px;
+    left: 9%;
   }
 }
 
