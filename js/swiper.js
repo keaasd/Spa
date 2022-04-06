@@ -1,9 +1,19 @@
 var swiper = new Swiper(".mySwiper", {
-  // добавим таймер
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // таймер выше  
+  speed: 2000,
+  grabCursor: true,
+  // автоматически 
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  // замещает
+  effect: "creative",
+  creativeEffect: {
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+  // выше добавил
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar",
@@ -35,6 +45,9 @@ var swiper = new Swiper(".mySwiper", {
         slidesPerGroup: 1,
         spaceBetween: 56,
       },
+      768: {
+        spaceBetween: 18,
+      },
       1200: {
         slidesPerView: 2.5,
         slidesPerGroup: 1,
@@ -48,25 +61,3 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 }
-
-
-
-  // автоматически
-  // {
-  //   var swiper = new Swiper(".mySwiper", {
-  //     spaceBetween: 30,
-  //     centeredSlides: true,
-  //     autoplay: {
-  //       delay: 2500,
-  //       disableOnInteraction: false,
-  //     },
-  //     pagination: {
-  //       el: ".swiper-pagination",
-  //       clickable: true,
-  //     },
-  //     navigation: {
-  //       nextEl: ".swiper-button-next",
-  //       prevEl: ".swiper-button-prev",
-  //     },
-  //   });
-  // }

@@ -14,3 +14,23 @@ Windows: Shift + Alt + F.
   font-size: var(--text-size-medium);
   font-size: var(--text-size-larg);
 }
+var swiper = new Swiper(".mySwiper", {
+  grabCursor: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      // translate: [0, 0, -400],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+});
+
+
+// добавим таймер
+// autoplay: {
+//   delay: 2500,
+//   disableOnInteraction: false,
+// таймер выше  
