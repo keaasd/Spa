@@ -217,11 +217,11 @@
   line-height: 131%;
 }
 
-.contact-box {
+/* .contact-box {
   display: flex;
   justify-content: space-between;
   gap: 85px;
-}
+} */
 
 .contact-nav-item {
   display: block;
@@ -246,10 +246,11 @@
   background: red;
 }
 
+/* 
 .contact-nav {
   gap: 0;
-  max-width: 1029px;
-}
+  max-width: 1029px; */
+/* } */
 
 .main-bg {
   position: absolute;

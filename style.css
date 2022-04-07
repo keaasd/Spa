@@ -2152,6 +2152,20 @@ input {
   bottom: 69px;
 }
 
+.swiper-button-next {
+  background-image: url(img/arrow-right.svg);
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: inherit;
+  opacity: 1;
+  right: 26%;
+  bottom: 69px;
+  width: 58px;
+  height: 58px;
+}
+
 /* .swiper-button-next {
   background: url(./img/arrow-right-green.svg);
   background-repeat: no-repeat;
@@ -2162,8 +2176,8 @@ input {
   width: 58px;
   height: 58px;
 } */
-.swiper-button-next {
-  background-image: url(../img/arrow-right.svg);
+/* .swiper-button-next {
+  background: url(./img/arrow-right-green.svg);
   background-repeat: repeat;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2172,7 +2186,7 @@ input {
   opacity: 1;
   right: 26%;
   bottom: 69px;
-}
+} */
 
 .swiper-button-prev:after {
   display: none;
@@ -3700,6 +3714,10 @@ input[type="radio"] {
     padding-top: 12px;
   }
 
+  .container .slider_2-wrap {
+    padding-right: 0;
+  }
+
   .logo {
     background-image: url(../img/logo_mobile.svg);
     width: 46px;
@@ -3737,6 +3755,7 @@ input[type="radio"] {
     top: -9px;
     max-width: 100%;
     margin-top: 44px;
+    margin-left: 24px;
   }
 
   .wrap_services {
@@ -3783,6 +3802,10 @@ input[type="radio"] {
   .container {
     padding-right: 24px;
     padding-left: 24px;
+  }
+
+  .enroll-form .container {
+    background-color: white;
   }
 
   .hero_wrap {
@@ -3893,6 +3916,8 @@ input[type="radio"] {
   .btn-text {
     padding: 15px 30px 16px 31px;
     font-size: 13px;
+    right: 0;
+    top: 20px;
   }
 
   .btn-text_offers {
@@ -4067,6 +4092,7 @@ input[type="radio"] {
   .registration,
   .copyright {
     order: 2;
+    padding: 0;
   }
 
   .contact {
@@ -4155,6 +4181,10 @@ input[type="radio"] {
   .discount-15 {
     top: 227px;
     left: 9%;
+  }
+
+  .discount-10 {
+    top: 99px;
   }
 }
 
