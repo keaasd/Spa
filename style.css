@@ -546,7 +546,9 @@ legend {
   top: 320px;
 }
 
-.slick-slider {}
+.slick-slider {
+  opacity: 1;
+}
 
 .slick-list {
   overflow: hidden;
@@ -1417,7 +1419,8 @@ li {
 .cards-list-grid {
   display: grid;
   grid-template-columns: 49% 50%;
-  grid-auto-rows: repeat(4, 311px);
+  /* grid-auto-rows: repeat(4, 311px); */
+  grid-template-rows: repeat(4, 311px);
   row-gap: 90px;
 }
 
@@ -1551,7 +1554,9 @@ li {
   transition: all 0.3s ease 0s;
 }
 
-.slider3__item.slick-center {}
+.slider3__item.slick-center {
+  opacity: 1;
+}
 
 .slider3__item.slick-slider {
   width: 100%;
@@ -1559,7 +1564,7 @@ li {
 }
 
 .slider3__item.slick-active {
-  /* transform: scale(1.1); */
+  opacity: 1;
 }
 
 .slick-list {
@@ -1592,11 +1597,17 @@ li {
   background: url("./img/arrow-right-green.svg") 0 0 / 100% no-repeat;
 }
 
-.slider3 .slick-dots {}
+.slider3 .slick-dots {
+  opacity: 1;
+}
 
-.slider3 .slick-dots li {}
+.slider3 .slick-dots li {
+  opacity: 1;
+}
 
-.slider3 .slick-dots button {}
+.slider3 .slick-dots button {
+  opacity: 1;
+}
 
 /* ONLINE-REGISTRATION FORM */
 
@@ -2063,7 +2074,9 @@ input {
   padding-bottom: 120px;
 }
 
-#Swiper3 .swiper-wrapper {}
+#Swiper3 .swiper-wrapper {
+  opacity: 1;
+}
 
 .swiper-slide {
   /* Center slide text vertically */
@@ -2166,28 +2179,6 @@ input {
   height: 58px;
 }
 
-/* .swiper-button-next {
-  background: url(./img/arrow-right-green.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  right: 10%;
-  top: 600px;
-  width: 58px;
-  height: 58px;
-} */
-/* .swiper-button-next {
-  background: url(./img/arrow-right-green.svg);
-  background-repeat: repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: inherit;
-  opacity: 1;
-  right: 26%;
-  bottom: 69px;
-} */
-
 .swiper-button-prev:after {
   display: none;
 }
@@ -2204,7 +2195,9 @@ input {
 
 /* HAMAM PAGE */
 
-.card-item._hamam:nth-child(1) {}
+.card-item._hamam:nth-child(1) {
+  opacity: 1;
+}
 
 .sub-heading-card-list {
   font-family: "Raleway";
