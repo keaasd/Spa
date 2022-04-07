@@ -1,10 +1,7 @@
-/* изменить  */
 /* https://github.com/Svetkachalina/1.git */
 /* https://github.com/keaasd/Spa.git */
-/* e  */
-body {
-  background-color: #e5e5e5;
-}
+
+
 
 /* .hidden {
   display: none;
@@ -73,8 +70,9 @@ body {
 }
 
 .header-nav {
-  margin-right: 50px;
-  gap: 30px;
+  /* margin-right: 50px;
+  gap: 30px; */
+  opacity: 1;
 }
 
 .navbar {
@@ -130,17 +128,6 @@ body {
   width: 48%;
 }
 
-.swiper-button-next {
-  background-image: url(../img/arrow-right.svg);
-  background-repeat: repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: inherit;
-  opacity: 1;
-  right: 26%;
-  bottom: 69px;
-}
 
 .hero-subheading {
   font-family: "Raleway", sans-serif;
@@ -178,22 +165,7 @@ body {
   height: 75px;
 }
 
-.swiper-button-prev {
-  background-image: url(../img/arrow-left.svg);
 
-  background-repeat: repeat;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: inherit;
-  left: inherit;
-  width: 58px;
-  height: 58px;
-  opacity: 1;
-  right: 35.6%;
-  bottom: 69px;
-}
 
 .hero_visual {
   background-image: url("../img/hero-pic.png");
@@ -319,13 +291,7 @@ body {
   line-height: 113%;
 }
 
-.services-text {
-  display: block;
-  flex-direction: inherit;
-  max-width: 304px;
-  margin-left: 100px;
-  margin-right: 0;
-}
+
 
 .wrap_services {
   display: flex;
@@ -334,14 +300,7 @@ body {
   min-width: 0;
 }
 
-.slider_2-wrap {
-  position: absolute;
-  top: -9px;
-  right: 0;
-  height: 100%;
-  max-width: 64vw;
-  margin-top: 18px;
-}
+
 
 .swiper-text {
   margin-top: 25px;
@@ -368,13 +327,14 @@ body {
 }
 
 .title-hero {
-  font-size: 64.9171px;
+  /* font-size: 64.9171px;
   line-height: 113%;
   max-width: 600px;
   margin-top: 130px;
   margin-left: 20px;
   margin-bottom: 125px;
-  color: #fff;
+  color: #fff; */
+  opacity: 1;
 }
 
 .burger-btn {
