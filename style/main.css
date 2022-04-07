@@ -29,15 +29,13 @@ body {
 .drop-down {
   position: relative;
 }
-.display_off {
-  display: none;
-}
+
 .drop-down::after {
   left: 24px;
   top: 31px;
   width: 140px;
 }
-
+/* .menu-select-home */
 .header-box {
   display: flex;
 }
@@ -110,15 +108,6 @@ body {
 }
 .btn-text_offers:hover {
   transform: scale(1.1);
-}
-.menu-select_gallery::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid #fff;
-  width: 289px;
-  position: absolute;
-  right: 6%;
-  top: 89%;
 }
 
 .hero_swip-box {
