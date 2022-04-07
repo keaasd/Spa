@@ -1,11 +1,12 @@
 .display_off {
   display: none;
 }
-.menu-select_gallery::after {
+
+.select-big::after {
   content: "";
   display: block;
   border-bottom: 1px solid #fff;
-  width: 289px;
+  width: 350px;
   position: absolute;
   right: 6%;
   top: 89%;
