@@ -2,10 +2,10 @@ var swiper = new Swiper(".mySwiper", {
   speed: 2000,
   grabCursor: true,
   // автоматически 
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   // замещает
   effect: "creative",
   creativeEffect: {

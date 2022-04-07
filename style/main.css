@@ -99,6 +99,11 @@ body {
   padding: 22px 68px 25px 39px;
   top: 24px;
   font-size: 17px;
+  transition: 0.3s ease-out;
+  transform: scale(1);
+}
+.btn-text_offers:hover {
+  transform: scale(1.1);
 }
 
 /* ==== первый свайпер */
@@ -315,7 +320,6 @@ body {
   display: block;
   flex-direction: inherit;
   max-width: 304px;
-  margin-left: 100px;
   margin-right: 0;
 }
 
@@ -355,7 +359,7 @@ body {
   text-transform: uppercase;
 }
 
-.btn-text_services {
+.btn-text {
   font-size: 17px;
 }
 
@@ -593,10 +597,6 @@ input[type="radio"]+label::after {
   transition: all 0.3s;
 } */
 
-.form-input-name {
-  font-weight: 500;
-  font-size: 17px;
-}
 
 /* 
 input[type="radio"]:checked+label::after {
@@ -666,13 +666,12 @@ input[type="radio"] {
 }
 
 .footer-social {
-  gap: 24px;
+  gap: 62px;
 }
 
 @media (max-width: 1360px) {
   .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 0 20px;
   }
 
   .logo {
@@ -755,7 +754,11 @@ input[type="radio"] {
     top: 66px;
   }
 }
-
+@media (max-width: 1100px) {
+   .wrap_services {
+    margin-bottom: 38px;
+  }
+}
 @media (max-width: 1040px) {
   .header-nav {
     margin-right: 20px;
@@ -765,7 +768,7 @@ input[type="radio"] {
   .header-nav_link {
     font-size: 11px;
   }
-
+  
   .title-hero {
     font-size: 54px;
     max-width: 472px;
@@ -1001,7 +1004,7 @@ input[type="radio"] {
     margin-top: 20px;
   }
 
-  .btn-text_services {
+  .btn-text {
     font-size: 11px;
   }
 
@@ -1012,31 +1015,12 @@ input[type="radio"] {
   }
 
   .btn-services {
-    margin-top: 38px;
+    margin-top: 116px;
   }
 
   .offers-title {
     font-size: 30px;
-    margin-top: 55px;
     margin-bottom: 22px;
-  }
-
-  .offers-grid {
-    grid-template-rows: 630px 238px 428px;
-    gap: 10px;
-    margin-top: 0;
-  }
-
-  .offers {
-    padding-top: 71px;
-  }
-
-  .grid_item2-pic {
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 406px;
-    height: 281px;
-    margin-bottom: 30px;
   }
 
   .offers-description {
@@ -1104,10 +1088,6 @@ input[type="radio"] {
 
   .form-input-text {
     margin-bottom: 14px;
-  }
-
-  .offers-grid {
-    display: block;
   }
 
   .btn-flex {
