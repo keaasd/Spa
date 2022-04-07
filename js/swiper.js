@@ -61,3 +61,30 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 }
+{
+  // третий свайпер
+  var swiper = new Swiper(".gallerySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    fade: false,
+    // slidesPerView: "auto",
+    slidesPerView: 2,
+    spaceBetween: 120,
+    coverflowEffect: {
+      // rotate: 50,
+      stretch: 0,
+      depth: 'auto',
+      modifier: 2,
+    },
+    zoom: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+  });
+}
