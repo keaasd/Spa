@@ -179,7 +179,7 @@ legend {
   position: relative;
 }
 
-.menu-select::after {
+.menu-select-home::after {
   content: "";
   display: block;
   border-bottom: 1px solid #fff;
@@ -2367,9 +2367,9 @@ input {
   margin-bottom: 60px;
   grid-template-rows: 189px 128px 343px;
   }
-/* .offers-grid_item {
+.offers-grid_item {
   
-} */
+}
 .grid-item2-pic {
   max-width: 223px;
 }
