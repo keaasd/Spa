@@ -14,17 +14,12 @@
       type: "fraction",
     },
     breakpoints: {
-      300: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 60,
-      },
       360: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
+        slidesPerView: 1.8,
         spaceBetween: 56,
       },
       768: {
+        slidesPerView: 1.8,
         spaceBetween: 50,
       },
       1040: {

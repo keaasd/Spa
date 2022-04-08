@@ -53,6 +53,10 @@ img {
   /* border: 5px solid red; */
 }
 
+.swiper-wrapper {
+  gap: 3px;
+}
+
 .swiper-slide-active-mod img {
   object-fit: cover;
 }
@@ -202,8 +206,24 @@ img {
   }
 }
 
-@media (max-width: 7680px) {
+@media (max-width: 768px) {
   .slider3__item {
-    height: 150px;
+    height: 130px;
+  }
+
+  .swiper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 567px) {
+  .slider3__item {
+    height: 90px;
+  }
+}
+
+@media (max-width: 375px) {
+  .slider3__item {
+    height: 70px;
   }
 }
