@@ -1042,6 +1042,8 @@ legend {
 }
 .online-reg-right {
     flex-basis: 49%;
+  
+
 }
 .online-reg-title {
   max-width: 260px;
@@ -1079,38 +1081,8 @@ legend {
   border-bottom: 1px solid #d4d626;
 }
 
-/* 
-input[type="text"], 
-input[type="email"], 
-input[type="tel"], 
-textarea[type="text"] { 
-    
-    padding: 26px 0 12px;
-   } */
-/* .online-reg-form input[type="text"]::-webkit-input-placeholder {
-    color: #fff;
-   } 
-   .online-reg-form input[type="text"]::-moz-placeholder {
-    color: #fff;
-   } 
-   .online-reg-form input[type="email"]::-webkit-input-placeholder {
-    color: #fff;
-   } 
-   .online-reg-form input[type="email"]::-moz-placeholder {
-    color: #fff;
-   } 
-   .online-reg-form input[type="tel"]::-webkit-input-placeholder {
-    color: #fff;
-   } 
-   .online-reg-form input[type="tel"]::-moz-placeholder {
-    color: #fff;
-   } 
-   .online-reg-form textarea[type="text"]::-webkit-input-placeholder {
-    color: #fff;
-   } 
-   .online-reg-form textarea[type="text"]::-moz-placeholder {
-    color: #fff;
-   }  */
+
+
 .form-input-text {
   margin-bottom: 20px;
 }
@@ -1129,7 +1101,6 @@ input[type="radio"] + label {
   color: #fff;
   font-size: 13px;
   font-weight: 500;
-  /* line-height: 18.17px; */
   line-height: 113.56%;
 }
 
@@ -1479,7 +1450,13 @@ li {
 .show-more-btn:hover {
   opacity: 1;
 }
-
+.result {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.show-more-list {
+  line-height: 200%;
+}
 .card-item-pic {
   height: 311px;
   flex-basis: 27%;
@@ -1582,7 +1559,7 @@ li {
 }
 
 .online-reg-border {
-  display: block;
+  
   border: 1px solid #000;
   border-radius: 10px;
   overflow: hidden;
@@ -1592,11 +1569,11 @@ li {
 }
 
 .img-cert-right-border {
-  border-radius: 0 10px 10px 0;
+  /* border-radius: 0 10px 10px 0; */
   width: 100%;
-
-  max-width: 708px;
-  height: 100%;
+  max-width: 620px;
+  height: 685px;
+  overflow: hidden;
 }
 
 .online-reg-form {
@@ -2142,7 +2119,7 @@ input {
 
 .cards-list-grid._spa-2 {
   grid-template-columns: 27% 27% 27%;
-  grid-template-rows: 46% 50%;
+  grid-template-rows: 58% 42%;
   column-gap: 5%;
 }
 

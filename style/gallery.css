@@ -154,6 +154,16 @@ img {
   right: 6%;
   top: 89%;
 } */
+.select-big::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #fff;
+  width: 289px;
+  position: absolute;
+  right: 6%;
+  top: 89%;
+}
+
 /* 
 @media (max-width: 1360px) {
 
