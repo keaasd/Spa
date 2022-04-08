@@ -1,6 +1,11 @@
+/* изменить  */
+/* https://github.com/Svetkachalina/1.git */
+/* https://github.com/keaasd/Spa.git */
+
 body {
-  background-color: #e5e5e5;
+  background-color: #E5E5E5;
 }
+
 :root {
   --text-size-larg: 16px;
   --text-size-medium: 11px;
@@ -32,22 +37,27 @@ body {
 
 .header-box {
   display: flex;
+
 }
 
 .header-nav_list {
   padding-right: 0;
+  /* удалить паддинг  */
 }
+
 .btn-text {
   margin-left: 0px;
-  background: url("../img/button.svg");
+  background: url('../img/button.svg');
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   display: block;
 }
+
 .btn-services {
   margin-top: 135px;
 }
+
 .header {
   padding-top: 40px;
   padding-right: 7%;
@@ -66,20 +76,24 @@ body {
   margin-top: 20px;
   padding-left: 2px;
 }
+
 .btn-text_services {
   padding: 23px 43px 26px 40px;
 }
+
 .btn-bg {
   width: 10px;
   height: 66px;
   background: transparent;
   display: none;
 }
+
 .btn-text_offers {
   padding: 22px 68px 25px 39px;
   top: 24px;
   font-size: 17px;
 }
+
 /* ==== первый свайпер */
 /* подключить js css для свайпера */
 .swiper {
@@ -98,7 +112,7 @@ body {
   padding-bottom: 2px;
 }
 
-.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-horizontal>.swiper-pagination-progressbar,
 .swiper-pagination-progressbar.swiper-pagination-horizontal {
   top: inherit;
   bottom: 0;
@@ -118,7 +132,7 @@ body {
 }
 
 .hero-subheading {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   color: #fff;
@@ -164,7 +178,7 @@ body {
 }
 
 .hero_visual {
-  background-image: url("../img/hero-pic.png");
+  background-image: url('../img/hero-pic.png');
   background-repeat: no-repeat;
   background-size: contain;
   width: 353px;
@@ -210,14 +224,10 @@ body {
 }
 
 .main-bg::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
-  background: linear-gradient(
-    360deg,
-    #d2d285 11.43%,
-    rgba(210, 210, 133, 0) 100%
-  );
+  background: linear-gradient(360deg, #D2D285 11.43%, rgba(210, 210, 133, 0) 100%);
   width: 100%;
   height: 0;
   left: 0px;
@@ -239,11 +249,7 @@ body {
 
 .main_gradient {
   position: absolute;
-  background: linear-gradient(
-    360deg,
-    #d2d285 11.43%,
-    rgba(210, 210, 133, 0) 100%
-  );
+  background: linear-gradient(360deg, #D2D285 11.43%, rgba(210, 210, 133, 0) 100%);
   background-repeat: repeat;
   background-size: auto;
   background-size: cover;
@@ -290,15 +296,15 @@ body {
 }
 
 .swiper-title::after {
-  content: "";
+  content: '';
   display: block;
-  border-bottom: 1px solid #d4d626;
+  border-bottom: 1px solid #D4D626;
   width: 232px;
   padding-bottom: 11px;
 }
 
 .swiper-no {
-  font-family: "Alice";
+  font-family: 'Alice';
   font-weight: 400;
   font-size: 56px;
   line-height: 111.8%;
@@ -318,6 +324,7 @@ body {
   margin-bottom: 125px;
   color: #fff;
 }
+
 .burger-btn {
   background-image: url(../img/burger_menu.svg);
   background-repeat: no-repeat;
@@ -330,6 +337,7 @@ body {
   display: none;
   height: 9.5px;
 }
+
 /* стили крестика ======== */
 .header-modal-close {
   background-image: url(../img/close_moby.svg);
@@ -353,6 +361,7 @@ body {
   z-index: 10;
   transition: 0.3s ease-in-out;
 }
+
 .modal_window {
   position: relative;
   background-color: #515002;
@@ -361,9 +370,11 @@ body {
   width: 100%;
   max-width: 500px;
 }
+
 .burger-link {
   margin-top: 30px;
 }
+
 .modal_link {
   display: block;
   font-weight: 500;
@@ -372,12 +383,14 @@ body {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFFFF;
 }
+
 .modal_box {
   display: flex;
   justify-content: space-between;
 }
+
 .modal_logo {
   display: block;
   background-image: url(../img/logo_mobile.svg);
@@ -386,6 +399,7 @@ body {
   width: 46px;
   height: 40.89px;
 }
+
 @media (max-width: 1360px) {
   .container {
     padding-right: 15px;
@@ -397,6 +411,7 @@ body {
     height: 44.11px;
     margin-right: 20px;
   }
+
 
   .header {
     padding-top: 40px;
@@ -431,6 +446,7 @@ body {
   .slider_2-wrap {
     max-width: 58vw;
   }
+
 }
 
 @media (max-width: 1200px) {
@@ -448,6 +464,7 @@ body {
   .header-nav_link {
     font-size: 11px;
   }
+
   .title-hero {
     font-size: 54px;
     max-width: 472px;
@@ -463,12 +480,15 @@ body {
   .burger-btn {
     display: block;
   }
+
   .header-nav {
     display: none;
   }
+
   .header {
     padding-top: 21px;
   }
+
   .search-txt {
     line-height: 0.5;
     width: 580px;
@@ -477,24 +497,29 @@ body {
     width: 20vw;
     padding: 10px;
   }
+
   .drop-down {
     margin-left: 3px;
     margin-top: 17px;
   }
+
   .menu-select {
     width: 155px;
     font-size: 10px;
     margin-left: 1px;
   }
+
   .pin {
-    width: 8.86px;
-    height: 11.65px;
+    Width: 8.86px;
+    Height: 11.65px;
   }
+
   .drop-down::after {
     left: 15px;
     top: 22px;
     width: 106px;
   }
+
   .title-hero {
     font-size: 41.9823px;
     max-width: 374px;
@@ -502,153 +527,190 @@ body {
     margin-left: 0;
     margin-bottom: 24px;
   }
+
   .hero_visual {
     width: 259px;
     height: 183px;
     margin-top: 4px;
   }
+
   .services {
     margin-top: 102px;
   }
+
   .services-text {
     max-width: 212px;
     margin-left: 40px;
   }
+
   .title-services {
     margin-bottom: 14px;
     font-size: 30px;
   }
+
   .descr-services {
     font-size: 11px;
     line-height: 145%;
   }
+
   .hero_wrap {
     height: 205px;
   }
+
   .hero-subheading {
     font-size: 12px;
     letter-spacing: 0.02em;
     margin-top: 0;
   }
+
   .hero-heading {
     font-size: 28px;
     line-height: 107%;
   }
+
   .swiper-button-next {
     width: 44px;
     height: 44px;
     right: 29%;
     bottom: 44px;
   }
+
   .swiper-button-prev {
     width: 44px;
     height: 44px;
     right: 38.6%;
     bottom: 44px;
   }
+
   .white_phone-index {
     display: none;
   }
+
   .main-bg {
     height: 822px;
   }
+
   .hero_swiper {
     height: 280px;
     padding-bottom: 2px;
     max-width: 570px;
   }
+
   .hero-text {
     margin-left: 0px;
     flex-basis: 46%;
   }
-  .swiper-horizontal > .swiper-pagination-progressbar,
+
+  .swiper-horizontal>.swiper-pagination-progressbar,
   .swiper-pagination-progressbar.swiper-pagination-horizontal {
     height: 1px;
     width: 45.3%;
   }
+
   .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     top: -1px;
   }
+
   .slider_2-wrap {
     max-width: 444px;
   }
+
   .slider2-item img {
     height: 205px;
   }
+
   .swiper-title {
     font-size: 18px;
     line-height: 0.5;
   }
+
   .swiper-no {
     font-size: 30px;
   }
+
   .swiper-text {
     margin-top: 20px;
   }
+
   .btn-text_services {
     font-size: 11px;
   }
+
   .btn-text {
     margin-left: 0px;
     padding: 14px 29px 22px 26px;
   }
+
   .btn-services {
     margin-top: 38px;
   }
 }
+
 @media (max-width: 567px) {
   .header {
     padding-top: 12px;
   }
+
   .logo {
     background-image: url(../img/logo_mobile.svg);
     width: 46px;
     height: 40.89px;
     margin-right: 0;
   }
+
   .header-flex {
     justify-content: center;
     align-items: center;
     gap: 10px;
   }
+
   .header-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .search-box {
     display: none;
   }
+
   .search-btn {
     display: none;
   }
+
   .header-logo {
     text-align: center;
   }
+
   .navbar {
     position: absolute;
     top: 3px;
     right: 24px;
   }
+
   .pin {
-    width: 9.17px;
-    height: 12.06px;
+    Width: 9.17px;
+    Height: 12.06px;
   }
+
   .menu-select {
     width: 186px;
     margin-left: 3px;
     font-size: 12px;
   }
+
   .drop-down {
     margin-left: 44px;
     margin-top: 6px;
   }
+
   .drop-down::after {
     top: 19px;
     width: 128px;
   }
 }
+
 
 /* @media (max-width: 900px) {} */
 

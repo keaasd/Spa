@@ -1,4 +1,117 @@
-.gallery_header-nav_link {
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gallery-slider {
+  margin-left: auto;
+}
+
+.swiper {
+  /* max-width: 1198px; */
+  max-width: 1274px;
+  margin-left: auto;
+  /* margin-right: 40px; */
+  margin-right: -2.5%;
+  padding-top: 142px;
+  padding-bottom: 109px;
+  /* background-color: blue; */
+  margin-top: 75px;
+}
+
+.slider3__item {
+  width: 100%;
+  transition: all 0.3s ease 0s;
+  height: 277px;
+}
+
+.swiper-slide-next {
+  /* max-width: 402px; */
+  transition: .3s;
+}
+
+.swiper-wrapper .swiper-slide-active-mod {
+  transform: scale(1.5);
+  /* transform: scale(1.7); */
+  /* border: 5px solid red; */
+}
+
+.swiper-slide-active-mod img {
+  object-fit: cover;
+}
+
+.swiper-slide-active {
+  transform: scale(1.5);
+}
+
+.swiper-horizontal>.swiper-pagination-fraction {
+  bottom: inherit;
+  top: 0;
+  left: 0;
+}
+
+.swiper-pagination {
+  text-align: left;
+}
+
+.swiper-slide-prev {
+  opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: inherit;
+  top: 12%;
+  width: 58px;
+  height: 58px;
+  opacity: 1;
+}
+
+.swiper-button-next {
+  background-image: url(../img/arrow-right-green.svg);
+  right: 27%;
+}
+
+.swiper-button-prev {
+  background-image: url(../img/arrow-left-green.svg);
+  right: 33%;
+}
+
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transform: scale(.33);
+  position: relative
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+  transform: scale(1)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
+  transform: scale(1)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
+  transform: scale(.66)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
+  transform: scale(.33)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+  transform: scale(.66)
+}
+
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+  transform: scale(.33)
+}
+
+/* .gallery_header-nav_link {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
@@ -31,8 +144,8 @@
   position: absolute;
   right: 6%;
   top: 89%;
-}
-
+} */
+/* 
 @media (max-width: 1360px) {
 
   .reg-left-wrapper {
@@ -42,4 +155,4 @@
     padding-top: 65px;
     padding-right: 8.3%;
   }
-}
+} */
