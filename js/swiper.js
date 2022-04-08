@@ -61,3 +61,15 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 }
+{
+  let navbar = document.querySelector('.header-nav');
+  let searchBtn = document.querySelector('.search-btn');
+  let searchText = document.querySelector('.search-txt');
+
+  searchBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    navbar.classList.toggle('hidden');
+    // searchBtn.classList.toggle('lupa');
+    searchText.classList.toggle('switch-on-off');
+  });
+}
