@@ -36,25 +36,22 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
       300: {
-        slidesPerView: 2.5,
+        slidesPerView: 2,
         slidesPerGroup: 1,
         spaceBetween: 60,
       },
       360: {
-        slidesPerView: 2.5,
-        slidesPerGroup: 1,
-        spaceBetween: 56,
+        spaceBetween: 0,
       },
       768: {
-        spaceBetween: 18,
+        spaceBetween: 0,
       },
-      936: {
-        spaceBetween: 25,
+      1040: {
+        spaceBetween: 430,
       },
       1200: {
-        slidesPerView: 2.5,
-        slidesPerGroup: 1,
-        spaceBetween: 30,
+        slidesPerView: 1,
+        spaceBetween: 80,
       },
       1440: {
         slidesPerView: 2.5,

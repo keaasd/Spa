@@ -9,11 +9,13 @@ img {
 }
 
 .swiper {
-  /* max-width: 1198px; */
-  max-width: 1274px;
+  max-width: 1198px;
+  /* max-width: 1274px; */
+  max-width: 86vw;
   margin-left: auto;
-  /* margin-right: 40px; */
-  margin-right: -2.5%;
+  /* margin-right: -2.5%; */
+  /* margin-right: -10.5%; */
+  margin-right: 0;
   padding-top: 142px;
   padding-bottom: 109px;
   /* background-color: blue; */
@@ -26,10 +28,24 @@ img {
   height: 277px;
 }
 
+.swiper-slide {
+  transition: 0.3s ease-out;
+}
+
 .swiper-slide-next {
   /* max-width: 402px; */
   transition: .3s;
 }
+
+/* .swiper-btn_container {
+  position: absolute;
+  top: 19%;
+  right: 26%;
+} */
+
+/* .swiper-btn_wraper {
+  position: relative;
+} */
 
 .swiper-wrapper .swiper-slide-active-mod {
   transform: scale(1.5);
@@ -81,34 +97,23 @@ img {
   right: 33%;
 }
 
-
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-  transform: scale(.33);
-  position: relative
+.swiper-pagination {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
-  transform: scale(1)
+.swiper-pagination::before {
+  content: 'фото';
+
+
+  margin-right: 5px;
+
 }
 
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main {
-  transform: scale(1)
-}
-
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
-  transform: scale(.66)
-}
-
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
-  transform: scale(.33)
-}
-
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
-  transform: scale(.66)
-}
-
-.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
-  transform: scale(.33)
+.swiper-pagination-total {
+  color: #9E9D52;
 }
 
 /* .gallery_header-nav_link {
@@ -156,3 +161,49 @@ img {
     padding-right: 8.3%;
   }
 } */
+@media (max-width: 1360px) {
+
+  .swiper-wrapper .swiper-slide-active-mod {
+    transform: scale(1.6);
+  }
+
+  .swiper {
+    max-width: 85%;
+  }
+
+  .slider3__item {
+    height: 250px;
+  }
+
+  .swiper-slide-active-mod img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slider3__item {
+    height: 230px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slider3__item {
+    height: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .slider3__item {
+    height: 180px;
+  }
+
+  .swiper {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 7680px) {
+  .slider3__item {
+    height: 150px;
+  }
+}
