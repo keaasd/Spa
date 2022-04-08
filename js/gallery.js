@@ -3,8 +3,7 @@
 
   var swiper = new Swiper(".gallerySwiper", {
     slidesPerView: 2,
-    // spaceBetween: 96,
-    slideActiveClass: 'swiper-slide-active-mod',
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -14,24 +13,23 @@
       type: "fraction",
     },
     breakpoints: {
-      360: {
-        slidesPerView: 1.8,
-        spaceBetween: 56,
+      280: {
+        spaceBetween: 20,
       },
-      768: {
-        slidesPerView: 1.8,
-        spaceBetween: 50,
+      360: {
+        spaceBetween: 40,
+      },
+      567: {
+        spaceBetween: 40,
       },
       1040: {
         spaceBetween: 50,
       },
       1200: {
-        spaceBetween: 30,
+        spaceBetween: 63,
       },
       1360: {
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 96,
+        spaceBetween: 63,
       },
     }
   });

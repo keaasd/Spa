@@ -9,16 +9,11 @@ img {
 }
 
 .swiper {
-  max-width: 1198px;
-  /* max-width: 1274px; */
-  max-width: 86vw;
+  max-width: 86%;
   margin-left: auto;
-  /* margin-right: -2.5%; */
-  /* margin-right: -10.5%; */
-  margin-right: 0;
+  margin-right: 30px;
   padding-top: 142px;
   padding-bottom: 109px;
-  /* background-color: blue; */
   margin-top: 75px;
 }
 
@@ -28,42 +23,20 @@ img {
   height: 277px;
 }
 
-.swiper-slide {
-  transition: 0.3s ease-out;
-}
 
 .swiper-slide-next {
-  /* max-width: 402px; */
+  flex-shrink: 3;
   transition: .3s;
-}
-
-/* .swiper-btn_container {
-  position: absolute;
-  top: 19%;
-  right: 26%;
-} */
-
-/* .swiper-btn_wraper {
-  position: relative;
-} */
-
-.swiper-wrapper .swiper-slide-active-mod {
-  transform: scale(1.5);
-  /* transform: scale(1.7); */
-  /* border: 5px solid red; */
 }
 
 .swiper-wrapper {
   gap: 3px;
 }
 
-.swiper-slide-active-mod img {
-  object-fit: cover;
+.swiper-slide-active img {
+  transform: scale(1.7);
 }
 
-.swiper-slide-active {
-  transform: scale(1.5);
-}
 
 .swiper-horizontal>.swiper-pagination-fraction {
   bottom: inherit;
@@ -93,12 +66,12 @@ img {
 
 .swiper-button-next {
   background-image: url(../img/arrow-right-green.svg);
-  right: 27%;
+  right: 22%;
 }
 
 .swiper-button-prev {
   background-image: url(../img/arrow-left-green.svg);
-  right: 33%;
+  right: 29%;
 }
 
 .swiper-pagination {
@@ -110,50 +83,13 @@ img {
 
 .swiper-pagination::before {
   content: 'фото';
-
-
   margin-right: 5px;
-
 }
 
 .swiper-pagination-total {
   color: #9E9D52;
 }
 
-/* .gallery_header-nav_link {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.04em;
-  font-weight: 500;
-  font-size: 15px;
-  color: #fff;
-  transition: 0.4s ease;
-}
-
-._gallery {
-  padding-left: 2.7%;
-  padding-right: 2.7%;
-}
-
-.online-reg-left {
-  flex-basis: 100%;
-  flex: 1;
-}
-
-.online-reg-right {
-  flex: 1;
-}
-
-.select-big::after {
-  content: '';
-  display: block;
-  border-bottom: 1px solid #fff;
-  width: 350px;
-  position: absolute;
-  right: 6%;
-  top: 89%;
-} */
 .select-big::after {
   content: "";
   display: block;
@@ -164,20 +100,9 @@ img {
   top: 89%;
 }
 
-/* 
 @media (max-width: 1360px) {
 
-  .reg-left-wrapper {
-    margin-left: 0;
-    margin-top: 0;
-    padding-left: 8.3%;
-    padding-top: 65px;
-    padding-right: 8.3%;
-  }
-} */
-@media (max-width: 1360px) {
-
-  .swiper-wrapper .swiper-slide-active-mod {
+  .swiper-slide-active-mod img {
     transform: scale(1.6);
   }
 
@@ -192,19 +117,26 @@ img {
   .swiper-slide-active-mod img {
     object-fit: contain;
   }
-}
 
-@media (max-width: 1200px) {
-  .slider3__item {
-    height: 230px;
+  .swiper-button-next {
+    right: 20%;
   }
 }
 
 @media (max-width: 1200px) {
+  .swiper-button-next {
+    right: 14%;
+  }
+
+  .swiper-button-prev {
+    right: 24%;
+  }
+
   .slider3__item {
     height: 200px;
   }
 }
+
 
 @media (max-width: 900px) {
   .slider3__item {
@@ -217,23 +149,63 @@ img {
 }
 
 @media (max-width: 768px) {
-  .slider3__item {
-    height: 130px;
+  .swiper-slide-active img {
+    transform: scale(1.5);
   }
 
+  /* .slider3__item {
+    height: 130px;
+  } */
   .swiper {
     max-width: 100%;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding-top: 110px;
+    padding-bottom: 80px;
+    margin-top: 60px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 22%;
+    width: 44px;
+    height: 44px;
   }
 }
 
 @media (max-width: 567px) {
-  .slider3__item {
-    height: 90px;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 23px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev {
+    right: 52px;
+  }
+
+  .swiper {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 13%;
+    padding-bottom: 10%;
+    margin-top: 30px;
+  }
+
+  .swiper-pagination {
+    font-size: 11px;
   }
 }
 
 @media (max-width: 375px) {
-  .slider3__item {
-    height: 70px;
+  .swiper {
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 }
