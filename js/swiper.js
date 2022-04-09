@@ -36,22 +36,25 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
       300: {
-        slidesPerView: 2,
+        slidesPerView: 2.5,
         slidesPerGroup: 1,
         spaceBetween: 60,
       },
       360: {
-        spaceBetween: 0,
+        slidesPerView: 2.5,
+        slidesPerGroup: 1,
+        spaceBetween: 56,
       },
       768: {
-        spaceBetween: 0,
+        spaceBetween: 18,
       },
-      1040: {
-        spaceBetween: 430,
+      936: {
+        spaceBetween: 25,
       },
       1200: {
-        slidesPerView: 1,
-        spaceBetween: 80,
+        slidesPerView: 2.5,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
       },
       1440: {
         slidesPerView: 2.5,
@@ -59,17 +62,5 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 60,
       },
     }
-  });
-}
-{
-  let navbar = document.querySelector('.header-nav');
-  let searchBtn = document.querySelector('.search-btn');
-  let searchText = document.querySelector('.search-txt');
-
-  searchBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    navbar.classList.toggle('hidden');
-    // searchBtn.classList.toggle('lupa');
-    searchText.classList.toggle('switch-on-off');
   });
 }
