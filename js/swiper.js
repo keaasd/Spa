@@ -35,31 +35,30 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
     breakpoints: {
-      300: {
-        slidesPerView: 2.5,
+      320: {
+        slidesPerView: 2.3,
         slidesPerGroup: 1,
-        spaceBetween: 60,
+        spaceBetween: 16,
       },
       360: {
-        slidesPerView: 2.5,
-        slidesPerGroup: 1,
-        spaceBetween: 56,
+        slidesPerView: 2.3,
+        spaceBetween: 16,
       },
-      768: {
-        spaceBetween: 18,
+      769: {
+        // spaceBetween: 18,
+        spaceBetween: 40,
       },
       936: {
-        spaceBetween: 25,
+        // spaceBetween: 25,
+        spaceBetween: 60,
       },
       1200: {
-        slidesPerView: 2.5,
-        slidesPerGroup: 1,
-        spaceBetween: 30,
+        spaceBetween: 80,
       },
-      1440: {
-        slidesPerView: 2.5,
+      1240: {
+        slidesPerView: 2.4,
         slidesPerGroup: 1,
-        spaceBetween: 60,
+        spaceBetween: 80,
       },
     }
   });
