@@ -1,3 +1,7 @@
+/* изменить  */
+/* https://github.com/Svetkachalina/1.git */
+/* https://github.com/keaasd/Spa.git */
+/* e  */
 body {
   background-color: #e5e5e5;
 }
@@ -88,7 +92,6 @@ body {
   transition: 0.3s ease-out;
   transform: scale(1);
 }
-
 .btn-text_offers:hover {
   transform: scale(1.1);
 }
@@ -458,142 +461,8 @@ legend {
   margin-top: 14px;
 }
 
-/* 
-input[type="radio"] {
-  appearance: none;
-}
-
-input[type="radio"] {
-  appearance: none;
-}
-
-input[type="radio"]+label {
-  cursor: pointer;
-  position: relative;
-  padding-left: 30px;
-  line-height: 20px;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 18.17px;
-}
-
-input[type="radio"]+label::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  aspect-ratio: 1;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  opacity: 1;
-  transition: all 0.3s;
-}
-
-input[type="radio"]+label::after {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  aspect-ratio: 1;
-  border: 1px solid #fff;
-  background: #fff;
-  border-radius: 50%;
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-input[type="radio"]:checked+label::after {
-  opacity: 1;
-}
-
-input[type="radio"]+label {
-  cursor: pointer;
-  position: relative;
-  padding-left: 30px;
-  line-height: 20px;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 18.17px;
-}
-
-input {
-  font-size: 12px;
-  line-height: 124.8%;
-  color: #ffffff;
-  padding: 0;
-}
-
-.form-input {
-  background: transparent;
-  outline: 0;
-  border: 0;
-  border-bottom-color: currentcolor;
-  border-bottom-style: none;
-  border-bottom-width: 0px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #d4d626;
-}
-
-input[type="radio"]+label {
-  cursor: pointer;
-  position: relative;
-  padding-left: 30px;
-  line-height: 20px;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 18.17px;
-}
-
-input[type="radio"]+label::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  aspect-ratio: 1;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  opacity: 1;
-  transition: all 0.3s;
-}
-
-input[type="radio"]+label::after {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  aspect-ratio: 1;
-  border: 1px solid #fff;
-  background: #fff;
-  border-radius: 50%;
-  position: absolute;
-  left: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: all 0.3s;
-} */
 
 
-/* 
-input[type="radio"]:checked+label::after {
-  opacity: 1;
-}
-
-input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
-} */
 .maps-moby {
 
   display: none;
@@ -634,7 +503,7 @@ input[type="radio"] {
 }
 
 .online-reg-form {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .reg-left-wrapper {
@@ -711,6 +580,7 @@ input[type="radio"] {
 @media (max-width: 1200px) {
   .search-txt {
     width: 39vw;
+    
   }
 
   .slider_2-wrap {
@@ -736,24 +606,12 @@ input[type="radio"] {
   .slider_2-wrap {
     top: 66px;
   }
-
-  .slider_2-wrap {
-    top: 0;
-  }
-
-  .slider2-item img {
-    height: auto;
-    width: 100%;
-    object-fit: contain;
-  }
 }
-
 @media (max-width: 1100px) {
-  .wrap_services {
+   .wrap_services {
     margin-bottom: 38px;
   }
 }
-
 @media (max-width: 1040px) {
   .header-nav {
     margin-right: 20px;
@@ -763,7 +621,7 @@ input[type="radio"] {
   .header-nav_link {
     font-size: 11px;
   }
-
+  
   .title-hero {
     font-size: 54px;
     max-width: 472px;
@@ -809,19 +667,20 @@ input[type="radio"] {
     width: 100%;
   }
 }
-
 @media (max-width: 1000px) {
   .online-reg-title {
     margin-bottom: 0;
   }
 }
-
 @media (max-width: 970px) {
   .slider_2-wrap {
     margin-top: 8px;
   }
-}
 
+  .swiper-title {
+    font-size: 18px;
+  }
+}
 @media (max-width: 900px) {
   .header-nav {
     display: none;
@@ -840,16 +699,15 @@ input[type="radio"] {
   }
 
   .swiper-title {
-    font-size: 17px;
+    font-size: 19px;
   }
-
   .swiper-text {
     margin-top: 8px;
   }
 }
 
 @media (max-width: 768px) {
-
+ 
   .header {
     padding-top: 21px;
   }
@@ -1023,7 +881,6 @@ input[type="radio"] {
     line-height: 145%;
     max-width: 194px;
   }
-
   .online-reg-title {
     max-width: 165px;
     font-size: 30px;
@@ -1049,7 +906,6 @@ input[type="radio"] {
     font-size: 12px;
     padding-bottom: 0px;
   }
-
   legend {
     font-size: 7px;
   }
@@ -1137,7 +993,33 @@ input[type="radio"] {
     padding-bottom: 45px;
   }
 }
+@media (max-width: 737px) {
+  
+  .reg-left-wrapper {
+    margin: 0;
+    padding: 32px 36px 38px 32px;
+}
 
+.online-reg-confirm {
+  margin-top: 0;
+  font-size: 12px;
+  position: absolute;
+  top: 63.6%;
+  left: 34%;
+  max-width: 100px;
+}
+}
+@media (max-width: 676px) {
+  .online-reg-confirm {
+    top: 63.6%;
+    left: 34%;
+    max-width: 123px;
+    padding-left: 20px;
+  }
+  .reg-left-wrapper {
+    padding-right: 16px;
+}
+}
 @media (max-width: 620px) {
   .swiper-button-next {
     right: 19%;
@@ -1152,7 +1034,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 567px) {
+@media (max-width: 570px) {
   .header {
     padding-top: 12px;
   }
@@ -1196,11 +1078,6 @@ input[type="radio"] {
     margin-top: 44px;
   }
 
-  .wrap_services {
-    display: block;
-    margin-bottom: 70px;
-  }
-
   .navbar {
     position: absolute;
     top: 3px;
@@ -1239,11 +1116,6 @@ input[type="radio"] {
 
   .container {
     padding-right: 24px;
-    padding-left: 24px;
-  }
-
-  .services .container {
-    padding-right: 0;
     padding-left: 24px;
   }
 
@@ -1309,12 +1181,14 @@ input[type="radio"] {
   }
 
   .wrap_services {
-    margin-left: 17px;
+    /* margin-left: 17px; */
     line-height: 117%;
-
     position: relative;
+    display: block;
+    margin-bottom: 70px;
+    margin-left: 0;
   }
-
+  
   .descr-services {
     font-size: 12px;
     line-height: 150%;
@@ -1326,6 +1200,10 @@ input[type="radio"] {
 
   .main-bg {
     height: 560px;
+  }
+  .services .container {
+    padding-right: 0;
+    padding-left: 24px;
   }
 
   .title-services {
@@ -1355,6 +1233,9 @@ input[type="radio"] {
   .btn-text {
     padding: 15px 30px 16px 31px;
     font-size: 13px;
+    right: 0;
+    top: 28px;
+  
   }
 
   .offers {
@@ -1364,35 +1245,32 @@ input[type="radio"] {
   .btn-text_offers {
     position: absolute;
     padding: 17px 33px 20px 31px;
-    top: 13px;
-    right: 6%;
+    top: -11px;
+    right: 6.7%;
   }
 
   .offers-description {
     font-size: 12px;
     max-width: 262px;
     line-height: 150%;
+    margin-bottom: 30px;
   }
 
   .offers-title {
     margin-bottom: 20px;
   }
-
   .btn-offers {
-    position: initial;
-    margin: 0;
+      position: absolute;
+      right: 7%;
+      margin: 0;
   }
-
   .grid_item2-pic {
-    width: 217px;
-    height: 272px;
-    margin: 0 auto;
+    max-width: 60%;
   }
-
   .offers-grid_item2 {
     margin-top: 10px;
+    
   }
-
   .grid_item2-pic::before {
     width: 85px;
     height: 85px;
@@ -1419,14 +1297,14 @@ input[type="radio"] {
   .item2-title {
     max-width: 211px;
     font-size: 21px;
-    margin-left: 17%;
+    /* margin-left: 17%; */
     margin-top: 22px;
     margin-bottom: 9px;
   }
 
   .item2-text {
     max-width: 274px;
-    margin-left: 17%;
+    /* margin-left: 17%; */
     font-size: 12px;
     line-height: 150%;
     margin-bottom: 9px;
@@ -1434,14 +1312,16 @@ input[type="radio"] {
 
   .grid_item4-pic {
     background-size: cover;
-    width: 91%;
-    height: 175px;
+    max-width: 81%;
     margin-bottom: 23px;
   }
 
   .offers-grid_item4 {
     position: relative;
     margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+
   }
 
   .swiper-no {
@@ -1480,16 +1360,14 @@ input[type="radio"] {
   }
 
   .offers-grid_item5 {
-    margin: 46px auto 0;
+    /* margin: 46px auto 0; */
     padding-bottom: 40px;
   }
 
   .grid_item5-pic {
     position: relative;
     background-size: cover;
-    width: 100%;
-    height: 275px;
-    max-width: 217px;
+    max-width: 71%;
     margin: 0 auto;
   }
 
@@ -1497,13 +1375,13 @@ input[type="radio"] {
     max-width: 217px;
     font-size: 21px;
     line-height: 110%;
-    margin: 20px auto 10px;
+    /* margin: 20px auto 10px; */
   }
 
   .item5-text {
     max-width: 221px;
     font-size: 12px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     line-height: 150%;
   }
 
@@ -1577,9 +1455,6 @@ input[type="radio"] {
     margin-bottom: 40px;
   }
 
-  .wrap_services {
-    margin-left: 0;
-  }
 }
 
 @media (max-width: 375px) {
@@ -1615,9 +1490,26 @@ input[type="radio"] {
     left: 9%;
   }
 }
+@media (max-width: 368px) {
+  .swiper-no {
+    font-size: 24px;
+  }
+}
 
 @media (max-width: 320px) {
   .title-hero {
     font-size: 30px;
+  }
+  .slider2-item img {
+    height: 38.9vw;
+}
+  .swiper-title {
+    font-size: 12px;
+  }
+  .swiper-title::after {
+    width: 90%;
+}
+  .swiper-no {
+    font-size: 16px;
   }
 }
