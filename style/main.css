@@ -92,6 +92,7 @@ body {
   transition: 0.3s ease-out;
   transform: scale(1);
 }
+
 .btn-text_offers:hover {
   transform: scale(1.1);
 }
@@ -108,6 +109,30 @@ body {
   max-width: 740px;
   height: 283px;
   padding-bottom: 2px;
+}
+
+.swipers_box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 740px;
+  margin-right: 0;
+  margin-left: auto;
+  min-width: 0;
+  min-height: 0;
+}
+
+.hero_swiper {
+  width: 100%;
+  max-width: 355px;
+  height: 283px;
+  padding-bottom: 2px;
+  flex: 1;
+}
+
+.mySwiperText {
+  min-height: 0;
+  max-height: 300px;
+  flex: 1;
 }
 
 .swiper-horizontal>.swiper-pagination-progressbar,
@@ -525,6 +550,16 @@ legend {
   gap: 62px;
 }
 
+.cross {
+  display: block;
+  background-image: url(../img/cross.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
 @media (max-width: 1360px) {
   .container {
     padding: 0 40px;
@@ -580,7 +615,7 @@ legend {
 @media (max-width: 1200px) {
   .search-txt {
     width: 39vw;
-    
+
   }
 
   .slider_2-wrap {
@@ -607,11 +642,13 @@ legend {
     top: 66px;
   }
 }
+
 @media (max-width: 1100px) {
-   .wrap_services {
+  .wrap_services {
     margin-bottom: 38px;
   }
 }
+
 @media (max-width: 1040px) {
   .header-nav {
     margin-right: 20px;
@@ -621,7 +658,7 @@ legend {
   .header-nav_link {
     font-size: 11px;
   }
-  
+
   .title-hero {
     font-size: 54px;
     max-width: 472px;
@@ -667,11 +704,13 @@ legend {
     width: 100%;
   }
 }
+
 @media (max-width: 1000px) {
   .online-reg-title {
     margin-bottom: 0;
   }
 }
+
 @media (max-width: 970px) {
   .slider_2-wrap {
     margin-top: 8px;
@@ -681,6 +720,7 @@ legend {
     font-size: 18px;
   }
 }
+
 @media (max-width: 900px) {
   .header-nav {
     display: none;
@@ -701,13 +741,14 @@ legend {
   .swiper-title {
     font-size: 19px;
   }
+
   .swiper-text {
     margin-top: 8px;
   }
 }
 
 @media (max-width: 768px) {
- 
+
   .header {
     padding-top: 21px;
   }
@@ -881,6 +922,7 @@ legend {
     line-height: 145%;
     max-width: 194px;
   }
+
   .online-reg-title {
     max-width: 165px;
     font-size: 30px;
@@ -906,6 +948,7 @@ legend {
     font-size: 12px;
     padding-bottom: 0px;
   }
+
   legend {
     font-size: 7px;
   }
@@ -993,22 +1036,24 @@ legend {
     padding-bottom: 45px;
   }
 }
+
 @media (max-width: 737px) {
-  
+
   .reg-left-wrapper {
     margin: 0;
     padding: 32px 36px 38px 32px;
+  }
+
+  .online-reg-confirm {
+    margin-top: 0;
+    font-size: 12px;
+    position: absolute;
+    top: 63.6%;
+    left: 34%;
+    max-width: 100px;
+  }
 }
 
-.online-reg-confirm {
-  margin-top: 0;
-  font-size: 12px;
-  position: absolute;
-  top: 63.6%;
-  left: 34%;
-  max-width: 100px;
-}
-}
 @media (max-width: 676px) {
   .online-reg-confirm {
     top: 63.6%;
@@ -1016,10 +1061,12 @@ legend {
     max-width: 123px;
     padding-left: 20px;
   }
+
   .reg-left-wrapper {
     padding-right: 16px;
+  }
 }
-}
+
 @media (max-width: 620px) {
   .swiper-button-next {
     right: 19%;
@@ -1188,7 +1235,7 @@ legend {
     margin-bottom: 70px;
     margin-left: 0;
   }
-  
+
   .descr-services {
     font-size: 12px;
     line-height: 150%;
@@ -1201,6 +1248,7 @@ legend {
   .main-bg {
     height: 560px;
   }
+
   .services .container {
     padding-right: 0;
     padding-left: 24px;
@@ -1235,7 +1283,7 @@ legend {
     font-size: 13px;
     right: 0;
     top: 28px;
-  
+
   }
 
   .offers {
@@ -1259,18 +1307,22 @@ legend {
   .offers-title {
     margin-bottom: 20px;
   }
+
   .btn-offers {
-      position: absolute;
-      right: 7%;
-      margin: 0;
+    position: absolute;
+    right: 7%;
+    margin: 0;
   }
+
   .grid_item2-pic {
     max-width: 60%;
   }
+
   .offers-grid_item2 {
     margin-top: 10px;
-    
+
   }
+
   .grid_item2-pic::before {
     width: 85px;
     height: 85px;
@@ -1490,6 +1542,7 @@ legend {
     left: 9%;
   }
 }
+
 @media (max-width: 368px) {
   .swiper-no {
     font-size: 24px;
@@ -1500,15 +1553,19 @@ legend {
   .title-hero {
     font-size: 30px;
   }
+
   .slider2-item img {
     height: 38.9vw;
-}
+  }
+
   .swiper-title {
     font-size: 12px;
   }
+
   .swiper-title::after {
     width: 90%;
-}
+  }
+
   .swiper-no {
     font-size: 16px;
   }

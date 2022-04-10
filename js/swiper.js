@@ -1,19 +1,16 @@
-var swiper = new Swiper(".mySwiper", {
+let myImageSlider = new Swiper(".mySwiper", {
   speed: 2000,
   grabCursor: true,
-  // автоматически 
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
-  // замещает
+  loop: true,
   effect: "creative",
   creativeEffect: {
     next: {
       translate: ["100%", 0, 0],
     },
   },
-  // выше добавил
+  controller: {
+    inverse: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     type: "progressbar",
@@ -23,12 +20,34 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-// slider 2 services
+let mySwiperText = new Swiper(".mySwiperText", {
+  direction: 'vertical',
+  speed: 2000,
+  grabCursor: true,
+  loop: true,
+  // effect: "creative",
+  // creativeEffect: {
+  //   next: {
+  //     translate: [0, '100%', 0],
+  //   },
+  // },
+  controller: {
+    inverse: false,
+  },
+});
+
+myImageSlider.controller.control = mySwiperText
+mySwiperText.controller.control = myImageSlider
+// автоматически
+// autoplay: {
+//   delay: 3000,
+//   disableOnInteraction: false,
+// },
 {
-  var swiper = new Swiper(".swiper_services", {
+  // slider 2 services
+  let myTextSlider = new Swiper(".swiper_services", {
     slidesPerView: 2.5,
     slidesPerGroup: 1,
-    // spaceBetween: 20,
     loop: true,
     pagination: {
       el: ".swiper-pagination",
@@ -45,11 +64,9 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 22,
       },
       769: {
-        // spaceBetween: 18,
         spaceBetween: 40,
       },
       936: {
-        // spaceBetween: 25,
         spaceBetween: 60,
       },
       1200: {
@@ -63,3 +80,4 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 }
+

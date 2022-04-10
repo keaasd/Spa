@@ -17,12 +17,12 @@ let searchText = document.querySelector('.search-txt');
 searchBtn.addEventListener('click', (e) => {
   e.preventDefault();
   navbar.classList.toggle('hidden');
-  // searchBtn.classList.toggle('lupa');
+  searchBtn.classList.toggle('cross');
   searchText.classList.toggle('switch-on-off');
 });
 
 
- // третий свайпер
+// третий свайпер
 {
 
   var swiper = new Swiper(".gallerySwiper", {
@@ -59,11 +59,11 @@ searchBtn.addEventListener('click', (e) => {
   });
 }
 
-  function openModal() {
-    document.getElementById("modal__mb").style.left = "0px";
+function openModal() {
+  document.getElementById("modal__mb").style.left = "0px";
 }
 function closeModal() {
-    document.getElementById("modal__mb").style.left = "-3000px";
+  document.getElementById("modal__mb").style.left = "-3000px";
 }
 
 // Button HIDDEN
