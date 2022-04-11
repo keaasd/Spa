@@ -81,6 +81,11 @@ legend {
   transform: scale(1);
 }
 
+.btn-phone-green-black._mobile {
+  display: none;
+
+}
+
 .btn-phone-green-black:hover {
   transform: scale(1.1);
 }
@@ -2556,6 +2561,15 @@ input {
   .header-nav_link {
     font-size: 11px;
   }
+
+  .hero-heading {
+    font-size: 32px;
+    max-width: 310px;
+  }
+
+  .hero-subheading {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1030px) {
@@ -2674,6 +2688,50 @@ input {
 }
 
 @media (max-width: 768px) {
+  .title-hero {
+    margin-bottom: 100px;
+  }
+
+  .hero_swiper {
+    height: 216px;
+  }
+
+  .mySwiperText {
+    max-height: 216px;
+    margin-left: 8%;
+  }
+
+  .swipers_box {
+    margin-left: auto;
+    max-width: 570px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-progressbar,
+  .swiper-pagination-progressbar.swiper-pagination-horizontal {
+
+    width: 100%;
+  }
+
+  .swiper-slide {
+    justify-content: start;
+  }
+
+  .swiper-button-next {
+    width: 44px;
+    height: 44px;
+    right: inherit;
+    bottom: 56px;
+    left: 20%;
+  }
+
+  .swiper-button-prev {
+    width: 44px;
+    height: 44px;
+    right: inherit;
+    bottom: 56px;
+    left: 0;
+  }
+
   .title-h2 {
     font-size: 30px;
     line-height: 91%;
@@ -2686,7 +2744,6 @@ input {
   .main-description {
     font-size: 11px;
     line-height: 145%;
-    /* max-width: 194px; */
     max-width: 266px;
   }
 
@@ -2810,6 +2867,55 @@ input {
 }
 
 @media (max-width: 570px) {
+  .swipers_box {
+    max-width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+
+  .swiper-horizontal>.swiper-pagination-progressbar,
+  .swiper-pagination-progressbar.swiper-pagination-horizontal {
+    width: 100%;
+    bottom: 0;
+  }
+
+  .hero_swiper {
+    padding-bottom: 14px;
+    margin-left: 0;
+    max-width: 235px;
+  }
+
+  .hero-text {
+    margin-top: 30px;
+  }
+
+  .mySwiperText {
+    max-height: 147px;
+    margin-left: 0;
+  }
+
+  .hero_wrap {
+    height: 100%;
+    display: block;
+    width: 100%;
+  }
+
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    left: inherit;
+    right: 0;
+    bottom: 77px;
+  }
+
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    right: 36.6%;
+    bottom: 77px;
+    left: inherit;
+    right: 15%;
+  }
 
   .offers-grid {
     display: block;
@@ -2887,6 +2993,7 @@ input {
   }
 
   .btn-phone-green-black._mobile {
+    display: block;
     top: 81%;
     right: 10%;
   }
@@ -2915,5 +3022,18 @@ input {
 
   .discount-10 {
     bottom: 19%;
+  }
+}
+
+@media (max-width: 522px) {
+  .btn-phone-green-black._mobile {
+    top: 80%;
+  }
+
+}
+
+@media (max-width: 375px) {
+  .swiper-button-prev {
+    right: 48px;
   }
 }
