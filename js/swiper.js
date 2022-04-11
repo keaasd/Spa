@@ -2,8 +2,13 @@ let myImageSlider = new Swiper(".mySwiper", {
   speed: 2000,
   grabCursor: true,
   loop: true,
+  spaceBetween: 0,
   effect: "creative",
   creativeEffect: {
+    prev: {
+      // translate: ["100%", 0, 0],
+      translate: ["0", 0, 0],
+    },
     next: {
       translate: ["100%", 0, 0],
     },
