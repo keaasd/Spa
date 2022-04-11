@@ -1,7 +1,3 @@
-/* изменить  */
-/* https://github.com/Svetkachalina/1.git */
-/* https://github.com/keaasd/Spa.git */
-/* e  */
 body {
   background-color: #e5e5e5;
 }
@@ -104,18 +100,16 @@ body {
   position: relative;
 }
 
+.hero_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
 .hero_swiper {
   width: 100%;
   max-width: 740px;
-  height: 283px;
-  padding-bottom: 2px;
-}
-
-.swiper-horizontal>.swiper-pagination-progressbar,
-.swiper-pagination-progressbar.swiper-pagination-horizontal {
-  top: inherit;
-  bottom: 0;
-  width: 48%;
+  padding-bottom: 33px;
 }
 
 .swiper-button-next {
@@ -186,15 +180,7 @@ body {
 .hero_visual {
   background-image: url("../img/hero-pic.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 353px;
-  height: 250px;
-}
-
-.hero_visual2 {
-  background-image: url("../img/hero-pic2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 353px;
   height: 250px;
 }
@@ -221,9 +207,8 @@ body {
 }
 
 .white_phone-index {
-  top: inherit;
-  bottom: -63px;
-  right: 0;
+  top: 15.7%;
+  right: 8%;
   z-index: 3;
 }
 
@@ -686,6 +671,15 @@ legend {
   .swiper-title::after {
     width: 100%;
   }
+
+  .hero-heading {
+    font-size: 32px;
+    max-width: 310px;
+  }
+
+  .hero-subheading {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -849,12 +843,6 @@ legend {
     height: 822px;
   }
 
-  .hero_swiper {
-    height: 280px;
-    padding-bottom: 2px;
-    max-width: 570px;
-  }
-
   .hero-text {
     margin-left: 0px;
     flex-basis: 46%;
@@ -945,7 +933,6 @@ legend {
   }
 
   .online-reg-btn {
-    font-size: 11px;
     padding: 6px 15px 7px 15px;
   }
 
@@ -1025,6 +1012,50 @@ legend {
   .footer {
     padding-top: 45px;
     padding-bottom: 45px;
+  }
+
+  .title-hero {
+    margin-bottom: 100px;
+  }
+
+  .hero_swiper {
+    height: 216px;
+  }
+
+  .swipers_box {
+    margin-left: auto;
+    max-width: 570px;
+  }
+
+  .mySwiperText {
+    max-height: 216px;
+    margin-left: 8%;
+  }
+
+  .swiper-horizontal>.swiper-pagination-progressbar,
+  .swiper-pagination-progressbar.swiper-pagination-horizontal {
+
+    width: 100%;
+  }
+
+  .swiper-slide {
+    justify-content: start;
+  }
+
+  .swiper-button-next {
+    width: 44px;
+    height: 44px;
+    right: inherit;
+    bottom: 56px;
+    left: 20%;
+  }
+
+  .swiper-button-prev {
+    width: 44px;
+    height: 44px;
+    right: inherit;
+    bottom: 56px;
+    left: 0;
   }
 }
 
@@ -1159,7 +1190,6 @@ legend {
   .container {
     padding-right: 24px;
     padding-left: 24px;
-    background: #fff;
   }
 
   .hero_wrap {
@@ -1311,7 +1341,10 @@ legend {
   }
 
   .grid_item2-pic {
-    max-width: 60%;
+    max-width: 47%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 25px;
   }
 
   .offers-grid_item2 {
@@ -1329,7 +1362,7 @@ legend {
   .discount-15 {
     top: 227px;
     left: 24%;
-    font-size: 31px;
+    font-size: 28px;
   }
 
   .grid_item5-pic::before {
@@ -1343,25 +1376,24 @@ legend {
   }
 
   .item2-title {
-    max-width: 211px;
+    max-width: 243px;
     font-size: 21px;
-    /* margin-left: 17%; */
-    margin-top: 22px;
-    margin-bottom: 9px;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
 
   .item2-text {
-    max-width: 274px;
-    /* margin-left: 17%; */
+    max-width: 246px;
     font-size: 12px;
     line-height: 150%;
+    margin: 0 auto;
     margin-bottom: 9px;
   }
 
   .grid_item4-pic {
-    background-size: cover;
-    max-width: 81%;
-    margin-bottom: 23px;
+    max-width: 60%;
+    display: block;
+    padding-bottom: 23px;
   }
 
   .offers-grid_item4 {
@@ -1376,12 +1408,19 @@ legend {
     line-height: 1.2;
   }
 
+  .discount-10::before {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  .discount-10::before {
+    right: 90%;
+  }
+
   .discount-10 {
-    position: absolute;
-    top: 99px;
+    bottom: 46%;
     left: initial;
-    bottom: 20px;
-    right: 4px;
+    right: 34%;
     font-size: 31px;
   }
 
@@ -1415,32 +1454,32 @@ legend {
 
   .grid_item5-pic {
     position: relative;
+    display: block;
     background-size: cover;
     max-width: 50%;
     margin: 0 auto;
   }
 
   .item5-title {
-    max-width: 217px;
+    max-width: 224px;
     font-size: 21px;
+    margin: 0 auto;
     line-height: 110%;
     margin-top: 19px;
     margin-bottom: 8px;
 
   }
 
-
   .item5-text {
     max-width: 221px;
     font-size: 12px;
-
+    margin: 0 auto;
     line-height: 150%;
   }
 
   .wraps_box {
     display: flex;
     flex-direction: column;
-    background: white;
   }
 
   .online-reg-right,
@@ -1458,6 +1497,27 @@ legend {
     /* padding-right: 36px; */
   }
 
+  .online-reg-form._white .form-input-name {
+    padding: 1px 0 4px;
+  }
+
+  .online-reg-title {
+    margin-bottom: 23px;
+  }
+
+  .online-reg-confirm {
+    top: 86%;
+    left: 68%;
+  }
+
+  .online-reg-btn {
+    padding: 10px 30px;
+  }
+
+  .form-input {
+    padding-bottom: 5px;
+  }
+
   .contact {
     background: white;
     margin-top: 21px;
@@ -1466,6 +1526,7 @@ legend {
 
   .contact-nav {
     display: block;
+    padding-bottom: 40px;
   }
 
   .contact-content {
@@ -1479,6 +1540,7 @@ legend {
 
   .main-contact-title {
     padding-top: 38px;
+    margin-bottom: 28px;
   }
 
   .contacts {
@@ -1526,6 +1588,63 @@ legend {
     margin-bottom: 40px;
   }
 
+  .swipers_box {
+    max-width: 100%;
+    display: block;
+    margin-left: 0;
+  }
+
+  .swiper-horizontal>.swiper-pagination-progressbar,
+  .swiper-pagination-progressbar.swiper-pagination-horizontal {
+    width: 100%;
+    bottom: 0;
+  }
+
+  .hero_swiper {
+    padding-bottom: 14px;
+    margin-left: 0;
+    max-width: 235px;
+  }
+
+  .hero-text {
+    margin-top: 30px;
+  }
+
+  .mySwiperText {
+    max-height: 147px;
+    margin-left: 0;
+  }
+
+  .hero_wrap {
+    height: 100%;
+    display: block;
+    width: 100%;
+  }
+
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    left: inherit;
+    right: 0;
+    bottom: 77px;
+  }
+
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+    right: 36.6%;
+    bottom: 77px;
+    left: inherit;
+    right: 15%;
+  }
+
+}
+
+@media (max-width: 563px) {
+
+  .discount-15 {
+    top: 168px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1559,6 +1678,10 @@ legend {
   .discount-15 {
     top: 227px;
     left: 9%;
+  }
+
+  .swiper-button-prev {
+    right: 48px;
   }
 }
 
