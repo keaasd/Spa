@@ -48,6 +48,11 @@
                             
                           </form>
                           <button class="search-btn" type="submit"></button>
+                          <button
+                          class="burger-btn header-burger"
+                          onclick="openModal()"
+                          type="button"
+                        ></button>
                     </nav>
                 </div>
                 <div class="service-flex">
@@ -269,24 +274,46 @@
             </div>
         </div>
     </footer>
-    <!-- <script>
-        const texts = document.querySelectorAll('.text-hidden');
-
-if (texts) {
-  texts.forEach(text => {
-    const moreBtn = text.querySelector('.show-more-btn');
-    const moreText = text.querySelector('.show-more-text');
-    
-    moreText.style.display = 'none';
-
-    moreBtn.addEventListener('click', e => {
-      e.preventDefault();
-      moreText.style.display = 'block';
-    })
-  })
-}
-    </script> -->
-
+    <!-- мобильное меню  -->
+    <div class="modal__mb" id="modal__mb">
+        <div class="modal_window">
+          <div class="modal_box">
+            <button onclick="closeModal()" class="header-modal-close"></button>
+            <div class="modal_logo"></div>
+            <div class="drop-down drop-down_mobile-menu">
+                <div class="drop-down_pin">
+                  <img src="./img/pin.svg" class="pin" />
+                </div>
+                <select class="menu-select">
+                  <option value="">в Павшинской пойме</option>
+                  <!-- <option value="down">Проспект Маршала Жукова</option> -->
+                </select>
+              </div>
+          </div>
+  
+          <div class="burger-link">
+            <a class="modal_link" href="services.html">Услуги</a>
+            <a class="modal_link" href="gallery.html">Галерея</a>
+            <a class="modal_link" href="offers.html">Акции</a>
+            <a class="modal_link" href="certificate.html">сертификаты</a>
+            <a class="modal_link" href="contacts.html">Контакты</a>
+          </div>
+          <form class="search-box search-box_mobile-menu" action="" method="get">
+                <input class="search-txt search-txt_mobile-menu" name="" placeholder="введите слово или фразу" type="search">
+                <button class="search-btn search-btn_mobile-menu" type="submit"></button>
+          </form>
+          <div class="mobile_footer">
+            <ul class="footer__social_moby">
+              <li><a href="#" class="social_mobile fb">facebook</a></li>
+              <li><a href="#" class="social_mobile insta">instagram</a></li>
+              <li><a href="#" class="social_mobile trip">tripadviser</a></li>
+            </ul>
+            <p class="copyright_mobile">
+              &copy;&nbsp;2021&nbsp;Thai&nbsp;Smile&nbsp;Spa
+            </p>
+            </div>
+        </div>
+      </div>
 
 <script>
     const texts = document.querySelectorAll('.text-hidden');
