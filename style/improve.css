@@ -1,0 +1,36 @@
+Изменения ! 4 апреля
+
+/* https://github.com/Svetkachalina/1.git */
+/* https://github.com/keaasd/Spa.git */
+изменения в файлах: html - внизу мобильное меню и в хедере кнопка мои style.css+(добавил) мобильное меню+в папку img две картинки: close_moby.svg burger_menu.svg:root {
+  --text-size-larg: 16px;
+  --text-size-medium: 11px;
+}
+Windows: Shift + Alt + F.
+
+
+Чтобы открыть палитру команд, вы можете использовать COMMAND + SHIFT + P в macOS или CTRL + SHIFT + P в Windows.
+.one {
+  font-size: var(--text-size-medium);
+  font-size: var(--text-size-larg);
+}
+var swiper = new Swiper(".mySwiper", {
+  grabCursor: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      // translate: [0, 0, -400],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+});
+
+
+// добавим таймер
+// autoplay: {
+//   delay: 2500,
+//   disableOnInteraction: false,
+// таймер выше  
