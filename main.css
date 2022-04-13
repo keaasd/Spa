@@ -473,7 +473,7 @@ legend {
 
 .maps-moby::before {
   content: '';
-  background-image: url('./img/pin.svg');
+  background-image: url(./img/pin.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;

@@ -290,6 +290,9 @@ legend {
   top: -30px;
   transition: 0.4s;
   display: none;
+  top: inherit;
+  bottom: 14px;
+  right: 78px;
 }
 .search-txt input {
   color: red;
@@ -316,6 +319,24 @@ legend {
   position: absolute;
   right: -20px;
   top: -20px;
+}
+.search-btn_contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 58px;
+  height: 58px;
+  
+}
+.search-btn_contain:hover {
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 58px;
+  height: 58px;
+}
+.search-btn:hover::after {
+  border: 1px solid transparent;
 }
 .cross {
   display: block;
@@ -1698,7 +1719,7 @@ li {
   line-height: 200%;
 }
 .card-item-pic {
-  height: 311px;
+  /* height: 311px; */
   flex-basis: 27%;
 }
 
@@ -2355,8 +2376,12 @@ input {
 .btn-phone-green-black._spa-2 {
   position: absolute;
   top: 22%;
+  transition: 0.4s ease-out;
+  transform: scale(1);
 }
-
+.btn-phone-green-black._spa-2:hover {
+  transform: scale(1.1);
+}
 .cards-list-grid._spa-2 {
   grid-template-columns: 27% 27% 27%;
   grid-template-rows: 58% 42%;
@@ -2582,6 +2607,14 @@ input {
       left: -20%;
   }
 }
+@media (max-width: 1110px) {
+  .btn-phone-green-black._spa-2 {
+    top: 19.5%; 
+}
+  .col-right {
+    flex-basis: 49%;
+}
+}
 @media (max-width: 1100px) {
  
   .offers {
@@ -2612,6 +2645,19 @@ input {
   .grid_item5-pic {
     max-width: 15rem;
   }
+ 
+}
+@media (max-width: 1090px) {
+  .btn-phone-green-black._spa-2 {
+    top: 24%;
+    right: 5%;
+  }
+  .card-title {
+    font-size: 24px;
+  }
+  .card-text {
+    font-size: 11px;
+  }
 }
 @media (max-width: 1040px) {
   .header-nav {
@@ -2628,6 +2674,10 @@ input {
   .hero-subheading {
     font-size: 14px;
   }
+  .btn-phone-green-black._spa-2 {
+ 
+    right: 2%;
+}
 }
 @media (max-width: 1030px) {
     .new-spa-circle {
@@ -2642,7 +2692,13 @@ input {
   .btn-text_services {
     top: -56px;
 }
-
+.btn-phone-green-black._spa-2 {
+  top: 21.5%;
+  
+}
+.cards-list-grid {
+  column-gap: 20px;
+}
 }
 @media (max-width: 970px) {
   .title-h2 {
@@ -2662,6 +2718,15 @@ input {
   max-width: 25rem;
 }
 }
+@media (max-height: 955px) {
+  .time-price {
+    font-size: 11px;
+    line-height: 200%; 
+}
+  .card-text {
+    font-size: 10px;
+}
+}
 @media (max-height: 945px) {
   input[type="radio"] + label {
     font-size: 0.6875rem;
@@ -2677,12 +2742,20 @@ input {
         left: -23%;
     }
 }
+@media (max-width: 890px) {
+ .card-item {
+   gap: 20px;
+ }
+}
 @media (max-width: 850px) {
     .new-spa-circle {
         left: -25%;
     }
 }
 @media (max-width: 830px) {
+  .card-title {
+    font-size: 19px;
+}
  .online-reg-title {
    font-size: 1.875rem;
    margin-bottom: 0;
@@ -2719,6 +2792,9 @@ input[type="radio"] + label {
 @media (max-width: 790px) {
     .new-spa-circle {
         left: -28%;
+    }
+    .category-item {
+      font-size: 13px;
     }
 }
 @media (max-width: 768px) {
@@ -2843,12 +2919,46 @@ input[type="radio"] + label::after {
 }
 }
 @media (max-width: 737px) {
+  .time-price {
+    font-size: 10px;
+}
+.card-title {
+  font-size: 18px;
+}
+.card-text {
+  margin-bottom: 20px;
+}
+.cards-list-grid {
+  row-gap: 60px;
+  
+}
   .online-reg-form {
     max-width: 578;
   }
   .online-reg-left {
     flex-basis: 71%;
   }
+}
+@media (max-width: 730px) {
+  .category-item {
+    font-size: 12px;
+}
+  .cards-list-grid {
+    display: block;
+}
+.card-item {
+  gap: 90px;
+  margin-bottom: 60px;
+}
+.card-title {
+  font-size: 30px;
+}
+.time-price {
+  font-size: 13px;
+}
+.card-text {
+  font-size: 12px;
+}
 }
 @media (max-width: 678px) {
   .discount-15::before {

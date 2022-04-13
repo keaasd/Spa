@@ -5,40 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Галерея</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="img/favicon/site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link      rel="stylesheet"      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"    /> 
     <link rel="stylesheet" href="style/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style/gallery.css" />
     <script defer src="js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <script defer src="js/gallery.js"></script>
+    <link rel="stylesheet" href="style/gallery.css" />
   </head>
   <body>
     <div class="small-bg">
@@ -70,23 +48,22 @@
                   <a class="header-nav_link" href="contacts.html">Контакты</a>
                 </li>
               </ul>
+              <div class="form_wrap">
+                <form class="search-box" action="" method="get">
+                  <input class="search-txt" name=""
+                    placeholder="введите слово или фразу"
+                    type="search"/>
+                  <div class="search-btn_contain search-btn_contain-gallery">
+                    <button class="search-btn" type="submit"></button>
+                  </div>
+                </form>
+                <button
+                  class="burger-btn header-burger"
+                  onclick="openModal()"
+                  type="button"
+                ></button>
+              </div>
             </nav>
-            <div class="form_wrap">
-              <form class="search-box" action="" method="get">
-                <input                  class="search-txt"
-                  name=""
-                  placeholder="введите слово или фразу"
-                  type="search"                />
-                <div class="search-btn_contain">
-                  <button class="search-btn" type="submit"></button>
-                </div>
-              </form>
-              <button
-                class="burger-btn header-burger"
-                onclick="openModal()"
-                type="button"
-              ></button>
-            </div>
           </div>
           <div class="service-flex">
             <h1 class="services-title">Галерея салона</h1>
@@ -157,23 +134,21 @@
       </div>
       <section class="enroll-online">
         <div class="container">
-          <div class="enroll-online-wrapper">
-            <div class="enroll-online-title">
-              <h1 class="title-extra-large title-extra-large1">Запись</h1>
-              <h1 class="title-extra-large title-extra-large2">онлайн</h1>
-            </div>
-            <p class="enroll-online-action">
-              Оставьте нам свои контакты и оператор перезвонит вам в течение
-              часа
-            </p>
-            <a href="enroll-online.html" class="enroll-online-btn"></a>
+            <div class="enroll-online-wrapper">
+                <div class="enroll-online-title">
+                  <h1 class="title-extra-large title-extra-large1">Запись</h1>
+                  <h1 class="title-extra-large title-extra-large2">онлайн</h1>
+                </div>
+                  <p class="enroll-online-action">Оставьте нам свои контакты и&nbsp;оператор перезвонит вам в&nbsp;течение часа</p>
+                  <a href="enroll-online.html" class="enroll-online-btn"></a>
+              </div>
+
           </div>
-        </div>
-      </section>
+    </section>
       <footer class="footer">
         <div class="container">
           <div class="footer-flex">
-            <p class="copyright">© 2021 Thai Smile Spa</p>
+            <p class="copyright">©&nbsp;2021&nbsp;Thai&nbsp;Smile&nbsp;Spa</p>
             <div class="footer-line"></div>
             <ul class="footer-social">
               <li><a href="#" class="social fb">facebook</a></li>
@@ -192,15 +167,15 @@
           <button onclick="closeModal()" class="header-modal-close"></button>
           <div class="modal_logo"></div>
           <div class="drop-down drop-down_mobile-menu">
-            <div class="drop-down_pin">
-              <img src="./img/pin.svg" class="pin" />
+              <div class="drop-down_pin">
+                <img src="./img/pin.svg" class="pin" />
+              </div>
+              <select class="menu-select">
+                <option value="">в Павшинской пойме</option>
+                <!-- <option value="down">Проспект Маршала Жукова</option> -->
+              </select>
             </div>
-            <select class="menu-select">
-              <option value="">в Павшинской пойме</option>
-              <!-- <option value="down">Проспект Маршала Жукова</option> -->
-            </select>
-          </div>
-        </div>
+        </div> 
 
         <div class="burger-link">
           <a class="modal_link" href="services.html">Услуги</a>
@@ -210,16 +185,8 @@
           <a class="modal_link" href="contacts.html">Контакты</a>
         </div>
         <form class="search-box search-box_mobile-menu" action="" method="get">
-          <input
-            class="search-txt search-txt_mobile-menu"
-            name=""
-            placeholder="введите слово или фразу"
-            type="search"
-          />
-          <button
-            class="search-btn search-btn_mobile-menu"
-            type="submit"
-          ></button>
+              <input class="search-txt search-txt_mobile-menu" name="" placeholder="введите слово или фразу" type="search">
+              <button class="search-btn search-btn_mobile-menu" type="submit"></button>
         </form>
         <div class="mobile_footer">
           <ul class="footer__social_moby">
@@ -230,7 +197,7 @@
           <p class="copyright_mobile">
             &copy;&nbsp;2021&nbsp;Thai&nbsp;Smile&nbsp;Spa
           </p>
-        </div>
+          </div>
       </div>
     </div>
     <script src="script.js"></script>
