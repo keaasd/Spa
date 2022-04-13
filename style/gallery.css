@@ -3,13 +3,16 @@ img {
   height: 100%;
   object-fit: contain;
 }
+
 .search-txt::-moz-placeholder,
 :-moz-placeholder {
   color: #9e9d52;
 }
+
 .gallery-slider {
   margin-left: auto;
 }
+
 /* background: url("../img/bg1.jpg"), rgb(33, 37, 32, 0.3); */
 
 .small-bg {
@@ -20,6 +23,7 @@ img {
   position: relative;
   z-index: 2;
 }
+
 .small-bg::after {
   content: "";
   display: block;
@@ -59,7 +63,7 @@ img {
   transform: scale(1.7);
 }
 
-.swiper-horizontal > .swiper-pagination-fraction {
+.swiper-horizontal>.swiper-pagination-fraction {
   bottom: inherit;
   top: 0;
   left: 0;
@@ -117,13 +121,15 @@ img {
   border-bottom: 1px solid #fff;
   width: 289px;
   position: absolute;
-  right: 6%;
+  right: 0;
   top: 89%;
 }
+
 .form_wrap {
   display: flex;
   align-items: center;
 }
+
 /* ================== */
 /* .search-btn_contain {
   display: flex;
@@ -138,50 +144,63 @@ height: 58px;
 .search-btn:hover::after {
   border: 1px solid transparent;
 }
+
 .search-txt {
   top: inherit;
   bottom: 14px;
   right: 78px;
 }
+
 /* ============== */
 @media (max-width: 1360px) {
   .container {
     padding: 0 40px;
   }
+
   .swiper-slide-active-mod img {
     transform: scale(1.6);
   }
+
   .service-flex {
     gap: 20px;
     justify-content: space-between;
   }
+
   .select-big {
     margin-right: 6%;
   }
+
   h1 {
     font-size: 60px;
   }
+
   .search-txt {
     font-size: 18px;
     width: 33vw;
     line-height: 60%;
   }
+
   .menu-select-big {
     font-size: 24px;
+    margin-left: 0;
   }
+
   .title-extra-large {
     font-size: 8.8vw;
     line-height: 87%;
   }
+
   .enroll-online-wrapper {
     position: relative;
     margin-left: 8%;
   }
+
   .enroll-online-btn {
     position: absolute;
     right: 4.2%;
     top: 0;
   }
+
   .footer-line {
     width: 100%;
     flex-grow: 1;
@@ -217,13 +236,16 @@ height: 58px;
     height: 200px;
   }
 }
+
 @media (max-width: 1040px) {
   h1 {
     max-width: 370px;
   }
+
   .select-big::after {
     width: 100%;
   }
+
   .select-big {
     margin-right: 0;
   }
@@ -233,9 +255,11 @@ height: 58px;
   .enroll-online-wrapper {
     margin-left: 3%;
   }
+
   .title-extra-large {
     font-size: 7.5vw;
   }
+
   .slider3__item {
     height: 180px;
   }
@@ -243,35 +267,47 @@ height: 58px;
   .swiper {
     max-width: 90%;
   }
+
+  .search-box {
+    display: block;
+  }
 }
 
 @media (max-width: 768px) {
   .header {
     padding: 0 25px;
   }
+
   .header {
     padding: 0;
     padding-top: 25px;
   }
+
   .menu-select-big {
     font-size: 18px;
     width: 105%;
   }
+
   .search-btn_contain-gallery {
     display: none;
   }
+
   .select-big::after {
     right: 0;
   }
+
   .services-title {
     max-width: 260px;
   }
+
   .service-flex {
     margin-top: 0;
   }
+
   .small-bg {
     height: 350px;
   }
+
   .logo {
     width: 209px;
     height: 44px;
@@ -280,6 +316,7 @@ height: 58px;
   .swiper-slide-active img {
     transform: scale(1.5);
   }
+
   .navbar {
     margin-top: 23px;
   }
@@ -306,19 +343,23 @@ height: 58px;
   .header-nav {
     display: none;
   }
+
   .burger-btn {
     display: block;
     margin-left: 2.5vw;
   }
+
   .title-extra-large2 {
     margin-left: 14%;
   }
+
   .enroll-online-wrapper {
     margin-left: 0;
     margin-top: 70px;
     margin-bottom: 90px;
     justify-content: space-between;
   }
+
   .enroll-online-action {
     max-width: 243px;
     font-size: 13px;
@@ -326,63 +367,78 @@ height: 58px;
     margin-left: 10px;
     margin-top: 150px;
   }
+
   .enroll-online-btn {
     width: 100.84px;
     height: 103.5px;
   }
+
   .footer-flex {
     gap: 0;
   }
+
   .footer-social {
-    gap: 0;
     margin-left: 22px;
   }
+
   .social {
     font-size: 12px;
   }
+
   .copyright {
     font-size: 12px;
   }
-  
+
 }
 
 @media (max-width: 570px) {
   .footer-line {
     display: none;
   }
+
   .footer-flex {
     gap: 0;
     flex-direction: column;
     align-items: initial;
   }
+
   .footer-social {
+    gap: 0;
     margin-left: 0;
   }
+
   .enroll-online-wrapper {
     margin-bottom: 70px;
   }
+
   .footer {
     padding-top: 0;
     padding-bottom: 30px;
   }
+
   .social {
     font-size: 14px;
   }
+
   .copyright {
-  font-size: 10px;
-  margin-top: 8px;
+    font-size: 10px;
+    margin-top: 8px;
+  }
 }
-}
+
 @media (max-width: 567px) {
   .container {
     padding: 0 24px;
   }
+
   .menu-select-big {
     display: none;
   }
+
   .services-title {
     font-size: 40px;
   }
+
   .small-bg {
     height: 270px;
   }
@@ -413,21 +469,25 @@ height: 58px;
   .swiper-pagination {
     font-size: 11px;
   }
+
   .title-extra-large {
     font-size: 42px;
     line-height: .8;
   }
 }
+
 @media (max-width: 420px) {
   .enroll-online-wrapper {
     flex-direction: column;
   }
+
   .enroll-online-btn {
     position: inherit;
     margin: 0 auto;
     width: 80.15px;
     height: 82.26px;
   }
+
   .enroll-online-action {
     max-width: 200px;
     font-size: 12px;
@@ -435,20 +495,24 @@ height: 58px;
     margin-top: 20px;
     order: 3;
   }
+
   .enroll-online-title {
     margin-bottom: 20px;
   }
 }
+
 @media (max-width: 375px) {
   .services-title {
     font-size: 32px;
     max-width: 140px;
     line-height: 114%;
   }
+
   .swiper {
     padding-top: 5%;
     padding-bottom: 5%;
   }
+
   .small-bg {
     height: 240px;
   }
