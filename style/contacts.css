@@ -1,41 +1,83 @@
+.container {
+  max-width: 100%;
+  padding: 0 40px;
+}
+
+.header {
+  padding-top: 30px;
+  padding-right: 3%;
+  padding-left: 3.5%;
+}
+
+.header-nav {
+  margin-right: 15px;
+}
+
 .adress_title_t-oogle {
   display: none;
 }
+
 .reg-left-wrapper {
   margin-left: 0;
   margin-top: 0;
   padding-left: 8.3%;
   padding-top: 60px;
   padding-right: 8.3%;
-  padding-bottom: 46px;
+  padding-bottom: 70px;
 }
+
+.online-reg-form .form-input-phone {
+  width: 100%;
+}
+
+.form-input-text {
+  width: 100%;
+}
+
+.form-input-box {
+  margin-top: 15px;
+}
+
+.form-input-text-box {
+  margin-top: 15px;
+}
+
 .drop-down {
-    display: none;
+  display: none;
 }
+
 .contact-nav-item_box {
-    display: flex;
-    
+  display: flex;
+
 }
+
 .contact-nav-item_two {
-    margin-left: 86px;
+  margin-left: 86px;
 }
+
 .contact-nav {
-    justify-content: start;
-    gap: 0;
-  }
-  .contact-content {
-    margin-right: 5vw;
-  }
+  justify-content: start;
+  gap: 0;
+  margin-left: 4vw;
+}
+
+.contact-content {
+  margin-right: 6vw;
+}
+
 .service-flex {
   align-items: last baseline;
   gap: 0;
 }
+
 .adress_title {
   text-transform: uppercase;
 }
+
 .contact-select-big {
   margin-left: 15px;
 }
+
 .maps-moby {
   display: none;
   color: #000000;
@@ -46,6 +88,7 @@
   margin-left: 3px;
   margin-bottom: 32px;
 }
+
 .maps-moby::before {
   content: "";
   background: url("../img/pin.svg");
@@ -58,44 +101,77 @@
   height: 16px;
   margin-right: 10px;
 }
+
 .online-reg-btn._contact {
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  .online-reg-pic {
-    object-fit: cover;
-  }
-  .registration-contacts {
-    padding: 46px 40px 55px;
-  }
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.online-reg-pic {
+  object-fit: cover;
+}
+
+.registration-contacts {
+  padding-bottom: 11px;
+}
+
 .footer__social_moby {
   padding-bottom: 50px;
 }
+
+.footer {
+  padding: 60px 4%;
+}
+
 .btn-flex {
-    margin-top: 47px;
-  }
+  margin-top: 47px;
+}
+
 @media (max-width: 1360px) {
   .service-flex {
     gap: 0;
     /* justify-content: space-between; */
   }
+
 }
+
 @media (max-width: 1200px) {
   .adress_title {
     max-width: min-content;
     font-size: 65px;
   }
 }
+
 @media (max-width: 1040px) {
-    .contact-content {
-        max-width: 354px;
-      }
-      .contact-nav-item_two {
-        margin-left: 6vw;
-      }
-      .contact-nav {
-        justify-content: space-between;
-      }
+  .contact-content {
+    max-width: 354px;
+  }
+
+  .contact-nav-item_two {
+    margin-left: 6vw;
+  }
+
+  .contact-nav {
+    justify-content: space-between;
+  }
+
+  .online-reg-btn._contact {
+    font-size: 14px;
+    padding: 6px 15px 7px 15px;
+  }
+
+  .btn-flex {
+    gap: 3%;
+    margin-top: 35px;
+  }
+
+  .reg-left-wrapper {
+    padding: 40px 8%;
+  }
+
+  .reg-left-wrapper {
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 955px) {
@@ -103,30 +179,45 @@
     font-size: 58px;
   }
 }
+
 @media (max-width: 900px) {
   .search-box {
     display: block;
   }
 }
+
 @media (max-width: 850px) {
   .header-nav {
     display: none;
   }
+
   .burger-btn {
     display: block;
   }
 }
+
 @media (max-width: 768px) {
   .container {
     padding-right: 40px;
     padding-left: 40px;
   }
+
   .header {
     padding-top: 5px;
   }
+
   .burger-btn {
-    margin-left: 20px;
+    margin-left: 0;
   }
+
+  .contacts {
+    font-size: 18px;
+  }
+
+  .contact-hours-descr {
+    font-size: 15px;
+  }
+
   .menu-select {
     width: 155px;
     font-size: 10px;
@@ -134,63 +225,170 @@
     font-size: 18px;
     width: 105%;
   }
+
+  .btn-phone-green-black {
+    display: none;
+  }
+
+  .contact-nav {
+    margin-left: 0;
+  }
+
   .select-big::after {
     width: 100%;
     right: 0;
   }
+
   .adress_title {
     font-size: 40px;
   }
+
   .menu-select-big {
     display: none;
   }
+
   .modal_window .search-box_mobile-menu {
     margin-top: 20px;
   }
+
   .burger-link {
     margin-top: 50px;
   }
+
+  .online-reg-title {
+    max-width: 165px;
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .online-reg-form._white .form-input-email._serv {
+    padding-top: 25px;
+  }
+
+  .online-reg-form .form-input-name {
+    padding: 21px 0 2px;
+  }
+
+  .online-reg-form .form-input-email {
+    padding: 7px 0 2px;
+    margin-top: 12px;
+  }
+
+  .form-input-box {
+    margin-top: 16px;
+  }
+
+  .online-reg-form .form-input-phone {
+    padding: 6px 0 0px;
+  }
+
+  .online-reg-btn._contact {
+    font-size: 11px;
+  }
+
+  .reg-left-wrapper {
+    padding: 35px 8%;
+    padding-bottom: 35px;
+  }
+
+  .search-txt {
+    width: 155px;
+    right: 44px;
+    padding: 2px 10px;
+    font-size: 11px;
+  }
+
+  input[type="radio"]+label {
+    padding-left: 27px;
+  }
+
+  .contact-email {
+    border: none;
+    text-decoration: underline;
+  }
+
+  .footer-line {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
 }
+
+@media (max-width: 632px) {
+  .contact-nav-item_box {
+    flex-direction: column;
+  }
+
+  .contact-nav-item_two {
+    margin-left: 0;
+  }
+
+  .online-reg-right {
+    display: none;
+  }
+
+  .online-reg-left {
+    flex-basis: 100%;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer-line {
+    display: none;
+  }
+}
+
 @media (max-width: 567px) {
   body {
     color: #000;
   }
+
   .t-oogle {
     display: none;
   }
+
   .adress_title_t-oogle {
     display: block;
   }
+
   ._color {
     color: #000;
   }
+
   .container {
     padding-right: 25px;
     padding-left: 25px;
   }
+
   .header {
     padding-top: 12px;
   }
+
   .small-bg {
     background: transparent;
   }
+
   .small-bg::after {
     background: transparent;
   }
+
   .contact {
     background: transparent;
   }
+
   .header-flex {
     justify-content: center;
     align-items: center;
     gap: 10px;
   }
+
   .header-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .logo {
     display: block;
     background: url("../img/logo_mobile.svg");
@@ -198,6 +396,7 @@
     height: 40.89px;
     margin-right: 0;
   }
+
   .burger-btn {
     background: url('../img/burger_menu-black.svg');
     background-repeat: no-repeat;
@@ -206,54 +405,67 @@
     width: 24px;
     height: 9.5px;
   }
+
   .header-logo {
     text-align: center;
   }
+
   .search-btn_off {
     display: none;
   }
+
   .drop-down {
     margin-top: 6px;
   }
+
   .navbar {
     position: absolute;
     top: 3px;
     right: 24px;
   }
+
   .menu-select {
     width: 155px;
     font-size: 12px;
   }
+
   .adress_title {
     font-size: 40px;
   }
+
   .adress_title {
     max-width: 100%;
     font-size: 30px;
     margin: 0 auto;
   }
+
   .service-flex {
     margin-top: 22px;
     padding-bottom: 0;
   }
+
   .contact {
     margin-top: 18px;
     padding-bottom: 0;
     padding-top: 10px;
   }
+
   .contact-content {
     line-height: 107%;
     font-size: 30px;
     margin-top: 0;
     max-width: 316px;
   }
+
   .maps-moby {
     display: block;
   }
+
   .contact-nav {
     display: block;
     padding-bottom: 0;
   }
+
   .menu-select {
     background: url("../img/drop-down-black.svg");
     background-repeat: no-repeat;
@@ -263,6 +475,7 @@
     appearance: none;
     position: relative;
   }
+
   .menu-select option {
     color: #000;
     background: transparent;
@@ -271,21 +484,35 @@
   .contact-title {
     font-size: 12px;
   }
+
   .contact-email {
-    border-bottom: 1px solid #000;
     margin-bottom: 30px;
+    width: auto;
   }
+
   .contact-hours-descr {
     font-size: 12px;
     margin-top: 7px;
   }
+
   .map {
     display: none;
   }
+
   .registration-contacts {
     display: none;
   }
+
   .btn-phone-green-black {
     display: none;
+  }
+
+  .online-reg {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .footer {
+    padding: 60px 0;
   }
 }
