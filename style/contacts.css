@@ -1,0 +1,291 @@
+.adress_title_t-oogle {
+  display: none;
+}
+.reg-left-wrapper {
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 8.3%;
+  padding-top: 60px;
+  padding-right: 8.3%;
+  padding-bottom: 46px;
+}
+.drop-down {
+    display: none;
+}
+.contact-nav-item_box {
+    display: flex;
+    
+}
+.contact-nav-item_two {
+    margin-left: 86px;
+}
+.contact-nav {
+    justify-content: start;
+    gap: 0;
+  }
+  .contact-content {
+    margin-right: 5vw;
+  }
+.service-flex {
+  align-items: last baseline;
+  gap: 0;
+}
+.adress_title {
+  text-transform: uppercase;
+}
+.contact-select-big {
+  margin-left: 15px;
+}
+.maps-moby {
+  display: none;
+  color: #000000;
+  font-size: 12px;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 6px;
+  margin-left: 3px;
+  margin-bottom: 32px;
+}
+.maps-moby::before {
+  content: "";
+  background: url("../img/pin.svg");
+  background-repeat: repeat;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+  margin-right: 10px;
+}
+.online-reg-btn._contact {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .online-reg-pic {
+    object-fit: cover;
+  }
+  .registration-contacts {
+    padding: 46px 40px 55px;
+  }
+.footer__social_moby {
+  padding-bottom: 50px;
+}
+.btn-flex {
+    margin-top: 47px;
+  }
+@media (max-width: 1360px) {
+  .service-flex {
+    gap: 0;
+    /* justify-content: space-between; */
+  }
+}
+@media (max-width: 1200px) {
+  .adress_title {
+    max-width: min-content;
+    font-size: 65px;
+  }
+}
+@media (max-width: 1040px) {
+    .contact-content {
+        max-width: 354px;
+      }
+      .contact-nav-item_two {
+        margin-left: 6vw;
+      }
+      .contact-nav {
+        justify-content: space-between;
+      }
+}
+
+@media (max-width: 955px) {
+  .adress_title {
+    font-size: 58px;
+  }
+}
+@media (max-width: 900px) {
+  .search-box {
+    display: block;
+  }
+}
+@media (max-width: 850px) {
+  .header-nav {
+    display: none;
+  }
+  .burger-btn {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .header {
+    padding-top: 5px;
+  }
+  .burger-btn {
+    margin-left: 20px;
+  }
+  .menu-select {
+    width: 155px;
+    font-size: 10px;
+    margin-left: 1px;
+    font-size: 18px;
+    width: 105%;
+  }
+  .select-big::after {
+    width: 100%;
+    right: 0;
+  }
+  .adress_title {
+    font-size: 40px;
+  }
+  .menu-select-big {
+    display: none;
+  }
+  .modal_window .search-box_mobile-menu {
+    margin-top: 20px;
+  }
+  .burger-link {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 567px) {
+  body {
+    color: #000;
+  }
+  .t-oogle {
+    display: none;
+  }
+  .adress_title_t-oogle {
+    display: block;
+  }
+  ._color {
+    color: #000;
+  }
+  .container {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .header {
+    padding-top: 12px;
+  }
+  .small-bg {
+    background: transparent;
+  }
+  .small-bg::after {
+    background: transparent;
+  }
+  .contact {
+    background: transparent;
+  }
+  .header-flex {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .header-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    display: block;
+    background: url("../img/logo_mobile.svg");
+    width: 46px;
+    height: 40.89px;
+    margin-right: 0;
+  }
+  .burger-btn {
+    background: url('../img/burger_menu-black.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 16px;
+    width: 24px;
+    height: 9.5px;
+  }
+  .header-logo {
+    text-align: center;
+  }
+  .search-btn_off {
+    display: none;
+  }
+  .drop-down {
+    margin-top: 6px;
+  }
+  .navbar {
+    position: absolute;
+    top: 3px;
+    right: 24px;
+  }
+  .menu-select {
+    width: 155px;
+    font-size: 12px;
+  }
+  .adress_title {
+    font-size: 40px;
+  }
+  .adress_title {
+    max-width: 100%;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  .service-flex {
+    margin-top: 22px;
+    padding-bottom: 0;
+  }
+  .contact {
+    margin-top: 18px;
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+  .contact-content {
+    line-height: 107%;
+    font-size: 30px;
+    margin-top: 0;
+    max-width: 316px;
+  }
+  .maps-moby {
+    display: block;
+  }
+  .contact-nav {
+    display: block;
+    padding-bottom: 0;
+  }
+  .menu-select {
+    background: url("../img/drop-down-black.svg");
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: 9px 7.75px;
+    background-position: 98% center;
+    appearance: none;
+    position: relative;
+  }
+  .menu-select option {
+    color: #000;
+    background: transparent;
+  }
+
+  .contact-title {
+    font-size: 12px;
+  }
+  .contact-email {
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+  }
+  .contact-hours-descr {
+    font-size: 12px;
+    margin-top: 7px;
+  }
+  .map {
+    display: none;
+  }
+  .registration-contacts {
+    display: none;
+  }
+  .btn-phone-green-black {
+    display: none;
+  }
+}

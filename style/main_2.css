@@ -1,0 +1,14 @@
+в твоих стилях
+.mySwiperText {
+    min-height: 0;
+    max-height: 300px;
+    flex: 1;
+  }
+  @media (max-width: 570px) {
+    .mySwiperText {
+        /* max-width: 147px; */
+        margin-left: 0;
+        max-width: 235px;
+      }
+  }
+  

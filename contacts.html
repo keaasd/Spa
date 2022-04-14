@@ -13,7 +13,8 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style/main.css">
+    <!-- <link rel="stylesheet" href="style/main.css"> -->
+    <link rel="stylesheet" href="style/contacts.css">
 </head>
 <body>
     <div class="small-bg">
@@ -23,6 +24,15 @@
                 <div class="header-box">
                   <div class="header-logo">
                     <a href="index.html" class="logo"></a>
+                  </div>
+                  <div class="drop-down">
+                    <div class="drop-down_pin">
+                      <img src="./img/pin.svg" class="pin" />
+                    </div>
+                    <select class="menu-select _color">
+                      <option value="">в Павшинской пойме</option>
+                      <!-- <option value="down">Проспект Маршала Жукова</option> -->
+                    </select>
                   </div>
                 </div>
                 <nav class="navbar">
@@ -50,7 +60,7 @@
                       <input class="search-txt" name=""
                         placeholder="введите слово или фразу"
                         type="search"/>
-                      <div class="search-btn_contain">
+                      <div class="search-btn_contain search-btn_off">
                         <button class="search-btn" type="submit"></button>
                       </div>
                     </form>
@@ -63,7 +73,8 @@
                 </nav>
                 </div>
                 <div class="service-flex">
-                    <h1 class="services-title">Адрес салона</h1>
+                    <h1 class="adress_title t-oogle">Адрес салона</h1>
+                    <h1 class="adress_title _color adress_title_t-oogle">Контакты</h1>
                     <div class="select-big contact-select-big">
                         <select class="menu-select menu-select-big">
                         <option class="location" value="">в Павшинской пойме</option>
@@ -79,17 +90,22 @@
                 <li class="contact-nav-item">
                     <span class="contact-title">Адрес</span>
                     <p class="contact-content">Красногорск, Павшинская пойма,<br> Красногорский бульвар, 13</p>
+                    <a                        class="maps-moby"                        href="https://www.google.com/maps/place/%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%B8%D0%B9+%D0%B1%D1%83%D0%BB.,+13,+%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA,+%D0%9C%D0%BE%D1%81%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+143401/@55.815548,37.37003,17z/data=!4m5!3m4!1s0x46b54647959e5801:0xf2d9fd64fef665f1!8m2!3d55.8155481!4d37.3700301?hl=ru"
+                        target="_blank"                        rel="noopener noreferrer"                        >На карте</a                      >
                 </li>
-                <li class="contact-nav-item">
+                <li class="contact-nav-item_box">
+                  <div class="contact-nav-item">
                     <span class="contact-title">Контакты</span>
                     <a href="tel:+79250332100" class="contacts contact-tel">+7 925 033 21 00</a>
                     <a href="mailto:thaismile@mail.ru" class="contacts contact-email">thaismile@mail.ru</a>
-                </li>
-                <li class="contact-nav-item">
+                </div>
+                <div class="contact-nav-item contact-nav-item_two">
                     <span class="contact-title">Часы работы</span>
                     <span class="contacts contact-hours">11:00 — 23:00</span>
                     <p class="contacts contact-hours-descr">Мы работаем без выходных<br>и перерывов</p>
+                </div>
                 </li>
+                
             </ul>
         </div>
         <a href="tel:+79250332100" class="btn-phone-green-black"></a>
@@ -125,7 +141,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-flex">
-                    <p class="copyright">© 2021 Thai Smile Spa</p>
+                    <p class="copyright">&copy;&nbsp;2021&nbsp;Thai&nbsp;Smile&nbsp;Spa</p>
                     <div class="footer-line"></div>
                         <ul class="footer-social">
                             <li><a href="#" class="social fb">facebook</a></li>
@@ -152,7 +168,10 @@
               </select>
             </div>
         </div>
-
+        <form class="search-box search-box_mobile-menu" action="" method="get">
+          <input class="search-txt search-txt_mobile-menu" name="" placeholder="введите слово или фразу" type="search">
+          <button class="search-btn search-btn_mobile-menu" type="submit"></button>
+    </form>
         <div class="burger-link">
           <a class="modal_link" href="services.html">Услуги</a>
           <a class="modal_link" href="gallery.html">Галерея</a>
@@ -160,19 +179,13 @@
           <a class="modal_link" href="certificate.html">сертификаты</a>
           <a class="modal_link" href="contacts.html">Контакты</a>
         </div>
-        <form class="search-box search-box_mobile-menu" action="" method="get">
-              <input class="search-txt search-txt_mobile-menu" name="" placeholder="введите слово или фразу" type="search">
-              <button class="search-btn search-btn_mobile-menu" type="submit"></button>
-        </form>
+        
         <div class="mobile_footer">
           <ul class="footer__social_moby">
             <li><a href="#" class="social_mobile fb">facebook</a></li>
             <li><a href="#" class="social_mobile insta">instagram</a></li>
             <li><a href="#" class="social_mobile trip">tripadviser</a></li>
           </ul>
-          <p class="copyright_mobile">
-            &copy;&nbsp;2021&nbsp;Thai&nbsp;Smile&nbsp;Spa
-          </p>
           </div>
       </div>
     </div>

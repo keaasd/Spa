@@ -1,4 +1,7 @@
-
+/* изменить  */
+/* https://github.com/Svetkachalina/1.git */
+/* https://github.com/keaasd/Spa.git */
+/* e  */
 body {
   background-color: #e5e5e5;
 }
@@ -18,14 +21,18 @@ body {
   background-repeat: no-repeat;
 }
 
+
+
+
+
 .header-nav_list {
   padding-right: 0;
-
+  /* удалить паддинг  */
 }
 
 .btn-text {
   margin-left: 0px;
-  background: url('../img/button.svg');
+  background: url("../img/button.svg");
   background-size: contain;
   background-repeat: no-repeat;
   /* position: relative; */
@@ -108,8 +115,8 @@ body {
 }
 
 .swiper-button-next {
-  background: url('../img/arrow-right.svg');
-  
+  background-image: url(./img/arrow-right.svg);
+  background-repeat: repeat;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -143,7 +150,9 @@ body {
 .white_phone-btn {
   display: block;
   position: absolute;
-  background: url('../img/phone.svg');
+  background-image: url(./img/phone.svg);
+  /* background: url('../img/phone.svg'); */
+  background-repeat: repeat;
   background-size: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,7 +163,9 @@ body {
 }
 
 .swiper-button-prev {
-  background: url('../img/arrow-left.svg');
+  background-image: url(./img/arrow-left.svg);
+
+  background-repeat: repeat;
   background-size: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -169,7 +180,7 @@ body {
 }
 
 .hero_visual {
-  background: url('../img/hero-pic.png');
+  background-image: url("../img/hero-pic.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 353px;
@@ -198,8 +209,8 @@ body {
 }
 
 .white_phone-index {
-  top: 101.7%;
-  right: 5%;
+  top: 15.7%;
+  right: 8%;
   z-index: 3;
 }
 
@@ -247,8 +258,8 @@ body {
 }
 
 .contact-nav {
-  gap: 33px;
-  max-width: 1098px;
+  gap: 136px;
+  max-width: 1029px;
 }
 
 .main-bg {
@@ -283,7 +294,7 @@ body {
 .services {
   position: relative;
   z-index: 0;
-  margin-top: 151px;
+  margin-top: 166px;
 }
 
 .title-services {
@@ -349,7 +360,7 @@ body {
 }
 
 /* .burger-btn {
-  background-image: url(.../img/burger_menu.svg);
+  background-image: url(./img/burger_menu.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: transparent;
@@ -363,7 +374,7 @@ body {
 
 /* стили крестика ======== */
 /* .header-modal-close {
-  background-image: url(.../img/moby.svg);
+  background-image: url(./img/moby.svg);
   background-repeat: no-repeat;
   background-size: contain;
   border: none;
@@ -416,7 +427,7 @@ body {
 
 .modal_logo {
   display: block;
-  background-image: url(.../img/logo_mobile.svg);
+  background-image: url(./img/logo_mobile.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 46px;
@@ -462,7 +473,7 @@ legend {
 
 .maps-moby::before {
   content: '';
-  background: url('../img/pin.svg');
+  background-image: url(./img/pin.svg);
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -564,7 +575,7 @@ legend {
 
 @media (max-width: 1200px) {
   .main-bg {
-    height: 1258px;
+    height: 1188px;
   }
   .search-txt {
     width: 39vw;
@@ -580,6 +591,10 @@ legend {
     margin-left: 0;
   }
 
+  .slider2-item img {
+    height: 250px;
+  }
+
   .swiper-title {
     font-size: 24px;
   }
@@ -589,16 +604,13 @@ legend {
   }
 
   .slider_2-wrap {
-    top: 8px;
+    top: 66px;
   }
   .btn-services {
     margin-top: 63px;
 }
 }
 @media (max-width: 1100px) {
-  .slider_2-wrap {
-    top: 44px;
-}
    .wrap_services {
     margin-bottom: 38px;
   }
@@ -668,7 +680,7 @@ legend {
 }
 @media (max-width: 1000px) {
   .online-reg-title {
-    /* margin-bottom: 0; */
+    margin-bottom: 0;
   }
   .btn-services {
     margin-top: 159px;
@@ -684,7 +696,7 @@ legend {
   }
 
   .swiper-title {
-    font-size: 1.1875rem;
+    font-size: 18px;
   }
 }
 @media (max-width: 900px) {
@@ -697,13 +709,16 @@ legend {
   }
 
   .slider_2-wrap {
-   margin-top: 41px;
+    max-width: 55vw;
   }
 
-  .services-text {
-    max-width: 205px;
-}
- 
+  .slider2-item img {
+    height: 205px;
+  }
+
+  .swiper-title {
+    font-size: 19px;
+  }
   .swiper-text {
     margin-top: 8px;
   }
@@ -738,7 +753,7 @@ legend {
   }
 
   .slider2-item img {
-    height: 32.5vw;
+    height: 26.5vw;
   }
 
   .menu-select {
@@ -750,7 +765,6 @@ legend {
   .pin {
     width: 8.86px;
     height: 11.65px;
-    margin-right: 5px;
   }
 
   .drop-down::after {
@@ -789,6 +803,22 @@ legend {
   .swiper-slide {
     justify-content: start;
   }
+
+  .swiper-button-next {
+    width: 44px;
+    height: 44px;
+    right: inherit;
+    bottom: 56px;
+    left: 20%;
+  }
+
+  .swiper-button-prev {
+    width: 44px;
+    height: 44px;
+    right: inherit;
+    bottom: 56px;
+    left: 0;
+  }
   .hero_visual {
     width: 259px;
     height: 183px;
@@ -796,7 +826,7 @@ legend {
   }
 
   .services {
-    margin-top: 84px;
+    margin-top: 102px;
   }
 
   .services-text {
@@ -828,16 +858,18 @@ legend {
     font-size: 28px;
     line-height: 107%;
   }
-  .swiper-button-prev {
-    width: 44px;
-    height: 44px;
-    right: 80%;
-    bottom: 44px;
-  }
+
   .swiper-button-next {
     width: 44px;
     height: 44px;
-    left: 29%;
+    right: 29%;
+    bottom: 44px;
+  }
+
+  .swiper-button-prev {
+    width: 44px;
+    height: 44px;
+    right: 38.6%;
     bottom: 44px;
   }
 
@@ -866,18 +898,17 @@ legend {
 
   .slider_2-wrap {
     max-width: 64.4vw;
-    top: 0;
-    margin-top: 0;
+    top: -9px;
   }
 
   .swiper-title {
-    
+    font-size: 2.3vw;
     line-height: 0.9;
   }
 
   .swiper-no {
     font-size: 30px;
-    line-height: 118.8%;
+    line-height: 63.8%;
   }
 
   .swiper-text {
@@ -1025,15 +1056,14 @@ legend {
   margin-top: 0;
   font-size: 12px;
   position: absolute;
-  padding-left: 10px;
+  top: 63.6%;
   left: 34%;
-  max-width: 108px;
+  max-width: 100px;
 }
 }
 @media (max-width: 676px) {
-  
   .online-reg-confirm {
-    top: 10%;
+    top: 63.6%;
     left: 34%;
     max-width: 123px;
     padding-left: 20px;
@@ -1042,25 +1072,13 @@ legend {
     padding-right: 16px;
 }
 }
-@media (max-width: 635px) {
-  .main-bg {
-    height: 849px;
-}
-.btn-services {
-  margin-top: 104px;
-}
-.slider_2-wrap {
-  margin-top: 41px;
-}
-}
 @media (max-width: 620px) {
-
   .swiper-button-next {
-    /* right: 19%; */
+    right: 19%;
   }
 
   .swiper-button-prev {
-    /* right: 28.6%; */
+    right: 28.6%;
   }
 
   .swiper-title {
@@ -1075,11 +1093,7 @@ legend {
   }
 
   .logo {
-    display: block;
-    background: url('../img/logo_mobile.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-image: url(./img/logo_mobile.svg);
     width: 46px;
     height: 40.89px;
     margin-right: 0;
@@ -1212,21 +1226,22 @@ legend {
     height: 100%;
   }
 
+
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    left: inherit;
+    right: 0;
+    bottom: 77px;
+  }
+
   .swiper-button-prev {
     width: 40px;
     height: 40px;
     right: 36.6%;
     bottom: 77px;
     left: inherit;
-    right: 40%;
-  }
-
-  .swiper-button-next {
-    width: 40px;
-    height: 40px;
-    left: inherit;
-    right: 25%;
-    bottom: 77px;
+    right: 15%;
   }
 
   .services {
@@ -1322,7 +1337,7 @@ legend {
       margin: 0;
   }
   .grid_item2-pic {
-    max-width: 65%;
+    max-width: 47%;
     display: block;
     margin: 0 auto;
     padding-bottom: 25px;
@@ -1339,9 +1354,9 @@ legend {
   }
 
   .discount-15 {
-    top: 269px;
-    left: 13%;
-    font-size: 2.5rem;
+    top: 227px;
+    left: 24%;
+    font-size: 28px;
   }
 
   .grid_item5-pic::before {
@@ -1370,7 +1385,7 @@ legend {
   }
 
   .grid_item4-pic {
-    max-width: 90%;
+    max-width: 60%;
     display: block;
     padding-bottom: 23px;
   }
@@ -1394,9 +1409,9 @@ legend {
    right: 90%;
 }
   .discount-10 {
-    bottom: 39%;
+    bottom: 46%;
     left: initial;
-    right: 4%;
+    right: 34%;
     font-size: 31px;
   }
 
@@ -1424,6 +1439,7 @@ legend {
 
   .offers-grid_item5 {
     
+    /* padding-bottom: 40px; */
     margin-top: 25px;
   }
 
@@ -1431,7 +1447,7 @@ legend {
     position: relative;
     display: block;
     background-size: cover;
-    max-width: 70%;
+    max-width: 50%;
     margin: 0 auto;
   }
 
@@ -1450,7 +1466,6 @@ legend {
     font-size: 12px;
     margin: 0 auto;
     line-height: 150%;
-    padding-bottom: 35px;
   }
 
   .wraps_box {
@@ -1479,7 +1494,7 @@ legend {
     margin-bottom: 23px;
 }
   .online-reg-confirm {
-    
+    top: 86%;
     left: 68%;
 }
 .online-reg-btn {
@@ -1489,10 +1504,9 @@ legend {
   padding-bottom: 5px;
 }
   .contact {
-    background: #fff;
+    background: white;
     margin-top: 21px;
     padding-bottom: 0;
-    position: relative;
   }
   .contact-nav {
     display: block;
@@ -1512,7 +1526,6 @@ legend {
   .contacts {
     line-height: 120%;
     font-size: 25px;
-    
   }
 
   .contact-box {
@@ -1551,60 +1564,29 @@ legend {
   .contacts_nav-items {
     margin-bottom: 40px;
   }
+
+}
+@media (max-width: 563px) {
+
+.discount-15 {
+  top: 168px;
+}
 }
 @media (max-width: 522px) {
   .online-reg-confirm {
+    top: 85%;
     left: 65%;
   }
 }
-@media (max-width: 500px) {
-  .discount-15 {
-    top: 237px;
-    left: 10%; 
-}
-}
 @media (max-width: 470px) {
   .online-reg-confirm {
+    top: 84%;
     left: 60%;
   }
-  .discount-15 {
-    top: 219px;
 }
-.new-spa-circle {
-  left: -1%;
-  }
-}
-@media (max-width: 440px) {
-  .discount-15 {
-    top: 196px;
-}
-.new-spa-circle {
- 
-  width: 100px;
-  height: 100px;
-}
-}
-@media (max-width: 420px) {
-  .discount-15 {
-    top: 196px;
-    font-size: 2rem;
-    left: 9%;
-}
-.new-spa-circle {
-  width: 100px;
-  height: 100px;
-}
-}
-
 @media (max-width: 400px) {
-  .discount-15 {
-    top: 180px;
-}
-.discount-10::before {
-  width: 5rem;
-  height: 5rem;
-}
   .contact-hours-descr {
+  
     max-width: 166px;
   }
   .footer-social {
@@ -1614,10 +1596,13 @@ legend {
 
 @media (max-width: 385px) {
   .online-reg-confirm {
+    top: 83.5%;
     left: 55%;
   }
 }
 @media (max-width: 375px) {
+
+
   .swiper-button-next {
     right: 0%;
   }
@@ -1644,58 +1629,18 @@ legend {
   }
 
   .discount-15 {
-    top: 164px;
+    top: 227px;
+    left: 9%;
   }
-  .discount-10::before {
-    width: 4.5rem;
-    height: 4.5rem;
 }
-  .discount-10 {
-    bottom: 42%;
-    right: -1%;
-    font-size: 27px;
-}
-.new-spa-circle {
-  width: 90px;
-  height: 90px;
-}
-}
+
+
 @media (max-width: 368px) {
   .swiper-no {
     font-size: 24px;
   }
-  .online-reg-title {
-    font-size: 24px;
 }
-.online-reg-confirm {
- font-size: 9px;
-}
-}
-@media (max-width: 350px) {
-  .discount-15 {
-    top: 149px;
-    left: 7%;
-}
-.new-spa-circle {
- left: -3%;
- top: 50%;
-}
-}
-@media (max-width: 340px) {
-.main-bg {
-  height: 617px;
-}
-}
-@media (max-width: 335px) {
-  .discount-15 {
-    top: 126px;
-    left: 5%;
-}
-.new-spa-circle {
- left: -6%;
- top: 48%;
-}
-}
+
 @media (max-width: 320px) {
   .title-hero {
     font-size: 30px;
