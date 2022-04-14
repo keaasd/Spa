@@ -14,16 +14,16 @@ searchBtn.addEventListener('click', (e) => {
 
 
 
-  function openModal() {
-    document.getElementById("modal__mb").style.left = "0px";
+function openModal() {
+  document.getElementById("modal__mb").style.left = "0px";
 }
 function closeModal() {
-    document.getElementById("modal__mb").style.left = "-3000px";
+  document.getElementById("modal__mb").style.left = "-3000px";
 }
 
 // Button HIDDEN
 const texts = document.querySelectorAll('.text-hidden');
-    
+
 if (texts) {
   texts.forEach(text => {
     const moreBtn = text.querySelector('.show-more-btn');
@@ -57,3 +57,32 @@ if (texts) {
 //     });
 //   });
 // }
+
+// .noscroll { overflow: hidden; height: 100 %; }
+
+const open = document.querySelector('.burger-btn');
+const close = document.querySelector('.header-modal-close');
+const body = document.querySelector('body');
+const modalWindow = document.querySelector('.modal_window');
+
+
+console.log('open: ', open);
+
+console.log('close: ', close);
+console.log('body: ', body);
+console.log('modalWindow: ', modalWindow);
+open.addEventListener('click', () => {
+  body.classList.add('noscroll');
+});
+close.addEventListener('click', () => {
+  body.classList.remove('noscroll');
+});
+
+modalWindow.addEventListener('click', (e) => {
+  const isModal = e.target.closest('.modal__mb');
+  if (!isModal) {
+    console.log('мимо: ');
+    modalWindow.style.left = "-3000px";
+    body.classList.remove('noscroll');
+  }
+});

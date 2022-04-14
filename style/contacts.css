@@ -3,6 +3,25 @@
   padding: 0 40px;
 }
 
+.contact .container {
+  position: relative;
+}
+
+.map {
+  position: relative;
+}
+
+.btn-phone-green-black {
+  top: -7%;
+}
+
+.menu-select-big {
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+
 .header {
   padding-top: 30px;
   padding-right: 3%;
@@ -145,6 +164,15 @@
 @media (max-width: 1040px) {
   .contact-content {
     max-width: 354px;
+    font-size: 25px;
+  }
+
+  .contacts {
+    font-size: 26px;
+  }
+
+  .contact-hours-descr {
+    font-size: 13px;
   }
 
   .contact-nav-item_two {
