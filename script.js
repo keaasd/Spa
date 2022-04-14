@@ -66,11 +66,6 @@ const body = document.querySelector('body');
 const modalWindow = document.querySelector('.modal_window');
 
 
-console.log('open: ', open);
-
-console.log('close: ', close);
-console.log('body: ', body);
-console.log('modalWindow: ', modalWindow);
 open.addEventListener('click', () => {
   body.classList.add('noscroll');
 });
