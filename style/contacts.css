@@ -208,13 +208,7 @@
   }
 }
 
-@media (max-width: 900px) {
-  .search-box {
-    display: block;
-  }
-}
-
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .header-nav {
     display: none;
   }
@@ -222,7 +216,20 @@
   .burger-btn {
     display: block;
   }
+
+  .burger-btn {
+    margin-left: 0;
+  }
 }
+
+@media (max-width: 900px) {
+  .search-box {
+    display: block;
+  }
+}
+
+
+@media (max-width: 850px) {}
 
 @media (max-width: 768px) {
   .container {
@@ -234,9 +241,7 @@
     padding-top: 5px;
   }
 
-  .burger-btn {
-    margin-left: 0;
-  }
+
 
   .contacts {
     font-size: 18px;
