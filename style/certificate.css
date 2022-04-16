@@ -1,321 +1,383 @@
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  input {
-      display: block;
-      width: 100%;
-  }
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input {
+  width: 100%;
+}
+
 .container {
-    max-width: 100%;
-    padding: 0 40px;
+  max-width: 100%;
+  padding: 0 40px;
 }
 
 .header {
-    padding-top: 30px;
-    padding-right: 3%;
-    padding-left: 3.5%;
+  padding-top: 30px;
+  padding-right: 3%;
+  padding-left: 3.5%;
 }
 
 .menu-select {
-    background: transparent;
-    color: white;
-    border: none;
+  background: transparent;
+  color: white;
+  border: none;
 }
 
 .header-nav {
-    margin-right: 1vw;
-    gap: 2.3vw;
+  margin-right: 1vw;
+  gap: 2.3vw;
 }
 
 .service-flex {
-    gap: 17.4vw;
+  gap: 17.4vw;
 }
 
 .link_hidden {
-    display: none;
+  display: none;
 }
-.sertificat-title {
-    text-transform: uppercase;
-}
-.online-reg_image {
-    flex-grow: 1;
-    max-height: 100%;
-}
-.reg-left_wrapper {
-    padding: 64px 4% 54px 4%;
-    flex-grow: 1;
-    margin-right: 8vw;
-    position: relative;
-}
-.online-reg_box {
-    border: 1px solid #000;
-border-radius: 10px;
-display: flex;
-justify-content: space-between;
-overflow: hidden;
-}
-.online-reg_input {
-    max-width: 466px;
-}
-.certificate-form .online-reg-title {
-    margin-bottom: 31px;
-  }
-  .online-reg-form .form-input-email {
-    padding: 24px 0 13px;
-  }
-  .online-reg-form .form-input-phone {
-    margin-top: 20px;
-  }
-  .online-reg-form .certificate-form_radio {
-    margin-top: 28px;
-  }
-  .certificate-form_wrap {
-    display: flex;
-    align-items: center;
-  }
-  .radio-button__control {
-    display: block;
-  }
-  .online-reg-btn {
-    margin: 0 6% 0 0;
-     
 
-  }
-    input[type="radio"] {
-    display: block;
-    color: #000;
-  }
-  .btn-flex {
-    gap: 44px;
-    margin-top: 39px;
-  }
-  .btn-flex {
-    gap: 2px;
-    margin-top: 39px;
-    justify-content: flex-start;
-  }
-  .online-reg-confirm {
-    max-width: 230px;
-  }
- 
-  .online-reg-moby {
-    display: none;
-  }
-  .form-input-name, .form-input-email, .form-input-phone {
-    color: #000;
-  }
+.sertificat-title {
+  text-transform: uppercase;
+}
+
+.online-reg_image {
+  flex-grow: 1;
+  max-height: 100%;
+}
+
+.reg-left_wrapper {
+  padding: 64px 4% 54px 4%;
+  flex-grow: 1;
+  margin-right: 8vw;
+  position: relative;
+}
+
+.online-reg_box {
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.online-reg_input {
+  max-width: 466px;
+}
+
+.certificate-form .online-reg-title {
+  margin-bottom: 31px;
+}
+
+.online-reg-form .form-input-email {
+  padding: 24px 0 13px;
+}
+
+.online-reg-form .form-input-phone {
+  margin-top: 20px;
+}
+
+.online-reg-form .certificate-form_radio {
+  margin-top: 28px;
+}
+
+.certificate-form_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.online-reg-btn {
+  margin: 0 6% 0 0;
+
+
+}
+
+.form-input-email {
+  display: block;
+}
+
+/* .form-input-name {
+    width: 100%;
+  } */
+.btn-flex {
+  gap: 44px;
+  margin-top: 39px;
+}
+
+.btn-flex {
+  gap: 2px;
+  margin-top: 39px;
+  justify-content: flex-start;
+}
+
+.online-reg-confirm {
+  max-width: 230px;
+}
+
+.online-reg-moby {
+  display: none;
+}
+
+.form-input-name,
+.form-input-email,
+.form-input-phone {
+  color: #000;
+}
 
 @media (max-width: 1360px) {
-    .header {
-        padding: 40px 0 0;
-    }
-    .reg-left_wrapper {
-        margin-right: 0;
-    }
+  .header {
+    padding: 40px 0 0;
+  }
+
+  .reg-left_wrapper {
+    margin-right: 0;
+  }
 }
 
 
 @media (max-width: 1250px) {
-    .services-title {
-        max-width: 295px;
-      }
+  .services-title {
+    max-width: 295px;
+  }
 }
+
 @media (max-width: 1200px) {
-    .adress_title {
-        font-size: 65px;
-      }
-      .service-flex {
-        gap: 0;
-        justify-content: space-between;
-      }
-      .sertificat-title {
-        font-size: 65px;
-      }
-      .online-reg-btn {
-        padding: 6px 15px 7px 15px;
-      }
-      .online-reg_image {
-        flex-shrink: 2;
-      }
-      .online-reg-title {
-        font-size: 2.8rem;
-      }
-      .reg-left_wrapper {
-        padding: 40px 4%;
-      }
-      
+  .adress_title {
+    font-size: 65px;
+  }
+
+  .service-flex {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .sertificat-title {
+    font-size: 65px;
+  }
+
+  .online-reg-btn {
+    padding: 6px 15px 7px 15px;
+  }
+
+  .online-reg_image {
+    flex-shrink: 2;
+    flex-grow: 0;
+  }
+
+  .online-reg-title {
+    font-size: 2.8rem;
+  }
+
+  .reg-left_wrapper {
+    padding: 40px 4%;
+    /* margin-right: 6vw; */
+  }
+
 }
 
 @media (max-width: 1056px) {
-    .header-nav {
-        display: none;
-    }
+  .header-nav {
+    display: none;
+  }
 
-    .burger-btn {
-        display: block;
-    }
+  .burger-btn {
+    display: block;
+  }
 
-    .burger-btn {
-        margin-left: 0;
-    }
+  .burger-btn {
+    margin-left: 0;
+  }
 
-    .search-btn_contain {
-        display: none;
-    }
-    .sertificat-title {
-        font-size: 58px;
-      }
-      .online-reg-form._white .form-input-name {
-        padding: 0;
-      }
-      .online-reg-form .form-input-name {
-        padding: 0;
-      }
-      .online-reg-form .form-input-email {
-        padding: 0;
-        margin-top: 25px;
-      }
-      .checkbox-square {
-        margin-top: 25px;
-      }
-      .online-reg-form .form-input-phone {
-        padding: 0;
-      }
-      .btn-flex {
-        gap: 25px;
-        flex-direction: column;
-      }
-      .online-reg-btn {
-        margin: 0;
-        
-      }
-      .btn-flex {
-        align-items: flex-start;
-      }
-      .online-reg-confirm {
-        max-width: 293px;
-      }
+  .search-btn_contain {
+    display: none;
+  }
+
+  .sertificat-title {
+    font-size: 58px;
+  }
+
+  .online-reg-form._white .form-input-name {
+    padding: 0;
+  }
+
+  .online-reg-form .form-input-name {
+    padding: 0;
+  }
+
+  .online-reg-form .form-input-email {
+    padding: 0;
+    margin-top: 25px;
+  }
+
+  .checkbox-square {
+    margin-top: 25px;
+  }
+
+  .online-reg-form .form-input-phone {
+    padding: 0;
+  }
+
+  .btn-flex {
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .online-reg-btn {
+    margin: 0;
+
+  }
+
+  .btn-flex {
+    align-items: flex-start;
+  }
+
+  .online-reg-confirm {
+    max-width: 293px;
+  }
 
 }
+
 @media (max-width: 768px) {
-    .service-flex {
-        gap: 0;
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .menu-select {
-        width: 189px;
-      }
-      .online-reg-title { 
-        font-size: 30px;
-      }
-      .checkbox-button__label1 {
-        margin-right: 30px;
-        font-size: 13px;
-      }
-      .checkbox-button {
-        font-size: 13px;
-      }
-      .btn-flex {
-        margin-top: 34px;
-      }
-      .online-reg-form .form-input-phone {
-        margin-top: 10px;
-      }
-      .reg-left_wrapper {
-        padding: 30px 4%;
-      }
+  .service-flex {
+    gap: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-select {
+    width: 189px;
+  }
+
+  .online-reg-title {
+    font-size: 30px;
+  }
+
+  .checkbox-button__label1 {
+    margin-right: 30px;
+    font-size: 13px;
+  }
+
+  .checkbox-button {
+    font-size: 13px;
+  }
+
+  .btn-flex {
+    margin-top: 34px;
+  }
+
+  .online-reg-form .form-input-phone {
+    margin-top: 10px;
+  }
+
+  .reg-left_wrapper {
+    padding: 30px 4%;
+  }
 }
 
 
 @media (max-width: 567px) {
-    .container {
-        padding-right: 25px;
-        padding-left: 25px;
+  .container {
+    padding-right: 25px;
+    padding-left: 25px;
 
-        position: relative;
-    }
+    position: relative;
+  }
 
-    .header {
-        padding-top: 12px;
-    }
+  .header {
+    padding-top: 12px;
+  }
 
-    .logo {
-        display: block;
-        background: url("../img/logo_mobile.svg");
-        width: 46px;
-        height: 40.89px;
-        margin-right: 0;
-    }
+  .logo {
+    display: block;
+    background: url("../img/logo_mobile.svg");
+    width: 46px;
+    height: 40.89px;
+    margin-right: 0;
+  }
 
-    .header-flex {
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
+  .header-flex {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 
-    .header-box {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .header-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .burger-btn {
-        background: url('../img/burger_menu-black.svg');
-        background-size: cover;
-        width: 24px;
-        height: 9.5px;
-        position: absolute;
-        right: 6%;
-        top: 12px;
-    }
+  .burger-btn {
+    background: url('../img/burger_menu-black.svg');
+    background-size: cover;
+    width: 24px;
+    height: 9.5px;
+    position: absolute;
+    right: 6%;
+    top: 12px;
+  }
 
-    .drop-down {
-        margin-top: 6px;
-    }
-    .menu-select {
-        color: black;
-        font-size: 12px;
-        width: 146px;
-      }
-      .service-flex {
-        margin-top: 22px;
-      }
-      .sertificat-title {
-        font-size: 58px;
-        color: black;
-        max-width: 100%;
-        font-size: 30px;
-        margin: 0 auto;
-      }
-      .online-reg_image {
-        display: none;
-      }
-      .reg-left_wrapper {
-        padding: 30px;
-      }
-      .online-reg-confirm {
-        max-width: 100%;
-font-size: 12px;
-      }
-      .form-input-email {
-        display: block;
-      }
-      .online-reg-confirm {
-        display: none;
-      }
-      .online-reg-moby {
-        display: block;
-        margin-bottom: 35px;
-      }
-      .certificate-form .online-reg-title {
-        margin-bottom: 10px;
-      }
-      .footer-line {
-        display: none;
-      }
-      
+  .drop-down {
+    margin-top: 6px;
+  }
+
+  .menu-select {
+    color: black;
+    font-size: 12px;
+    width: 146px;
+  }
+
+  .service-flex {
+    margin-top: 22px;
+  }
+
+  .sertificat-title {
+    font-size: 58px;
+    color: black;
+    max-width: 100%;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+
+  .online-reg_image {
+    display: none;
+  }
+
+  .reg-left_wrapper {
+    padding: 30px;
+  }
+
+  .online-reg-confirm {
+    max-width: 100%;
+    font-size: 12px;
+  }
+
+  .form-input-email {
+    display: block;
+  }
+
+  .online-reg-confirm {
+    display: none;
+  }
+
+  .online-reg-moby {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  .certificate-form .online-reg-title {
+    margin-bottom: 10px;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+  .checkbox-button__label1 {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+
 
 }
