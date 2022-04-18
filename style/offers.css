@@ -9,8 +9,8 @@ img {
   }
   
   .container {
-    max-width: 100%;
-    padding: 0 40px;
+    max-width: 1248px;
+    margin: 0 auto;
   }
   
   .header {
@@ -19,16 +19,29 @@ img {
     padding-left: 3.5%;
   }
   .service-flex {
-    gap: 17.4vw;
+    gap: 14.4vw;
+    margin-top: 77px;
+  }
+  .header-nav {
+    margin-right: 5px;
+    gap: 2.5vw;
+  }
+  .services-title {
+    flex-basis: auto;   
+  }
+  .services-descriprion {
+    flex-basis: auto;
+    max-width: 331px;
+    margin-top: 43px;
   }
   .current-offers_grid {
     display: grid;
     /* grid-template-columns: 30% 30% 30%; */
     /* grid-template-rows: 580px 580px; */
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1198px;
-margin-left: 4.5%;
-gap: 90px 50px;
+    max-width: 1250px;
+
+gap: 90px 0;
 padding-top: 110px;
 padding-bottom: 100px;
   }
@@ -53,21 +66,41 @@ padding-bottom: 100px;
     border-radius: 50%;
     right: -49px;
 bottom: 37px;
+z-index: 3;
   }
-  .offers_image {
-    background-image: url(../img/offers1.png);
+  .offers__image {
     background-size: contain;
     background-repeat: no-repeat;
     height: 378px;
+    /* height: 26.4vw; */
     margin-bottom: 32px;
     position: relative;
   }
+  .offers__image_1 {    
+    background-image: url(../img/offers1.png);
+  }
+  .offers__image_2 {
+    background-image: url('../img/offers2.png');  
+  }
+  .offers__image_3 {
+    background-image: url('../img/offers3.png');  
+  }
+  .offers__image_4 {
+    background-image: url('../img/offers4.png');  
+  }
+  .offers__image_5 {
+    background-image: url('../img/offers5.png');  
+  } 
   .offers_card {
     max-width: 303px;
   }
   
   
   @media (max-width: 1360px) {
+    .container {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
     .header-nav_link {
         font-size: 13px;
       }
@@ -80,6 +113,7 @@ bottom: 37px;
     @media (max-width: 1200px) {
       .current-offers_grid {
         margin: 0 auto;
+        gap: 70px 0;
       }
     }
     @media (max-width: 1130px) {
@@ -100,9 +134,25 @@ bottom: 37px;
           }
     }
     @media (max-width: 1200px) {
+      .offers_card {
+        max-width: 260px;
+      }
+      .offers__sale_s {
+        bottom: 32px;
+        width: 90px;
+height: 90px;
+font-size: 36px;
+      }
+      .offers__image {
+        height: 325px;
+      }
+    }
+    @media (max-width: 1040px) {
       .current-offers_grid {
         grid-template-columns: repeat(2, 1fr);
-
+      }
+      .offers_card {
+        max-width: 260px;
       }
     }
     @media (max-width: 955px) {
@@ -125,12 +175,46 @@ bottom: 37px;
             margin-left: 0;
             margin-left: 5%;
           }
+          .offers__image {
+            height: 300px;
+            margin-bottom: 17px;
+          }
+          .offers_card {
+            max-width: 82%;
+            margin: auto;
+          }
+          .offers__sale_s {
+            width: 77px;
+            height: 77px;
+            font-size: 27px;
+          }
+          .offers-card-title {
+            min-height: 43px;
+          font-size: 18px;
+          line-height: 117%;
+          margin-bottom: 10px;
+          }
+          .offers-card-text {
+            
+          font-size: 11px;
+          line-height:  145% ;
+          }
+          .current-offers_grid {
+            gap: 60px 0;
+            padding-top: 70px;
+padding-bottom: 70px;
+          }
     }
     @media (max-width: 567px) {
         .container {
             padding-right: 25px;
             padding-left: 25px;
             position: relative;
+          }
+          .header {
+            padding-top: 11px;
+            padding-right: 0;
+            padding-left: 0;
           }
           .header-flex {
             justify-content: center;
@@ -163,15 +247,43 @@ bottom: 37px;
             margin-right: 0;
           }
           .service-flex {
-            margin-top: 22px;
+            margin-top: 29px;
           }
           .services-title {
             text-align: center;
-          }
-    }
-    /* @media (max-width: 505px) {
-        .services-title {
             font-size: 30px;
           }
-        
-    } */
+          .offers__image {
+            height: 275px;
+            margin-bottom: 22px;
+            background-position: center;
+          }
+          .current-offers_grid {
+            grid-template-columns: repeat(1, 1fr); 
+            margin: 0 auto;
+            max-width: 87%;
+            gap: 40px 0;
+            padding-top: 37px;
+padding-bottom: 40px;
+          }
+
+         
+          .offers-card-title {
+            
+            font-size: 21px;
+  line-height: 110%;
+          }
+          .offers-card-text {
+            font-size: 12px;
+            line-height:  150%;
+          }
+          .offers__sale_s {
+            width: 85px;
+            height: 85px;
+            font-size: 31px;
+            bottom: 21px;
+right: inherit;
+left: -34px;
+          }
+         
+    }
