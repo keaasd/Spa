@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="./style/serv-menu-mob.css">
 </head>
 <body>
     <div class="small-bg">
@@ -29,7 +30,7 @@
                             <div class="drop-down_pin">
                                 <img src="./img/pin.svg" class="pin">
                             </div>
-                            <select class="menu-select">
+                            <select class="menu-select _desk">
                                 <option value="">в Павшинской пойме</option>
                                 <!-- <option value="down">Проспект Маршала Жукова</option> -->
                             </select>
@@ -79,14 +80,34 @@
                <li><a href="complex-treatments.html" class="category-item">Комплексные&nbsp;уходы</a></li>
                <li><a href="peelings.html" class="category-item">Пилинги</a></li>   
             </ul>
-            <a href="tel:+79250332100" class="btn-phone-green-black _spa-2"></a>
+
+          <!-- MOBILE DROP-DOWN MENU Categories -->
+            <div class="drop-down-categories"> 
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="services.html" class="menu__link disabled">Тайские&nbsp;уходы</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="hamam.html" class="sub-menu__link">Хамам</a></li>
+                                <li><a href="SPA-programs.html" class="sub-menu__link">SPA&nbsp;программы</a></li>
+                                <li><a href="spa-for-two.html" class="sub-menu__link">SPA&nbsp;программы&nbsp;для&nbsp;двоих</a></li>
+                                <li><a href="spa-facial.html" class="sub-menu__link">SPA&nbsp;уходы&nbsp;для&nbsp;лица</a></li>
+                                <li><a href="slimming.html" class="sub-menu__link">Коррекция&nbsp;фигуры&nbsp;и&nbsp;похудение</a></li>
+                                <li><a href="complex-treatments.html" class="sub-menu__link">Комплексные&nbsp;уходы</a></li>
+                                <li><a href="peelings.html" class="sub-menu__link">Пилинги</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+             </div>
+            <a href="tel:+79250332100" class="btn-phone-green-black _serv"></a>
         </div>
     </section>
     <section class="SPA-cards">
        <div class="container">
         <ul class="cards-list-grid">
-            <li class="card-item">
-                <div class="card-item-pic card-item-pic1">
+            <li class="card-item _serv">
+                <div class="card-item-pic">
                     <img src="./img/yoga.png" alt="">
                 </div>
                 <div class="col-right">
@@ -96,26 +117,24 @@
                         <span class="price">2100 ₽</span>
                     </div>
                     <div class="line"></div>
-                    <p class="card-text">Представьте, что ваш позвоночник удлиняется, таз и&nbsp;плечи раскрываются&nbsp;&mdash; и&nbsp;все это без единого усилия с&nbsp;вашей стороны. Вы&nbsp;лишь расслабляетесь. Тайская йога, или, как ее&nbsp;еще называют, &laquo;пассивная&raquo; йога&nbsp;&mdash; это определенный вид работы с&nbsp;телом, древнейшее искусство </p>
-                    <div class="text-hidden">
-                        <div class="show-more-text">
-                            <p>исцеления, появившееся еще во&nbsp;времена Будды. Эта тайская методика очень глубока и&nbsp;сочетает работу на&nbsp;уровне всех оболочек тела&nbsp;&mdash; физической, энергетической, эмоциональной и&nbsp;духовной. Мастер старается побудить тело того, с кем он работает, к самовосстановлению и саморегенерации. Выполняется в удобной одежде, лежа на мате. Цель – профилактика и оздоровление всего организма через снятие физических блоков и психологического напряжения.</p>
-                                <h4 class="result">Результат:</h4>
-                                <ul class="show-more-list">
-                                    <li>&mdash;&nbsp;снимает стресс и хроническую усталость</li>
-                                    <li>&mdash;&nbsp;улучшает кровообращение</li>
-                                    <li>&mdash;&nbsp;снимает мышечную усталость и увеличивает подвижность суставов</li>
-                                </ul>
-                        </div>
-                       
-                       
-                        <a href="#" class="show-more-btn">подробнее</a>
-                    </div>
                    
                 </div>
+                <p class="card-text">Представьте, что ваш позвоночник удлиняется, таз и&nbsp;плечи раскрываются&nbsp;&mdash; и&nbsp;все это без единого усилия с&nbsp;вашей стороны. Вы&nbsp;лишь расслабляетесь. Тайская йога, или, как ее&nbsp;еще называют, &laquo;пассивная&raquo; йога&nbsp;&mdash; это определенный вид работы с&nbsp;телом, древнейшее искусство </p>
+                <div class="text-hidden _1">
+                    <div class="show-more-text">
+                        <p>исцеления, появившееся еще во&nbsp;времена Будды. Эта тайская методика очень глубока и&nbsp;сочетает работу на&nbsp;уровне всех оболочек тела&nbsp;&mdash; физической, энергетической, эмоциональной и&nbsp;духовной. Мастер старается побудить тело того, с кем он работает, к самовосстановлению и саморегенерации. Выполняется в удобной одежде, лежа на мате. Цель – профилактика и оздоровление всего организма через снятие физических блоков и психологического напряжения.</p>
+                            <h4 class="result">Результат:</h4>
+                            <ul class="show-more-list">
+                                <li>&mdash;&nbsp;снимает стресс и хроническую усталость</li>
+                                <li>&mdash;&nbsp;улучшает кровообращение</li>
+                                <li>&mdash;&nbsp;снимает мышечную усталость и увеличивает подвижность суставов</li>
+                            </ul>
+                    </div>
+                    <a href="#" class="show-more-btn _1">подробнее</a>
+                </div>
             </li>
-            <li class="card-item">
-                <div class="card-item-pic card-item-pic2">
+            <li class="card-item _serv">
+                <div class="card-item-pic">
                     <img src="./img/classical.png" alt="">
                 </div>
                 
@@ -136,24 +155,25 @@
                         <span class="price">4000 ₽</span>
                     </div>
                     <div class="line"></div>
-                    <p class="card-text">Техника тайской процедуры сочетает надавливание, скручивание и&nbsp;растягивание и&nbsp;основывается на&nbsp;воздействии с&nbsp;помощью</p>
-                    <div class="text-hidden">
-                       <div class="show-more-text">
-                        <p>стоп, локтей и&nbsp;кистей. При&nbsp;этом нагрузка на&nbsp;различные группы мышц сравнима&nbsp;с посещением спортзала. Выполняется в удобной одежде, лежа на мате.</p>
-                        <h4 class="result">Результат:</h4>
-                        <ul class="show-more-list">
-                            <li>&mdash;&nbsp;снимает стресс и хроническую усталость</li>
-                            <li>&mdash;&nbsp;улучшает кровообращение</li>
-                            <li>&mdash;&nbsp;влияет на ускорение обмена веществ</li>
-                            <li>&mdash;&nbsp;снимает мышечную усталость и увеличивает подвижность суставов</li>
-                        </ul>
-                       </div>
-                        <a href="#" class="show-more-btn">подробнее</a>
-                    </div>
+                  
+                </div>
+                <p class="card-text">Техника тайской процедуры сочетает надавливание, скручивание и&nbsp;растягивание и&nbsp;основывается на&nbsp;воздействии с&nbsp;помощью</p>
+                <div class="text-hidden _2">
+                   <div class="show-more-text">
+                    <p>стоп, локтей и&nbsp;кистей. При&nbsp;этом нагрузка на&nbsp;различные группы мышц сравнима&nbsp;с посещением спортзала. Выполняется в удобной одежде, лежа на мате.</p>
+                    <h4 class="result">Результат:</h4>
+                    <ul class="show-more-list">
+                        <li>&mdash;&nbsp;снимает стресс и хроническую усталость</li>
+                        <li>&mdash;&nbsp;улучшает кровообращение</li>
+                        <li>&mdash;&nbsp;влияет на ускорение обмена веществ</li>
+                        <li>&mdash;&nbsp;снимает мышечную усталость и увеличивает подвижность суставов</li>
+                    </ul>
+                   </div>
+                    <a href="#" class="show-more-btn _2">подробнее</a>
                 </div>
             </li>
-            <li class="card-item">
-                <div class="card-item-pic card-item-pic3">
+            <li class="card-item _serv">
+                <div class="card-item-pic">
                     <img src="./img/oil-treatment.png" alt="">
                 </div>
                 
@@ -173,13 +193,12 @@
                         <span class="time">120 минут</span>
                         <span class="price">4000 ₽</span>
                     </div>
-                    <div class="line"></div>
-                    <p class="card-text">Расслабляющая процедура с&nbsp;использованием ароматических масел. Имеет расслабляющее, успокаивающее и&nbsp;восстанавливающее действие на&nbsp;нервную систему. Поэтому ее&nbsp;можно считать идеальным средством в борьбе со стрессом.</p>
-                    
+                    <div class="line"></div>                    
                 </div>
+                <p class="card-text">Расслабляющая процедура с&nbsp;использованием ароматических масел. Имеет расслабляющее, успокаивающее и&nbsp;восстанавливающее действие на&nbsp;нервную систему. Поэтому ее&nbsp;можно считать идеальным средством в борьбе со стрессом.</p>
             </li>
-            <li class="card-item">
-                <div class="card-item-pic card-item-pic4">
+            <li class="card-item _serv">
+                <div class="card-item-pic">
                    <img src="./img/oil-sport.png" alt="">
                 </div>
                
@@ -200,15 +219,16 @@
                         <span class="price">4000 ₽</span>
                     </div>
                     <div class="line"></div>
-                    <p class="card-text">Процедура незаменима для профессиональных атлетов и&nbsp;людей,</p>
-                    <div class="text-hidden">
-                        <p class="show-more-text">ведущих активный образ жизни. В&nbsp;результате интенсивного воздействия ускоряется восстановление поврежденных мышц, тело становится более гибким и выносливым.</p>
-                        <a href="#" class="show-more-btn">подробнее</a>
-                    </div>
+                   
+                </div>
+                <p class="card-text">Процедура незаменима для профессиональных атлетов и&nbsp;людей,</p>
+                <div class="text-hidden _3">
+                    <p class="show-more-text">ведущих активный образ жизни. В&nbsp;результате интенсивного воздействия ускоряется восстановление поврежденных мышц, тело становится более гибким и выносливым.</p>
+                    <a href="#" class="show-more-btn">подробнее</a>
                 </div>
             </li>
-            <li class="card-item">
-                <div class="card-item-pic card-item-pic5">
+            <li class="card-item _serv">
+                <div class="card-item-pic">
                     <img src="./img/4hands.png" alt="">
                 </div>
                
@@ -218,13 +238,12 @@
                         <span class="time">60 минут</span>
                         <span class="price">4600 ₽</span>
                     </div>
-                    <div class="line"></div>
-                    <p class="card-text">Синхронное исполнение комплексного ухода с&nbsp;арома-маслом двумя мастерами. Благодаря интенсивному воздействию, процедура позволяет телу максимально быстро избавиться от&nbsp;усталости</p>
-                    
+                    <div class="line"></div>                    
                 </div>
+                <p class="card-text">Синхронное исполнение комплексного ухода с&nbsp;арома-маслом двумя мастерами. Благодаря интенсивному воздействию, процедура позволяет телу максимально быстро избавиться от&nbsp;усталости</p>
             </li>
-            <li class="card-item">
-                <div class="card-item-pic card-item-pic6">
+            <li class="card-item _serv">
+                <div class="card-item-pic">
                     <img src="./img//neck.png" alt="">
                 </div>
                 
@@ -235,15 +254,16 @@
                         <span class="price">2500 ₽</span>
                     </div>
                     <div class="line"></div>
-                    <p class="card-text">Воротниковая область – одно из самых малоподвижных мест нашего тела. Поэтому именно в ней часто возникают застойные явления, защемления позвонков, появляются отечность и боли.</p>
-                    <div class="text-hidden">
-                        <p class="show-more-text">Результатом процедуры является улучшение кровообращения, снятие напряжения и зажимов. Проработка данной области позволяет избавиться от головных и спинных болей, бессонницы, снимает отечности и припухлости.</p>
-                        <a href="#" class="show-more-btn">подробнее</a>
-                    </div>
+                   
+                </div>
+                <p class="card-text">Воротниковая область – одно из самых малоподвижных мест нашего тела. Поэтому именно в ней часто возникают застойные явления, защемления позвонков, появляются отечность и боли.</p>
+                <div class="text-hidden _4">
+                    <p class="show-more-text">Результатом процедуры является улучшение кровообращения, снятие напряжения и зажимов. Проработка данной области позволяет избавиться от головных и спинных болей, бессонницы, снимает отечности и припухлости.</p>
+                    <a href="#" class="show-more-btn">подробнее</a>
                 </div>
             </li>
-            <li class="card-item">
-                <div class="card-item-pic card-item-pic7">
+            <li class="card-item _serv">
+                <div class="card-item-pic">
                     <img src="./img/facial.png" alt="">
                 </div>
                 
@@ -254,12 +274,13 @@
                         <span class="price">1500 ₽</span>
                     </div>
                     <div class="line"></div>
-                    <p class="card-text">Способствует расслаблению мышц лица и&nbsp;разглаживанию морщин.
-                        В&nbsp;области головы находятся жизненно важные точки, которые отвечают за&nbsp;состояние нервной системы и&nbsp;кровеносных сосудов. Их&nbsp;стимуляция поможет снять усталость и&nbsp;раздражение, избавит от&nbsp;головной боли и&nbsp;активизирует рост волос.</p>
+                   
                 </div>
+                <p class="card-text">Способствует расслаблению мышц лица и&nbsp;разглаживанию морщин.
+                    В&nbsp;области головы находятся жизненно важные точки, которые отвечают за&nbsp;состояние нервной системы и&nbsp;кровеносных сосудов. Их&nbsp;стимуляция поможет снять усталость и&nbsp;раздражение, избавит от&nbsp;головной боли и&nbsp;активизирует рост волос.</p>
             </li>
-            <li class="card-item">
-                <div class="card-item-pic card-item-pic8">
+            <li class="card-item _serv">
+                <div class="card-item-pic">
                     <img src="./img/herbal.png" alt="">
                 </div>
                
@@ -270,8 +291,9 @@
                         <span class="price">2700 ₽</span>
                     </div>
                     <div class="line"></div>
-                    <p class="card-text">Процедура проводится с помощью горячих мешочков с травяными сборами. Тайские травы обладают хорошим проникающим действием. Уход оказывает глубокое расслабляющее, прогревающее и оздоравливающее воздействие, быстро восстанавливает организм после болезни, стрессов или физических нагрузок.</p>
+                   
                 </div>
+                <p class="card-text">Процедура проводится с помощью горячих мешочков с травяными сборами. Тайские травы обладают хорошим проникающим действием. Уход оказывает глубокое расслабляющее, прогревающее и оздоравливающее воздействие, быстро восстанавливает организм после болезни, стрессов или физических нагрузок.</p>
             </li>
         </ul>
        </div>
@@ -322,12 +344,13 @@
         <div class="modal_window">
           <div class="modal_box">
             <button onclick="closeModal()" class="header-modal-close"></button>
-            <div class="modal_logo"></div>
+            <!-- <div class="modal_logo"></div> -->
+            <a href="index.html"><img src="./img/logo_mobile.svg" alt="лого"></a>
             <div class="drop-down drop-down_mobile-menu">
                 <div class="drop-down_pin">
                   <img src="./img/pin.svg" class="pin" />
                 </div>
-                <select class="menu-select">
+                <select class="menu-select _index">
                   <option value="">в Павшинской пойме</option>
                   <!-- <option value="down">Проспект Маршала Жукова</option> -->
                 </select>
@@ -356,8 +379,9 @@
             </p>
             </div>
         </div>
-      </div>
+    </div>
    
     <script src="script.js"></script>
+    <script src="custom-select.js"></script>
 </body>
 </html>

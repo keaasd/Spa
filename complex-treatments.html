@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="./style/serv-menu-mob.css">
 </head>
 <body>
     <div class="small-bg">
@@ -29,7 +30,7 @@
                             <div class="drop-down_pin">
                                 <img src="./img/pin.svg" class="pin">
                             </div>
-                            <select class="menu-select">
+                            <select class="menu-select _desk">
                                 <option value="">в Павшинской пойме</option>
                                 <!-- <option value="down">Проспект Маршала Жукова</option> -->
                             </select>
@@ -79,13 +80,32 @@
                <li><a href="complex-treatments.html" class="category-item active">Комплексные уходы</a></li>
                <li><a href="peelings.html" class="category-item">Пилинги</a></li>   
             </ul>
-            <a href="tel:+79250332100" class="btn-phone-green-black"></a>
+              <!-- MOBILE DROP-DOWN MENU Categories -->
+              <div class="drop-down-categories"> 
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="complex-treatments.html" class="menu__link disabled">Комплексные&nbsp;уходы</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="services.html" class="sub-menu__link">Тайские&nbsp;уходы</a></li>
+                                <li><a href="hamam.html" class="sub-menu__link">Хамам</a></li>
+                                <li><a href="SPA-programs.html" class="sub-menu__link">SPA&nbsp;программы</a></li>
+                                <li><a href="spa-for-two.html" class="sub-menu__link">SPA&nbsp;программы&nbsp;для&nbsp;двоих</a></li>
+                                <li><a href="spa-facial.html" class="sub-menu__link">SPA&nbsp;уходы&nbsp;для&nbsp;лица</a></li>
+                                <li><a href="slimming.html" class="sub-menu__link">Коррекция&nbsp;фигуры&nbsp;и&nbsp;похудение</a></li>
+                                <li><a href="peelings.html" class="sub-menu__link">Пилинги</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+             </div>
+            <a href="tel:+79250332100" class="btn-phone-green-black _complex"></a>
         </div>
     </section>
     <section class="SPA-cards">
        <div class="container">
         <ul class="cards-list-grid">
-            <div class="card-item _hamam">
+            <div class="card-item _complex">
                 <div class="card-item-pic">
                     <img src="./img/thai-herbs.png" alt="Тайские травы">
                 </div>
@@ -100,7 +120,7 @@
                     <p class="card-text">Сочетание тайской ароматической процедуры для спортсменов и процедуры травяными мешочками поможет справиться с бессонницей, улучшит циркуляцию крови, мягко прогреет и расслабит мышцы. Такой комплекс процедур приводит к оздоровлению и максимально быстрой релаксации.</p>
                 </div>
             </div>
-            <div class="card-item _hamam">
+            <div class="card-item _complex">
                 <div class="card-item-pic">
                     <img src="./img/life-energy.png" alt="Жизненная энергия">
                 </div>
@@ -171,7 +191,48 @@
                 <div class="drop-down_pin">
                   <img src="./img/pin.svg" class="pin" />
                 </div>
-                <select class="menu-select">
+                <select class="menu-select _index">
+                  <option value="">в Павшинской пойме</option>
+                  <!-- <option value="down">Проспект Маршала Жукова</option> -->
+                </select>
+              </div>
+          </div>
+  
+          <div class="burger-link">
+            <a class="modal_link" href="services.html">Услуги</a>
+            <a class="modal_link" href="gallery.html">Галерея</a>
+            <a class="modal_link" href="offers.html">Акции</a>
+            <a class="modal_link" href="certificate.html">сертификаты</a>
+            <a class="modal_link" href="contacts.html">Контакты</a>
+          </div>
+          <form class="search-box search-box_mobile-menu" action="" method="get">
+                <input class="search-txt search-txt_mobile-menu" name="" placeholder="введите слово или фразу" type="search">
+                <button class="search-btn search-btn_mobile-menu" type="submit"></button>
+          </form>
+          <div class="mobile_footer">
+            <ul class="footer__social_moby">
+              <li><a href="#" class="social_mobile fb">facebook</a></li>
+              <li><a href="#" class="social_mobile insta">instagram</a></li>
+              <li><a href="#" class="social_mobile trip">tripadviser</a></li>
+            </ul>
+            <p class="copyright_mobile">
+              &copy;&nbsp;2021&nbsp;Thai&nbsp;Smile&nbsp;Spa
+            </p>
+            </div>
+        </div>
+      </div>
+          <!-- мобильное меню  -->
+    <div class="modal__mb" id="modal__mb">
+        <div class="modal_window">
+          <div class="modal_box">
+            <button onclick="closeModal()" class="header-modal-close"></button>
+            <!-- <div class="modal_logo"></div> -->
+            <a href="index.html"><img src="./img/logo_mobile.svg" alt="лого"></a>
+            <div class="drop-down drop-down_mobile-menu">
+                <div class="drop-down_pin">
+                  <img src="./img/pin.svg" class="pin" />
+                </div>
+                <select class="menu-select _desk">
                   <option value="">в Павшинской пойме</option>
                   <!-- <option value="down">Проспект Маршала Жукова</option> -->
                 </select>
@@ -202,5 +263,6 @@
         </div>
       </div>
     <script src="script.js"></script>
+    <script src="custom-select.js"></script>
 </body>
 </html>

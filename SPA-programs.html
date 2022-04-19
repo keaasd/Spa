@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="./style/serv-menu-mob.css">
 </head>
 <body>
     <div class="small-bg">
@@ -29,7 +30,7 @@
                             <div class="drop-down_pin">
                                 <img src="./img/pin.svg" class="pin">
                             </div>
-                            <select class="menu-select">
+                            <select class="menu-select _desk">
                                 <option value="">в Павшинской пойме</option>
                                 <!-- <option value="down">Проспект Маршала Жукова</option> -->
                             </select>
@@ -79,17 +80,37 @@
                <li><a href="complex-treatments.html" class="category-item">Комплексные уходы</a></li>
                <li><a href="peelings.html" class="category-item">Пилинги</a></li>   
             </ul>
-            <a href="tel:+79250332100" class="btn-phone-green-black _spa-2"></a>
+              <!-- MOBILE DROP-DOWN MENU Categories -->
+              <div class="drop-down-categories"> 
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="SPA-programs.html" class="menu__link disabled">SPA&nbsp;программы</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="services.html" class="sub-menu__link">Тайские&nbsp;уходы</a></li>
+                                <li><a href="hamam.html" class="sub-menu__link">Хамам</a></li>
+                                
+                                <li><a href="spa-for-two.html" class="sub-menu__link">SPA&nbsp;программы&nbsp;для&nbsp;двоих</a></li>
+                                <li><a href="spa-facial.html" class="sub-menu__link">SPA&nbsp;уходы&nbsp;для&nbsp;лица</a></li>
+                                <li><a href="slimming.html" class="sub-menu__link">Коррекция&nbsp;фигуры&nbsp;и&nbsp;похудение</a></li>
+                                <li><a href="complex-treatments.html" class="sub-menu__link">Комплексные&nbsp;уходы</a></li>
+                                <li><a href="peelings.html" class="sub-menu__link">Пилинги</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+             </div>
+            <a href="tel:+79250332100" class="btn-phone-green-black"></a>
         </div>
     </section>
     <section class="SPA-cards">
        <div class="container">
         <ul class="cards-list-grid cards-list-grid_spa-prog">
-            <li class="card-item">
+            <li class="card-item _spa">
                 <div class="card-item-pic">
                     <img src="./img/mango.png" alt="">
                 </div>
-                <div class="col-right">
+                <div class="col-right-wrap">
                     <h3 class="card-title">Сочное манго</h3>
                     <div class="time-price">
                         <span class="time">90 минут</span>
@@ -101,34 +122,35 @@
                         <span class="price">4700 ₽</span>
                     </div>
                     <div class="line"></div>
-                
+                </div>
+                <div class="card-text-box">
                     <p class="card-text">Расслабляющая спа-программа, направленная на восстановление жизненной энергии, повышение эластичности и упругости кожи. Подготовительный этап включает в себя очищение нежным ароматным скрабом. Он усиливает регенерацию клеток и способствует деликатному обновлению и выравниванию кожного покрова. Массаж с натуральным тайским маслом наполнит тело живительной силой, увлажнит кожу, снимет</p>
                     <div class="text-hidden">
-                        <div class="show-more-text">
-                            <p>напряжение с мышц, устранит беспокойства и оставит после себя тонкую ароматную вуаль на коже. Благоухая дивными эфирами, вы будете чувствовать себя как после отдыха на тропическом острове.</p>
-                            <h4 class="result">Этапы процедуры:</h4>
-                            <ul class="show-more-list">
-                                <li>&mdash;&nbsp;Пилинг «Манго»</li>
-                                <li>&mdash;&nbsp;Ароматическая ойл-процедура с теплым маслом манго</li>
-                            </ul>
-                        </div>
-                       
-                        <a href="#" class="show-more-btn">подробнее</a>
+                            <div class="show-more-text">
+                                <p>напряжение с мышц, устранит беспокойства и оставит после себя тонкую ароматную вуаль на коже. Благоухая дивными эфирами, вы будете чувствовать себя как после отдыха на тропическом острове.</p>
+                                <h4 class="result">Этапы процедуры:</h4>
+                                <ul class="show-more-list">
+                                    <li>&mdash;&nbsp;Пилинг «Манго»</li>
+                                    <li>&mdash;&nbsp;Ароматическая ойл-процедура с теплым маслом манго</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="show-more-btn">подробнее</a>
                     </div>
                 </div>
             </li>
-            <li class="card-item">
+            <li class="card-item _spa">
                 <div class="card-item-pic">
                     <img src="./img/wine.png" alt="">
                 </div>
-                <div class="col-right">
+                <div class="col-right-wrap">
                     <h3 class="card-title">Терпкое вино</h3>
-                   
                     <div class="time-price">
                         <span class="time">120 минут</span>
                         <span class="price">5000 ₽</span>
                     </div>
                     <div class="line"></div>
+                </div>
+                <div class="card-text-box">
                     <p class="card-text">Программа разработана специально для ухода за зрелой кожей лица и тела.
                         Нежная паста для пилинга содержит косточки и масло красного винограда, которые смягчают и выравнивают рельеф кожи. Плотная и насыщенная маска для тела содержит экстракт вина с высокой концентрацией антиоксидантов, которые замедляют процессы старения клеток кожи, а полифенолы предотвращают преждевременное разрушение волокон коллагена, структурного белка, отвечающего за эластичность, упругость и увлажненность кожи.</p>
                     <div class="text-hidden">
@@ -142,16 +164,15 @@
                                     <li>&mdash;&nbsp;Ароматическая ойл-процедура с питательным кремом</li>
                                 </ul>
                         </div>
-                       
                         <a href="#" class="show-more-btn">подробнее</a>
                     </div>
                 </div>
             </li>
-            <li class="card-item">
+            <li class="card-item _spa">
                 <div class="card-item-pic">
                     <img src="./img/coconut.png" alt="">
                 </div>
-                <div class="col-right">
+                <div class="col-right-wrap">
                     <h3 class="card-title">Питательный кокос</h3>
                     <div class="time-price">
                         <span class="time">90 минут</span>
@@ -162,8 +183,9 @@
                         <span class="time">120 минут</span>
                         <span class="price">4700 ₽</span>
                     </div>
-                    
                     <div class="line"></div>
+                </div>
+                <div class="card-text-box">
                     <p class="card-text">Глубоко расслабляющий и питательный уход. Пилинг кокосовыми хлопьями мягко очищает и выравнивает кожу. А ароматическая процедура с нежным кокосовым маслом подарит вам ощущение спокойствия и умиротворения. Ваша кожа очищена и увлажнена, гладкая и «шелковая» на ощупь.</p>
                     <div class="text-hidden">
                         <div class="show-more-text">
@@ -173,24 +195,25 @@
                                     <li>&mdash;&nbsp;Ароматическая ойл-процедура с питательным кремом</li>
                                 </ul>
                         </div>
-                        
                         <a href="#" class="show-more-btn">подробнее</a>
                     </div>
                 </div>
+                
             </li>
-            <li class="card-item">
+            <li class="card-item _spa">
                 <div class="card-item-pic">
                     <img src="./img/chocolate.png" alt="">
                 </div>
                 
-                <div class="col-right">
+                <div class="col-right-wrap">
                     <h3 class="card-title card-title3">Шоколадное настроение</h3>
                     <div class="time-price">
                         <span class="time">120 минут</span>
                         <span class="price">4800 ₽</span>
                     </div>
                     <div class="line"></div>
-                   
+                </div>   
+                <div class="card-text-box">
                     <p class="card-text">«Вкусный» уход для всего тела. Направлен на моделирование фигуры, уменьшение целлюлита, подтягивание кожи и мышц. Программа улучшает настроение и поднимает общий тонус. В составе обертывания такие экзотические компоненты, как кофеин, экстракты ламинарии и фукуса, которые активируют обменные процессы, кровообращение, снимают мышечные напряжения. Аромат шоколада активизирует работу головного мозга и такие функции, как внимание и зрительная память.</p>
                     <div class="text-hidden">
                         <div class="show-more-text">
@@ -204,13 +227,14 @@
                         </div>
                         <a href="#" class="show-more-btn">подробнее</a>
                     </div>
-                </div>
+                </div>    
+                
             </li>
-            <li class="card-item">
+            <li class="card-item _spa">
                 <div class="card-item-pic">
                    <img src="./img/silky.png" alt="">
                 </div>
-                <div class="col-right">
+                <div class="col-right-wrap">
                     <h3 class="card-title">Шёлковая кожа</h3>
                     <div class="time-price">
                         <span class="time">90 минут</span>
@@ -222,6 +246,8 @@
                         <span class="price">4700 ₽</span>
                     </div>
                     <div class="line"></div>
+                </div>
+                <div class="card-text-box">
                     <p class="card-text">Легкая спа-программа, направленная на увлажнение и восстановление. Подготовительный этап включает в себя обертывание с применением питательной маски. Ее ингредиенты насытят кожный покров микроэлементами и витаминами, глубоко увлажнят, придадут шелковистость. Завершает ритуал часовой увлажняющий массаж всего тела с тайским маслом.</p>
                     <div class="text-hidden">
                         <div class="show-more-text">
@@ -234,9 +260,8 @@
                         <p class="show-more-text">some hidden text</p>
                         <a href="#" class="show-more-btn">подробнее</a>
                     </div>
-                </div>
+                </div>   
             </li>
-            
         </ul>
        </div>
     </section>
@@ -286,12 +311,13 @@
         <div class="modal_window">
           <div class="modal_box">
             <button onclick="closeModal()" class="header-modal-close"></button>
-            <div class="modal_logo"></div>
+            <!-- <div class="modal_logo"></div> -->
+            <a href="index.html"><img src="./img/logo_mobile.svg" alt="лого"></a>
             <div class="drop-down drop-down_mobile-menu">
                 <div class="drop-down_pin">
                   <img src="./img/pin.svg" class="pin" />
                 </div>
-                <select class="menu-select">
+                <select class="menu-select _index">
                   <option value="">в Павшинской пойме</option>
                   <!-- <option value="down">Проспект Маршала Жукова</option> -->
                 </select>
@@ -323,5 +349,6 @@
       </div>
 
     <script src="script.js"></script>
+    <script src="custom-select.js"></script>
 </body>
 </html>

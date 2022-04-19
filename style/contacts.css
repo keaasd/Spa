@@ -15,11 +15,11 @@
   top: -7%;
 }
 
-.menu-select-big {
+/* .menu-select-big {
   background: transparent;
   color: white;
   border: none;
-}
+} */
 
 
 .header {
@@ -431,7 +431,7 @@
   }
 
   .burger-btn {
-    background: url('../img/burger_menu-black.svg');
+    background: url('../img/burger-green.svg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 16px;

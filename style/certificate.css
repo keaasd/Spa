@@ -243,6 +243,7 @@ input {
     gap: 0;
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 30px;
   }
 
   .menu-select {
@@ -309,7 +310,7 @@ input {
   }
 
   .burger-btn {
-    background: url('../img/burger_menu-black.svg');
+    background: url('../img/burger-green.svg');
     background-size: cover;
     width: 24px;
     height: 9.5px;

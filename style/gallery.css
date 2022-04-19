@@ -115,7 +115,7 @@ img {
 
 .select-big::after {
   content: "";
-  display: block;
+  display: none;
   border-bottom: 1px solid #fff;
   width: 289px;
   position: absolute;
@@ -329,11 +329,11 @@ img {
   .header-nav {
     display: none;
   }
-
+/* 
   .burger-btn {
     display: block;
     margin-left: 2.5vw;
-  }
+  } */
 
   .title-extra-large2 {
     margin-left: 14%;
@@ -457,15 +457,16 @@ img {
     margin-top: 6px;
   }
   .burger-btn {
-    background: url('../img/burger_menu-black.svg');
-      background-size: auto;
+    /* background: url('../img/burger_menu-black.svg');
+    background-size: auto;
     background-size: auto;
     background-size: cover;
     width: 24px;
     height: 9.5px;
     position: absolute;
     right: 6%;
-    top: 12px;
+    top: 12px; */
+
   }
 
   .small-bg {

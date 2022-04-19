@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="./style/serv-menu-mob.css">
    
 </head>
 <body>
@@ -30,7 +31,7 @@
                             <div class="drop-down_pin">
                                 <img src="./img/pin.svg" class="pin">
                             </div>
-                            <select class="menu-select">
+                            <select class="menu-select _desk">
                                 <option value="">в Павшинской пойме</option>
                                 <!-- <option value="down">Проспект Маршала Жукова</option> -->
                             </select>
@@ -80,6 +81,25 @@
                <li><a href="complex-treatments.html" class="category-item">Комплексные уходы</a></li>
                <li><a href="peelings.html" class="category-item">Пилинги</a></li>   
             </ul>
+              <!-- MOBILE DROP-DOWN MENU Categories -->
+              <div class="drop-down-categories"> 
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="spa-facial.html" class="menu__link disabled">SPA&nbsp;уходы&nbsp;для&nbsp;лица</a>
+                            <span class="menu__arrow arrow"></span>
+                            <ul class="sub-menu__list">
+                                <li><a href="services.html" class="sub-menu__link">Тайские&nbsp;уходы</a></li>
+                                <li><a href="hamam.html" class="sub-menu__link">Хамам</a></li>
+                                <li><a href="SPA-programs.html" class="sub-menu__link">SPA&nbsp;программы</a></li>
+                                <li><a href="spa-for-two.html" class="sub-menu__link">SPA&nbsp;программы&nbsp;для&nbsp;двоих</a></li>
+                                <li><a href="slimming.html" class="sub-menu__link">Коррекция&nbsp;фигуры&nbsp;и&nbsp;похудение</a></li>
+                                <li><a href="complex-treatments.html" class="sub-menu__link">Комплексные&nbsp;уходы</a></li>
+                                <li><a href="peelings.html" class="sub-menu__link">Пилинги</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+             </div>
             <a href="tel:+79250332100" class="btn-phone-green-black _spa-2"></a>
         </div>
     </section>
@@ -92,7 +112,7 @@
                 </div>
                 <div class="card-item-text-spa-2">
                     <h3 class="card-title">SPA уходы для лица сделают кожу упругой, подтянутой и бархатистой</h3>
-                    <p class="card-desсription">А так же устранят такие негативные проявления внешнего влияния окружающей среды, как сухость, раздражение и отечность.                    </p>
+                    <p class="card-desсription _facial">А также устранят такие негативные проявления внешнего влияния окружающей среды, как сухость, раздражение и отечность.                    </p>
                 </div>
             </div>
             
@@ -184,12 +204,13 @@
         <div class="modal_window">
           <div class="modal_box">
             <button onclick="closeModal()" class="header-modal-close"></button>
-            <div class="modal_logo"></div>
+            <!-- <div class="modal_logo"></div> -->
+            <a href="index.html"><img src="./img/logo_mobile.svg" alt="лого"></a>
             <div class="drop-down drop-down_mobile-menu">
                 <div class="drop-down_pin">
                   <img src="./img/pin.svg" class="pin" />
                 </div>
-                <select class="menu-select">
+                <select class="menu-select _index">
                   <option value="">в Павшинской пойме</option>
                   <!-- <option value="down">Проспект Маршала Жукова</option> -->
                 </select>
@@ -220,5 +241,6 @@
         </div>
       </div>
     <script src="script.js"></script>
+    <script src="custom-select.js"></script>
 </body>
 </html>
