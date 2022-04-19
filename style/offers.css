@@ -1,7 +1,7 @@
 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 input {
@@ -200,6 +200,83 @@ justify-content: center;
   color: #fff;
   max-width: 339px;
 }
+.green-bg {
+  position: relative;
+}
+.online-reg_box {
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background: #D4D626;
+  box-shadow: inset 0px 0 0 1px #000;
+}
+.reg-left_wrapper {
+  padding: 64px 4% 54px 4%;
+  flex-grow: 1;
+  margin-right: 8vw;
+  position: relative;
+}
+.certificate-form .online-reg-title {
+  margin-bottom: 31px;
+}
+.online-reg-confirm {
+  max-width: 230px;
+}
+.online-reg-moby {
+  display: none;
+}
+.online-reg_input {
+  max-width: 466px;
+}
+.form-input-name, .form-input-email, .form-input-phone {
+  color: #000;
+}
+.form-input-email {
+  display: block;
+}
+.form-input-name, .form-input-email, .form-input-phone {
+  color: #000;
+}
+.online-reg-form .form-input-email {
+  padding: 24px 0 13px;
+}
+.form-input-name, .form-input-email, .form-input-phone {
+  color: #000;
+}
+.online-reg-form .form-input-phone {
+  margin-top: 20px;
+}
+.online-reg-form .certificate-form_radio {
+  margin-top: 28px;
+}
+.btn-flex {
+  gap: 2px;
+  margin-top: 39px;
+  justify-content: flex-start;
+}
+.online-reg-btn {
+  margin: 0 6% 0 0;
+}
+.online-reg-confirm {
+  max-width: 230px;
+}
+.online-reg_image {
+  flex-grow: 1;
+  max-height: 100%;
+  border-top: 1px solid black;
+border-bottom: 1px solid black;
+border-right: 1px solid black;
+}
+input {
+  width: 100%;
+}
+.certificate-form {
+  padding: 0;
+  margin: 40px auto;
+}
+
 @media (max-width: 1360px) {
   .container {
     padding-right: 40px;
@@ -221,6 +298,9 @@ justify-content: center;
   .offer {
     padding-left: 40px;
     padding-right: 40px;
+  }
+  .reg-left_wrapper {
+    margin-right: 0;
   }
 }
 
@@ -252,6 +332,19 @@ justify-content: center;
     max-width: 440px;
     
   }
+  .reg-left_wrapper {
+    padding: 40px 4%;
+  }
+  .online-reg-btn {
+    padding: 6px 15px 7px 15px;
+  }
+  .online-reg_image {
+    flex-shrink: 2;
+    flex-grow: 0;
+  }
+  .online-reg-title {
+    font-size: 2.8rem;
+  }
 }
 
 @media (max-width: 1130px) {
@@ -271,6 +364,34 @@ justify-content: center;
     display: none;
   }
 }
+
+@media (max-width: 1056px) {
+  .online-reg-form .form-input-name {
+    padding: 0;
+  }
+  .online-reg-form .form-input-email {
+    padding: 0;
+    margin-top: 25px;
+  }
+  .checkbox-square {
+    margin-top: 25px;
+  }
+  .online-reg-form .form-input-phone {
+    padding: 0;
+  }
+  .btn-flex {
+    gap: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .online-reg-btn {
+    margin: 0;
+  }
+  .online-reg-confirm {
+    max-width: 293px;
+  }
+}
+
 
 
 @media (max-width: 1040px) {
@@ -307,6 +428,7 @@ justify-content: center;
   .ellipse__green {
     background: none;
     height: 100%;
+    max-width: 306px;
   }
 }
 
@@ -400,6 +522,28 @@ justify-content: center;
   .contact-title {
     font-size: 12px;
     margin-bottom: 1px;
+  }
+  .reg-left_wrapper {
+    padding: 30px 4%;
+  }
+  .checkbox-button {
+    font-size: 13px;
+  }
+  .checkbox-button__label1 {
+    margin-right: 30px;
+    font-size: 13px;
+  }
+  .online-reg-form .form-input-phone {
+    margin-top: 10px;
+  }
+  .btn-flex {
+    margin-top: 34px;
+  }
+  .online-reg-title {
+    font-size: 30px;
+  }
+  .services-descriprion {
+    margin-top: 0;
   }
 }
 
@@ -539,6 +683,57 @@ justify-content: center;
   .offers-footer .footer-line {
     border-bottom: none;
   }
+  .offer_title {
+    font-size: 30px;
+    line-height: 120%;
+    max-width: 249px;
+  }
+  .offer::after {
+    content: '';
+    background-image: url(../img/ellips_8-moby.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    top: 6.5%;
+    left: 0;
+  }
+  .offer {
+    padding: 40px 24px 28px;
+  }
+  .ellipse__green {
+    margin-top: 50px;
+  }
+  .ellipse__text {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .reg-left_wrapper {
+    padding: 30px;
+  }
+  .certificate-form .online-reg-title {
+    margin-bottom: 10px;
+  }
+  .online-reg-confirm {
+    max-width: 100%;
+    font-size: 12px;
+  }
+  .checkbox-button__label1 {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  .online-reg-confirm {
+    display: none;
+  }
+  .online-reg_image {
+    display: none;
+  }
+  .online-reg-moby {
+    display: block;
+    margin-bottom: 35px;
+  }
 
 }
 @media (max-width: 375px) {
@@ -551,12 +746,20 @@ justify-content: center;
   .offers-card-text {
     padding-left: 7%;
   }
-}
-@media (max-width: 375px) {
+  .offer::after {
+    height: 76px;
+    top: 5%;
+  }
+  
   .offers-card-title {
     padding-left: 0;
   }
   .offers-card-text {
-  padding-left: 0;
-}
+    padding-left: 0;
+  }
+  .offer_title {
+    max-width: 290px;
+    font-size: 23px;
+  }
+  
 }
