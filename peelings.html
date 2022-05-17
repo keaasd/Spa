@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="./style/serv-menu-mob.css">
+    <link rel="stylesheet" href="style/serv-menu-mob.css">
+    <link rel="stylesheet" href="style/animation.css">
 </head>
 <body>
     <div class="small-bg">
@@ -26,15 +27,15 @@
                             <a href="index.html" class="logo"></a>
                         </div>
                        
-                        <div class="drop-down">
+                        <!-- <div class="drop-down">
                             <div class="drop-down_pin">
                                 <img src="./img/pin.svg" class="pin">
                             </div>
                             <select class="menu-select _desk">
                                 <option value="">в Павшинской пойме</option>
-                                <!-- <option value="down">Проспект Маршала Жукова</option> -->
+                                <option value="down">Проспект Маршала Жукова</option>
                             </select>
-                        </div>
+                        </div> -->
                     </div>
                     <nav class="navbar">
                         <ul class="header-nav">
@@ -62,7 +63,7 @@
                     </nav>
                 </div>
                 <div class="service-flex">
-                    <h1 class="services-title">Услуги и цены</h1>
+                    <h1 class="services-title">Услуги<br> и&nbsp; цены</h1>
                     <p class="services-descriprion">Thai Smile SPA&nbsp;&mdash; оазис спокойствия и&nbsp;красоты. Заботливые руки спа-терапевтов вернут Вас к&nbsp;жизни и&nbsp;избавят от&nbsp;стресса, вернув бодрость и&nbsp;отличное самочувствие</p>
                 </div>
             </div>
@@ -142,35 +143,61 @@
         </ul>
        </div>
     </section>
-    <section class="reg-SPA">
-        <div class="container">
-            <div class="online-reg">
+    <section class="enroll-form">
+        <div class="container _form">
+          <div class="wraps_box">
+            <div class="registration">
+              <div class="online-reg">
                 <div class="online-reg-left">
-                   <div class="reg-left-wrapper">
-                        <h2 class="online-reg-title">Запись онлайн</h2>
-                        <form class="online-reg-form _white">
-                            <input type="text" class="form-input form-input-name" placeholder="ваше имя" required>
-                            <input type="email" class="form-input form-input-email _serv" placeholder="почта" required>
-                            <input type="tel" class="form-input form-input-phone" placeholder="телефон">
-                            <textarea type="text" class="form-input form-input-text" name="" rows="2" placeholder="сообщение"></textarea>
-                            <div class="form_radio">
-                                <input type="radio" id="male" name="gender">
-                                <label for="male">Даю согласие на обработку персональных данных</label>
-                            </div>
-                            <div class="btn-flex">
-                                <button class="online-reg-btn" type="submit">Отправить&nbsp;сообщение</button>
-                                <p class="online-reg-confirm">Наш оператор перезвонит вам в&nbsp;течение часа</p>
-                            </div>
-                        </form>
-                   </div>
+                  <div class="reg-left-wrapper">
+                    <h2 class="online-reg-title">Запись онлайн</h2>
+                    <form class="online-reg-form _white" action="" method="POST" class="form">
+                      <div class="form-group">
+                        <input type="text" class="form-input form-input-name" placeholder="ваше имя" name="name" required>
+                        <label for="name" class="form-label">ваше имя</label>
+                      </div>
+
+                      <div class="form-group">
+                        <input type="email" class="form-input form-input-email" name="email" placeholder="jane@firefly.com" required>
+                        <label for="email" class="form-label">почта</label>
+                      </div>
+
+                     <div class="form-group">
+                      <input type="tel" class="form-input form-input-phone" placeholder="телефон">
+                      <label for="phone" class="form-label">телефон</label>
+                     </div>
+
+                     <div class="form-group">
+                      <textarea class="form-input form-input-text" name="text" rows="2" placeholder="сообщение"></textarea>
+                      <label for="message" class="form-label">сообщение</label>
+                     </div>
+
+                    
+                     
+                      <div class="form_radio">
+                        <input type="radio" id="male" name="gender">
+                        <label class="agree-text" for="male">Даю согласие на обработку персональных данных</label>
+                      </div>
+                      <div class="btn-flex">
+                        <button class="online-reg-btn" type="submit">
+                          Отправить&nbsp;сообщение
+                        </button>
+                        <p class="online-reg-confirm">
+                          Наш оператор перезвонит вам в&nbsp;течение часа
+                        </p>
+                      </div>
+                    </form>
+                  </div>
                 </div>
                 <div class="online-reg-right">
-                    <img src="./img/registration.png"  class="online-reg-pic">
+                  <img src="./img/registration.png" alt="Запись" class="online-reg-pic">
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <footer class="footer">
+      </section>
+    <footer class="footer _gray">
         <div class="container">
             <div class="footer-flex">
                 <p class="copyright">© 2021 Thai Smile Spa</p>
@@ -225,6 +252,7 @@
         </div>
       </div>
     <script src="script.js"></script>
-    <script src="custom-select.js"></script>
+    <script src="js/custom-select.js"></script>
+    <script src="./js/scroll-anim.js"></script>
 </body>
 </html>

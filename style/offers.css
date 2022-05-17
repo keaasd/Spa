@@ -211,7 +211,21 @@ justify-content: center;
   overflow: hidden;
   background: #D4D626;
   box-shadow: inset 0px 0 0 1px #000;
+  /* -webkit-transform: translate(40%, 0);
+  transform: translate(40%, 0);
+-webkit-transition: all 3s ease;
+transition: all 3s ease;
+opacity: 0;
+-webkit-animation-name: anim;
+animation-name: anim; */
+overflow: hidden;
 }
+/* .online-reg_box._active {
+-webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+opacity: 1;
+} */
+
 .reg-left_wrapper {
   padding: 64px 4% 54px 4%;
   flex-grow: 1;
@@ -738,7 +752,7 @@ input {
 }
 @media (max-width: 375px) {
   .offers__image {
-    height: 275px;
+    height: 311px;
   }
   .offers-card-title {
     padding-left: 7%;

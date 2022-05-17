@@ -1,0 +1,31 @@
+в main.css !!!!!!!!!!!!!!!!!!
+заменить значения или добавить, если нет таких свойств
+.swipers_box {
+  position: relative;
+}
+.mySwiperText {
+  pointer-events: none;
+  max-height: 140px;
+}
+
+
+.swiper-button-next {
+  right: 23%;
+  bottom: 68px;
+}
+.swiper-button-prev {
+  right: 34%;
+bottom: 68px;
+}
+
+@media (max-width: 768px)
+.swiper-button-next {
+  left: 73%;
+  bottom: 53px;
+}
+
+@media (max-width: 768px)
+.swiper-button-prev {
+  left: 62%;
+  bottom: 53px;
+}

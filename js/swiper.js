@@ -1,5 +1,4 @@
 let myImageSlider = new Swiper(".mySwiper", {
-  // speed: 2000,
   grabCursor: true,
   loop: true,
   spaceBetween: 0,
@@ -24,24 +23,24 @@ let myImageSlider = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-}); 
+});
 let mySwiperText = new Swiper(".mySwiperText", {
   direction: 'vertical',
-  // speed: 1000,
+  speed: 2000,
+  // автоматически
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
   grabCursor: true,
   loop: true,
   controller: {
     inverse: false,
   },
 });
-
 myImageSlider.controller.control = mySwiperText
 mySwiperText.controller.control = myImageSlider
-// автоматически
-// autoplay: {
-//   delay: 3000,
-//   disableOnInteraction: false,
-// },
+
 {
   // slider 2 services
   let myTextSlider = new Swiper(".swiper_services", {
@@ -79,4 +78,3 @@ mySwiperText.controller.control = myImageSlider
     }
   });
 }
-

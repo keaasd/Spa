@@ -18,11 +18,11 @@
     <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="js/swiper.js"></script>
     <link rel="stylesheet" href="style/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/animation.css">
-    
+    <link rel="stylesheet" href="style/anim-custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   </head>
   <body>
     <div class="main-bg">
@@ -36,15 +36,15 @@
               <a href="index.html" class="logo"></a>
             </div>
 
-            <div class="drop-down">
+            <!-- <div class="drop-down">
               <div class="drop-down_pin">
-                <img src="./img/pin.svg" class="pin" />
+                <img src="./img/pin.svg" alt="location" class="pin" />
               </div>
               <select class="menu-select _index">
                 <option value="">в Павшинской пойме</option>
-                <!-- <option value="down">Проспект Маршала Жукова</option> -->
+                <option value="down">Проспект Маршала Жукова</option>
               </select>
-            </div>
+            </div> -->
           </div>
 
           <nav class="navbar">
@@ -68,8 +68,8 @@
               </li>
             </ul>
             <div class="form_wrap">
-              <form class="search-box" action="" method="get">
-                <input class="search-txt" name=""
+              <form class="search-box" action="search" method="get">
+                <input class="search-txt" name="search"
                   placeholder="введите слово или фразу"
                   type="search"/>
                 <div class="search-btn_contain">
@@ -88,9 +88,11 @@
     </header>
     <section class="hero">
       <div class="container">
-        <h1 class="title-hero wow animate__animated animate__fadeInUp">Добро пожаловать в Thai Smile Spa!</h1>
+        <h1 class="title-hero _active anim-items">Добро пожаловать в Thai Smile Spa!</h1>
         <!-- =============================== 1 слайдер -->
         <div class="swipers_box">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
           <!-- slider 1 -->
           <div class="swiper hero_swiper mySwiper">
             <div class="swiper-wrapper">
@@ -176,10 +178,9 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
         </div>
+
         <a href="tel:+79250332100" class="white_phone-index white_phone-btn"></a>     
       </div>
     </section>
@@ -189,8 +190,8 @@
     <div class="container">
       <div class="wrap_services">
         <div class="services-text">
-          <h2 class="title-h2 title-services wow animate__animated animate__slideInLeft">Наши услуги</h2>
-          <p class="main-description descr-services wow animate__animated animate__backInRight">
+          <h2 class="title-h2 title-services _active anim-items">Наши услуги</h2>
+          <p class="main-description descr-services anim-items _active ">
             Thai Smile SPA&nbsp;&mdash; оазис спокойствия и&nbsp;красоты.
             Заботливые руки спа-терапевтов вернут Вас к&nbsp;жизни
             и&nbsp;избавят от&nbsp;стресса, вернув бодрость и&nbsp;отличное
@@ -200,8 +201,7 @@
             <div class="btn btn-services">
               <div class="btn-bg btn-bg_services"></div>
               <a href="services.html" class="btn-text btn-text_services"
-                >Все&nbsp;услуги</a
-              >
+                >Все&nbsp;услуги</a>
             </div>
           </div>
         </div>
@@ -268,7 +268,8 @@
                 <div class="slider2-item">
                   <img src="./img/all.png" alt="" />
                   <div class="swiper-text">
-                    <a href="services.html" class="slider-link"><h3 class="swiper-title _all">Смотреть&nbsp;все<br> услуги &#8594;</h3></a>
+                    <a href="services.html" class="slider-link"><h3 class="swiper-title _all">Смотреть&nbsp;все<br> услуги</h3></a>
+                    <span class="arrow-serv"></span>
                     
                   </div>
                 </div>
@@ -288,8 +289,8 @@
         <div class="container">
           <div class="offers-grid">
             <div class="offers-grid_item offers-grid_item1">
-              <h2 class="title-h2 offers-title wow animate__animated animate__pulse">Акции</h2>
-              <p class="main-description offers-description wow animate__animated animate__pulse">
+              <h2 class="title-h2 offers-title  _active anim-items">Акции</h2>
+              <p class="main-description offers-description _active anim-items">
                 Thai Smile SPA&nbsp;&mdash; оазис спокойствия и&nbsp;красоты.
                 Заботливые руки спа-терапевтов вернут Вас к&nbsp;жизни
                 и&nbsp;избавят от&nbsp;стресса, вернув бодрость и&nbsp;отличное
@@ -298,19 +299,18 @@
               <div class="btn btn-offers">
                 <div class="btn-bg btn-bg_offers"></div>
                 <a href="offers.html" class="btn-text btn-text_offers"
-                  >Все&nbsp;акции</a
-                >
+                  >Все&nbsp;акции</a>
               </div>
             </div>
             <div class="offers-grid_item offers-grid_item2">
-                <div class="before-15 wow animate__animated animate__backInRight">
+                <div class="before-15 anim-items _active">
                     <span class="discount-15">15%</span>
-                    <img src="./img/15offer.png" alt="" class="grid_item2-pic">
+                    <img src="./img/15offer.png" alt="скидка 15%" class="grid_item2-pic">
                 </div>
-				<h3 class="item-title item2-title">
+				<h3 class="item-title item2-title anim _active">
 					15% скидка на новую spa-программу
 				</h3>
-				<p class="item-text item2-text">
+				<p class="item-text item2-text anim-items _active">
                 Предлагаем попробовать нашу новинку со&nbsp;скидкой 15%! Легкая
                 спа-программа, направленная на&nbsp;увлажнение
                 и&nbsp;восстановление
@@ -318,30 +318,30 @@
             </div>
             <div class="offers-grid_item offers-grid_item3">
               <div class="item3_phone-green">
-                <a href="tel:+79250332100"><img src="./img/phone-green.svg" class="phone-green"></a>
+                <a href="tel:+79250332100"><img src="./img/phone-black-green.svg" alt="phone" class="phone-green"></a>
                 
               </div>
             </div>
             <div class="offers-grid_item offers-grid_item4">
-              <div class="before-10">
+              <div class="before-10 anim _active">
                 <span class="discount-10">10%</span>
-                <img class="grid_item4-pic" src="./img/10offer.png" alt="">
+                <img class="grid_item4-pic" src="./img/10offer.png" alt="скидка 10%">
               </div>
             
-              <h3 class="item-title item4-title">
+              <h3 class="item-title item4-title anim-items _active">
                 Приведи друга или подругу и получи скидку
               </h3>
-              <p class="item-text item4-text">
+              <p class="item-text item4-text anim-items _active">
                 Приведи друга или подругу и получи 10% скидки
               </p>
             </div>
             <div class="offers-grid_item offers-grid_item5">
-              <div class="img-wrapper">
+              <div class="img-wrapper anim _active">
                 <img class="new-spa-circle" src="./img/new-spa.svg" alt="">
                 <img class="grid_item5-pic" src="./img/massage.png" alt="">
               </div>
-              <h3 class="item-title item5-title">Стратегия прекрасного тела</h3>
-              <p class="item-text item5-text">
+              <h3 class="item-title item5-title anim-items _active">Стратегия прекрасного тела</h3>
+              <p class="item-text item5-text anim-items _active">
                 Тай Смайл СПА предлагает вам новую программу! Это комплексная
                 терапия при решении проблем с отеками, целлюлитом, потерей
                 тонуса и упругости кожи
@@ -359,13 +359,29 @@
                   <div class="online-reg-left">
                     <div class="reg-left-wrapper">
                       <h2 class="online-reg-title">Запись онлайн</h2>
-                      <form class="online-reg-form _white">
-                        <input type="text" class="form-input form-input-name" placeholder="ваше имя" required>
-                        <legend>почта</legend>
-                        <input type="email" class="form-input form-input-email" placeholder="pochtamail@gmail.com" required>
-                        <input type="email" class="form-input form-input-email-small" placeholder="почта" required>
+                      <form class="online-reg-form _white" action="" method="POST" class="form">
+                        <div class="form-group">
+                          <input type="text" class="form-input form-input-name" placeholder="ваше имя" name="name" required>
+                          <label for="name" class="form-label">ваше имя</label>
+                        </div>
+
+                        <div class="form-group">
+                          <input type="email" class="form-input form-input-email" name="email" placeholder="jane@firefly.com" required>
+                          <label for="email" class="form-label">почта</label>
+                        </div>
+
+                       <div class="form-group">
                         <input type="tel" class="form-input form-input-phone" placeholder="телефон">
-                        <textarea type="text" class="form-input form-input-text" name="" rows="2" placeholder="сообщение"></textarea>
+                        <label for="phone" class="form-label">телефон</label>
+                       </div>
+
+                       <div class="form-group">
+                        <textarea class="form-input form-input-text" name="text" rows="2" placeholder="сообщение"></textarea>
+                        <label for="message" class="form-label">сообщение</label>
+                       </div>
+
+                      
+                       
                         <div class="form_radio">
                           <input type="radio" id="male" name="gender">
                           <label class="agree-text" for="male">Даю согласие на обработку персональных данных</label>
@@ -382,8 +398,9 @@
                     </div>
                   </div>
                   <div class="online-reg-right">
-                    <img src="./img/registration.png" class="online-reg-pic">
+                    <img src="./img/registration.png" alt="Запись" class="online-reg-pic">
                   </div>
+                 
                 </div>
               </div>
             </div>
@@ -421,7 +438,7 @@
                         <p class="contacts contact-hours-descr">
                           Мы работаем без выходных и перерывов
                         </p>
-                        <a href="tel:+79250332100" class="btn-phone-green-black _mobile"></a>
+                        <a href="tel:+79250332100" class="btn-phone-green-black _mobile animate__animated animate__pulse animate__infinite	infinite"></a>
                       </div>
                       
                     </li>
@@ -470,7 +487,7 @@
           <a href="index.html"><img src="./img/logo_mobile.svg" alt="лого"></a>
           <div class="drop-down drop-down_mobile-menu">
               <div class="drop-down_pin">
-                <img src="./img/pin.svg" class="pin" />
+                <img src="./img/pin.svg" alt="location" class="pin" />
               </div>
               <select class="menu-select _index">
                 <option value="">в Павшинской пойме</option>
@@ -486,8 +503,8 @@
           <a class="modal_link" href="certificate.html">сертификаты</a>
           <a class="modal_link" href="contacts.html">Контакты</a>
         </div>
-        <form class="search-box search-box_mobile-menu" action="" method="get">
-              <input class="search-txt search-txt_mobile-menu" name="" placeholder="введите слово или фразу" type="search">
+        <form class="search-box search-box_mobile-menu" action="search" method="get">
+              <input class="search-txt search-txt_mobile-menu" name="search" placeholder="введите слово или фразу" type="search">
               <button class="search-btn search-btn_mobile-menu" type="submit"></button>
         </form>
         <div class="mobile_footer">
@@ -503,9 +520,8 @@
       </div>
     </div>
   </div>
-  <script src="js/animation.js"></script>
+  <script src="./js/scroll-anim.js"></script>
   <script src="script.js"></script>
-  <script src="js/wow.min.js"></script>
-
+ 
   </body>  
 </html>

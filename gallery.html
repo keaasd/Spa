@@ -18,6 +18,8 @@
     <script defer src="js/gallery.js"></script>
     <link rel="stylesheet" href="style/gallery.css" />
     <link rel="stylesheet" href="style/animation.css">
+    <link rel="stylesheet" href="style/anim-custom.css">
+    
   </head>
   <body>
     <div class="small-bg">
@@ -28,15 +30,15 @@
               <div class="header-logo">
                 <a href="index.html" class="logo"></a>
               </div>
-              <div class="drop-down">
+              <!-- <div class="drop-down">
                 <div class="drop-down_pin">
                   <img src="./img/pin.svg" class="pin">
                 </div>
                 <select class="menu-select _mob">
                   <option value="">в Павшинской пойме</option>
-                  <!-- <option value="down">Проспект Маршала Жукова</option> -->
+                  <option value="down">Проспект Маршала Жукова</option>
                 </select>
-              </div>
+              </div> -->
             </div>
             <nav class="navbar">
               <ul class="header-nav">
@@ -77,12 +79,12 @@
           </div>
           <div class="service-flex">
             <h1 class="services-title">Галерея салона</h1>
-            <div class="select-big gallery-select-big">
+            <!-- <div class="select-big gallery-select-big">
               <select class="menu-select menu-select-big">
                 <option class="location" value="">в Павшинской пойме</option>
-                <!-- <option class="location" value="down">Проспект Маршала Жукова</option> -->
+                <option class="location" value="down">Проспект Маршала Жукова</option>
               </select>
-            </div>
+            </div> -->
           </div>
         </div>
       </header>
@@ -150,11 +152,66 @@
                   <h1 class="title-extra-large title-extra-large2">онлайн</h1>
                 </div>
                   <p class="enroll-online-action">Оставьте нам свои контакты и&nbsp;оператор перезвонит вам в&nbsp;течение часа</p>
-                  <a href="enroll-online.html" class="enroll-online-btn"></a>
+                  <a href="#online-registration" class="enroll-online-btn"></a>
               </div>
 
           </div>
     </section>
+
+    <section class="registration-contacts _gallery">
+      <div class="container">
+        <div class="online-reg" id="online-registration">
+          <div class="online-reg-left">
+             <div class="reg-left-wrapper">
+                  <h2 class="online-reg-title">Запись онлайн</h2>
+                  <form class="online-reg-form _black" action="" method="POST" class="form">
+                    <div class="form-group">
+                      <input type="text" class="form-input _black form-input-name" placeholder="ваше имя" name="name" required>
+                      <label for="name" class="form-label _black">ваше имя</label>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="email" class="form-input _black form-input-email" name="email" placeholder="jane@firefly.com" required>
+                      <label for="email" class="form-label _black">почта</label>
+                    </div>
+
+                   <div class="form-group">
+                    <input type="tel" class="form-input _black form-input-phone" placeholder="телефон">
+                    <label for="phone" class="form-label _black">телефон</label>
+                   </div>
+
+                   <div class="form-group">
+                    <textarea class="form-input _black form-input-text" name="text" rows="2" placeholder="сообщение"></textarea>
+                    <label for="message" class="form-label _black">сообщение</label>
+                   </div>
+
+
+                   <div class="certificate-form_radio">
+                    <label class="radio-button">
+                      <input type="checkbox" class="radio-button__input" id="choice-agree" name="choice-agree">
+                      <span class="radio-button__control"></span>
+                      <span class="radio-button__label">Даю согласие на обработку персональных данных</span>
+                    </label>
+                    <!-- </label> -->
+                    <label class="radio-button">
+                      <input type="radio" class="radio-button__input">
+                    </label>
+  
+                    <div class="btn-flex">
+                      <button class="online-reg-btn _black" type="submit">Отправить&nbsp;сообщение</button>
+                      <p class="online-reg-confirm _black">Наш оператор перезвонит вам в&nbsp;течение часа</p>
+                    </div>
+                  </div>
+                  </form>
+             </div>
+          </div>
+          <img src="./img/registration.png"  class="online-reg-pic _border">
+          <!-- <div class="online-reg-right"></div> -->
+      </div>
+      </div>
+     
+    </section>
+
       <footer class="footer">
         <div class="container">
           <div class="footer-flex">
@@ -213,6 +270,6 @@
 </div>
 
 <script src="script.js"></script>
-<script src="custom-select.js"></script>
+<script src="./js/scroll-anim.js"></script>
   </body>
 </html>

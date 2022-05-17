@@ -1,0 +1,29 @@
+
+/****************Rolling Button**************/
+
+.enroll-online-btn {
+    
+    -webkit-animation: rotating 30s infinite linear;
+	-moz-animation: rotating 30s infinite linear;
+	-ms-animation: rotating 30s infinite linear;
+	-o-animation: rotating 30s infinite linear;
+	animation: rotating 30s infinite linear;
+}
+
+@-webkit-keyframes rotating {
+	to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes rotating {
+	to { -moz-transform: rotate(360deg); }
+}
+@-ms-keyframes rotating {
+	to { -ms-transform: rotate(360deg); }
+}
+@-o-keyframes rotating {
+	to { -o-transform: rotate(360deg); }
+}
+@keyframes rotating {
+	to { transform: rotate(360deg); }
+}
+
+/****************Appearing pictures animation**************/

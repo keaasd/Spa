@@ -1,38 +1,89 @@
 .card-item {
-  display: flex;
-}
-.cards-list-box {
-  margin-left: 3vw;
-  max-width: 343px;
-}
-.card-item-pic-hiddnv {
-  display: none;
-}
-.col-right-txt {
-  width: 100%;
-}
-.col-right {
-  display: flex;
-}
-@media (max-width: 567px) {
-  .card-item-pic-vhiddn {
-    display: none;
-  }
-
-  .card-item-pic img {
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    display: flex;
   }
   .cards-list-box {
-    margin: 0;
+    
+    max-width: 343px;
   }
   .card-item-pic-hiddnv {
-    display: block;
-    margin-right: 17px;
+    display: none;
   }
-  .card-item-pic img {
-    max-width: 100%;
-    max-height: 100%;
+  .col-right-txt {
+    width: 100%;
   }
+  .col-right {
+    display: flex;
+  }
+  
+  @media (max-width: 1250px) {
+
+  .cards-list-box {
+    max-width: 275px;
 }
+  }
+  @media (max-width: 1125px) {
+
+    .cards-list-box {
+      max-width: 230px;
+  }
+    }
+    @media (max-width: 1030px) {
+
+      .cards-list-box {
+        max-width: 220px;
+    }
+    .card-item {
+      gap: 15px;
+    }
+      }
+  @media (max-width: 768px) {
+        .card-item._serv  {
+          max-width: 661px; 
+      }
+      .cards-list-box {
+        max-width: 550px;
+    }
+        }
+  @media (max-width: 737px) {
+    .online-reg-right {
+      display: none;
+  }
+  .online-reg-left {
+    flex-basis: 100%;
+    border-radius: 10px;
+}
+.online-reg-confirm {
+  top: 10%;
+  left: 34%;
+  max-width: 123px;
+  padding-left: 20px;
+}
+}
+@media (max-width: 500px) {
+  .online-reg-confirm {
+    left: 54%;
+}
+}
+  @media (max-width: 567px) {
+    .card-item-pic-vhiddn {
+      display: none;
+    }
+  
+    .card-item-pic img {
+      width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .cards-list-box {
+      margin: 0;
+    }
+    .card-item-pic-hiddnv {
+      display: block;
+      margin-right: 17px;
+    }
+    .card-item-pic img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  
