@@ -166,7 +166,7 @@ body {
   height: 58px;
   opacity: 1;
   right: 34%;
-bottom: 68px;
+  bottom: 68px;
 }
 
 .hero_visual {
@@ -814,13 +814,16 @@ legend {
   }
 
   .mySwiperText {
-    max-height: 216px;
+    
     margin-left: 8%;
+    pointer-events: none;
+    max-height: 115px;
   }
 
   .swipers_box {
     margin-left: auto;
     max-width: 570px;
+    position: relative;
   }
 
   .swiper-horizontal>.swiper-pagination-progressbar,
@@ -874,16 +877,17 @@ legend {
   .swiper-button-prev {
     width: 44px;
     height: 44px;
-    right: 80%;
-    bottom: 44px;
+    left: 62%;
+    bottom: 53px;
   }
+  
   .swiper-button-next {
     width: 44px;
     height: 44px;
-    left: 29%;
-    bottom: 44px;
+    left: 73%;
+    bottom: 53px;
   }
-
+  
   .white_phone-index {
     display: none;
   }
@@ -915,7 +919,7 @@ legend {
 
   .swiper-title {
     
-    line-height: 0.9;
+    line-height: 1.3;
   }
 
   .swiper-no {
@@ -1040,6 +1044,7 @@ legend {
     padding-top: 45px;
     padding-bottom: 45px;
   }
+ 
 }
 @media (max-width: 737px) {
   .btn-services {
@@ -1186,10 +1191,6 @@ legend {
 
   .hero-text {
     margin-top: 30px;
-  }
-  .mySwiperText {
-    max-height: 147px;
-    margin-left: 0;
   }
 
   .hero-heading {
@@ -1569,6 +1570,14 @@ legend {
   .burger-btn {
     background: url('../img/burger-green.svg');
   }
+  .swiper-title {
+    line-height: 1.2;
+    max-width: 60px;
+}
+.arrow-serv {
+  right: 50%;
+  bottom: 2%;
+}
 }
 @media (max-width: 522px) {
   .online-reg-confirm {
@@ -1582,6 +1591,10 @@ legend {
 }
 }
 @media (max-width: 470px) {
+  .arrow-serv {
+    right: 40%;
+    
+}
   .online-reg-confirm {
     left: 60%;
   }
@@ -1622,6 +1635,9 @@ legend {
 }
 
 @media (max-width: 400px) {
+  .arrow-serv {
+    right: 30%;
+}
   .discount-15 {
     top: 180px;
 }
@@ -1708,10 +1724,18 @@ legend {
  left: -3%;
  top: 50%;
 }
+.swiper-title {
+  line-height: 1.1;
+ 
+}
 }
 @media (max-width: 340px) {
 .main-bg {
   height: 617px;
+}
+.arrow-serv {
+  transform: scale(0.5);
+  right: 25%;
 }
 }
 @media (max-width: 335px) {

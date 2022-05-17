@@ -3,6 +3,7 @@
 let navbar = document.querySelector('.header-nav');
 let searchBtn = document.querySelector('.search-btn');
 let searchText = document.querySelector('.search-txt');
+let krug = document.querySelector('.search-btn_contain');
 
 searchBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -10,6 +11,7 @@ searchBtn.addEventListener('click', (e) => {
   // searchBtn.classList.toggle('lupa');
   searchBtn.classList.toggle('cross');
   searchText.classList.toggle('switch-on-off');
+  krug.classList.toggle('cross2');
 });
 
 // находим родительский ul 
