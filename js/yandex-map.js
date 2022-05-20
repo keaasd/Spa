@@ -18,7 +18,7 @@ ymaps.ready(function () {
             balloonContent: 
             [
                 `<div class="map__balloon">
-                <img class="map__burger-img" src="../img/logo_mobile.svg" alt="logo"/>
+                <img class="map__burger-img" src="./img/logo_mobile.svg" alt="logo"/>
                 <p class="map__title-hero">Добро пожаловать в Thai Smile Spa!<span class="map__title-span">Заходите по адресу:</span>Красногорский бульвар, 13
                 </p></div>`
             ],
