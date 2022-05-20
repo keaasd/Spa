@@ -1,31 +1,31 @@
-в main.css !!!!!!!!!!!!!!!!!!
-заменить значения или добавить, если нет таких свойств
-.swipers_box {
-  position: relative;
+в style.css 
+.map {
+  max-height: 649px;
+  width: 100%;
+  height: max(649px, 310px);
 }
-.mySwiperText {
-  pointer-events: none;
-  max-height: 140px;
+.map__balloon {
+  display: flex;
+}
+.ymaps-2-1-79-i-custom-scroll {
+  height: fit-content;
+}
+.map__burger-img {
+  max-height: 300px;  
+  margin-right: 10px;
+}
+.map__title-hero, .map__title-span {
+  display: block;
+  font-family: "Philosopher", sans-serif;
+  font-size: min(25px, 1rem);
+  line-height: 1.3;
+font-weight: 700;
 }
 
 
-.swiper-button-next {
-  right: 23%;
-  bottom: 68px;
-}
-.swiper-button-prev {
-  right: 34%;
-bottom: 68px;
-}
 
 @media (max-width: 768px)
-.swiper-button-next {
-  left: 73%;
-  bottom: 53px;
+.map {
+  max-height: 310px;
 }
-
-@media (max-width: 768px)
-.swiper-button-prev {
-  left: 62%;
-  bottom: 53px;
-}
+  -116

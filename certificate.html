@@ -79,8 +79,18 @@
               <p class="online-reg-confirm online-reg-moby">Наш оператор перезвонит вам в&nbsp;течение часа</p>
               <form class="online-reg-form">
                 <div class="online-reg_input">
-                  <input type="text" class="form-input form-input-name" placeholder="ваше имя" required>
-                  <input type="email" class="form-input form-input-email" placeholder="почта" required>
+                  <div class="form-group">
+                    <input type="text" class="form-input form-input-name" name="name" value=""
+                      placeholder=" " required>
+                    <label for="name" class="form-label _name">ваше имя</label>
+                  </div>
+                 
+                  <div class="form-group">
+                    <input type="email" name="email" id="input-email" class="form-input form-input-email" 
+                      placeholder=" " required>
+                    <label for="input-email" class="form-label _email">почта</label>
+                  </div>
+                 
 
                   <div class="checkbox-square">
                     <label class="checkbox-button">
@@ -95,8 +105,12 @@
                     </label>
                   </div>
 
-                  <input type="tel" class="form-input form-input-phone" placeholder="на какую сумму/услугу">
-
+                  <div class="form-group">
+                    <input type="sum" name="sum" class="form-input form-input-sum" 
+                      placeholder=" " required>
+                    <label for="sum" class="form-label _sum">на какую сумму/услугу</label>
+                  </div>
+                 
                 </div>
 
                 <div class="certificate-form_radio">
@@ -110,12 +124,14 @@
                     <input type="radio" class="radio-button__input">
                   </label>
 
-                  <div class="btn-flex">
-                    <button class="online-reg-btn" type="submit">Отправить&nbsp;сообщение</button>
-                    <p class="online-reg-confirm">Наш оператор перезвонит вам в&nbsp;течение часа</p>
-                  </div>
+                 
                 </div>
+               
               </form>
+              <div class="btn-flex">
+                <button class="online-reg-btn" type="submit">Отправить&nbsp;сообщение</button>
+                <p class="online-reg-confirm">Наш оператор перезвонит вам в&nbsp;течение часа</p>
+              </div>
             </div>
 
           </div>

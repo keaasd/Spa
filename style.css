@@ -41,7 +41,7 @@ h1 {
   font-weight: 700;
   color: #fff;
 }
-input {
+/* input {
   color: #fff;
   padding: 7px 0;
 }
@@ -57,17 +57,13 @@ textarea {
 }
 
 legend {
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 12px;
   margin-top: 14px;
-}
+} */
 
-.form-input {
-  font-weight: 400;
-  font-size: 1rem;
-}
 .gray-bg {
   background-color: #F9F8F6;
 }
@@ -91,7 +87,7 @@ legend {
   width: 86px;
   height: 86px;
   position: absolute;
-  top: 1550%;
+  /* top: 1550%; */
   right: 4%;
   transition: 0.4s ease;
   transform: scale(1);
@@ -397,9 +393,7 @@ legend {
   bottom: 14px;
   right: 78px;
 }
-.search-txt input {
-  color: red;
-}
+
 .search-btn {
   display: block;
   border: none;
@@ -430,7 +424,7 @@ legend {
   position: relative;
   width: 58px;
   height: 58px;
-  
+  transition: .3s ease-in-out;
 }
 .search-btn_contain:hover {
   border: 1px solid #fff;
@@ -1147,13 +1141,13 @@ opacity: 1;
 }
 .before-15 {
   position: relative;
-  -webkit-transform: translate(0px, -80%);
+  /* -webkit-transform: translate(0px, -80%);
   transform: translate(0px, -80%);
--webkit-transition: all 3s ease;
-transition: all 3s ease;
-opacity: 0;
--webkit-animation-name: anim;
-  animation-name: anim;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+  opacity: 0;
+  -webkit-animation-name: anim;
+  animation-name: anim; */
 
     
 }
@@ -1366,80 +1360,6 @@ opacity: 0;
   padding-bottom: 55px;
 }
 
-.registration-contacts._gallery {
-  padding-top: 140px;
-}
-
-.registration-contacts._gallery .online-reg {
-  border: 1px solid #000;
-  border-radius: 10px;
-  max-width: 1360px;
-}
-.form-input-email-small {
-  display: none;
-}
-.registration-contacts._gallery .online-reg-title {
-  color: #000;
-}
-.form-input-name_black {
-    padding: 8px 0 14px;
-}
-.form-input-email_black {
-    padding: 26px 0 14px;
-}
-.form-input-phone_black {
-    padding: 26px 0 16px;
-}
-.form-input-text_black {
-    margin-top: 26px;
-    padding-bottom: 10px;
-}
-.form-input-name_black {
-  color: #000;
-  font-size: 1rem;
-}
-.online-enroll-form textarea::placeholder{
-    color: #000;
-    font-size: 1rem;
-}
-.online-enroll-form input::placeholder{
-    color: #000;
-    font-family: inherit;
-    font-size: 1rem;
-}
-
-.form-input-name_black {
-    color: #000;
-    font-size: 1rem;
-}
-.form-input-email_black {
-    color: #000;
-    font-size: 1rem;
-}
-.form-input-phone_black {
-    color: #000;
-    font-size: 1rem;
-}
-.form-input-text_black {
-    color: #000;
-}
-.registration-contacts._gallery .form-input {
-  border-bottom: 1px solid #000;
-  overflow: hidden;
-}
-
-.registration-contacts._gallery .online-reg-left {
-  background-color: #F9F8F6;
-}
-
-.btn-flex._gallery .online-reg-btn {
-  color: #000;
-  border: 1px solid #000;
-}
-
-.btn-flex._gallery .online-reg-confirm {
-  color: #000;
-}
 
 .online-reg {
   display: flex;
@@ -1492,7 +1412,7 @@ opacity: 1;
   line-height: 113%;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 32px;
+  margin-bottom: 60px;
 }
 
 .online-reg-title_cert {
@@ -1516,22 +1436,11 @@ opacity: 1;
   object-fit: cover;
 }
 
-.form-input {
-  background: transparent;
-  outline: 0;
-  border: 0;
-  text-transform: uppercase;
-  border-bottom: 1px solid #d4d626;
-}
-.form-input-text {
-  /* margin-bottom: 20px; */
-}
-
 /* RADIO Button */
 
-input[type="radio"] {
+/* input[type="radio"] {
   appearance: none;
-}
+} */
 
 input[type="radio"] + label {
   cursor: pointer;
@@ -1577,8 +1486,9 @@ input[type="radio"] + label::after {
 }
 
 input[type="radio"]:checked + label::after {
-        opacity: 1;
+  opacity: 1;
 }
+
 input[type="radio1"] + label {
   color: #000;
 }
@@ -1761,14 +1671,17 @@ li {
   font-family: "Raleway";
   font-weight: 500;
   font-size: 14px;
-  line-height: 195%;
+  line-height: 1.95;
   text-align: right;
   letter-spacing: 0.02em;
   text-decoration-line: underline;
   color: #000;
-  transition: 0.3s ease;
+  transition: 0.3s ease-out;
+  transform: scale(1);
 }
-
+.social:hover {
+  transform: scale(1.2);
+}
 /* Services and Prices Page */
 
 .service-flex {
@@ -1830,6 +1743,7 @@ li {
   grid-template-columns: 50% 50%;
   /* grid-template-rows: repeat(4, 311px); */
   row-gap: 90px;
+  column-gap: 20px;
   margin-bottom: 60px;
 }
 
@@ -2032,59 +1946,6 @@ li {
 
 
 /* ONLINE-REGISTRATION FORM */
-.form-group {
-  margin-bottom: 1em;
-  transition: all .3s;
-
-}
-.form-label {
-  height: 100%;
-  position: absolute;
-  left: 4.5%;
-  color: #fff;
-  text-transform: uppercase;
-  display: block;
-  cursor: text;
-  transition: all .3s;
-}
-.form-label._name {
-  top: 38%;
-}
-.form-label._email {
-  top: 47%;
-}
-.form-label._phone {
-  top: 55%;
-}
-.form-label._message {
-  top: 65%;
-}
-.form-label._black {
-  color: #000;
-}
-.form-input {
-  box-shadow: none;
-  border-radius: 0;
-  width: 100%;
-  background: transparent;
-  transition: all .3s;
-  padding: 15px 5px 5px 0;
-}
-.form-input._black {
-  padding: 6px 5px 13px 0;
-  color: #000;
-}
-
-
-
-
-input::-webkit-input-placeholder {
-  /* color:red; */
-}
-input:-moz-placeholder {
-  /* color:red; */
-}
-
 
 
 
@@ -2124,94 +1985,7 @@ input:-moz-placeholder {
   overflow: hidden;
 }
 
-.online-reg-form {
-  display: flex;
-  flex-direction: column;
-}
-.online-reg-form._enroll-white .form-input-name::placeholder{
-  color: #fff;
-}
-.online-reg-form._enroll-white .form-input-email::placeholder{
-  color: #fff;
-}
-.online-reg-form._enroll-white .form-input-phone::placeholder{
-  color: #fff;
-}
-.certificate-form.online-reg-title {
-  color: #000;
-}
 
-.online-enroll-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 469px;
-}
-
-.certificate-form_radio {
-  color: #000;
-}
-.online-reg-form .certificate-form_radio {
-  margin-top: 2px;
-}
-.online-reg-form._white .form-input-name::placeholder{
-  color: transparent;
-}
-.online-reg-form._white .form-input-email::placeholder{
-  color: transparent;
-  text-transform: uppercase;
-}
-
-.online-reg-form._white .form-input-phone::placeholder{
-  color: transparent;
-}
-.online-reg-form._white {
-  color: #fff;
-  padding: 14px 0 14px;
-}
-.online-reg-form._white .form-input-text::placeholder{
-  color: transparent;
-}
-.online-reg-form._white .form-input-text {
-  margin-top: 20px;
-  padding-bottom: 5px;
-  overflow: hidden;
-}
-.online-reg-form._enroll-white textarea::placeholder{
-  color: transparent;
-}
-textarea {
-  resize: none;
-}
-.certificate-form .form-input {
-  border-bottom: 1px solid #000;
-}
-
-
-
-.online-reg-form._enroll-white .form-input-email {
-  text-transform: uppercase;
-}
-
-.online-reg-form .form-input-name::placeholder{
-  color: #000;
-}
-.online-reg-form .form-input-email::placeholder{
-  color: #000;
-}
-.online-reg-form .form-input-phone::placeholder{
-  color: #000;
-}
-.online-reg-form .form-input-text::placeholder{
-  color: #000;
-}
-.certificate-form .online-reg-btn {
-  color: #000;
-  border: 1px solid #000;
-}
-
-.certificate-form .online-reg-confirm {
-  color: #000;
-}
 
 .gallery-label {
   color: #000;
@@ -2347,15 +2121,14 @@ input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
-
 input {
-  font-size: 1rem;
-  line-height: 1.5;
-  padding: 11px 23px;
-  border: 1px solid;
-  border-radius: 0;
-  outline: 0;
-  background-color: #000;
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  
 }
 
 .checkbox-button__input {
@@ -2406,43 +2179,45 @@ input {
   font-family: "Raleway";
   font-weight: 500;
   font-size: 13px;
-  line-height: 139.8%;
+  line-height: 1.4;
+  
+}
+.radio-button__label_white {
+    color: #fff;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 .radio-button {
+  position: relative;
   display: flex;
   align-items: center;
   cursor: pointer;
   /* padding-right: 25px; */
 }
 
-input[type=radio] {
-    box-sizing: border-box;
-    padding: 0;
-    display: none;
-}
-
-input {
-  font-size: 1rem;
-  line-height: 1.5;
-  padding: 11px 23px;
-  border: 1px solid #000;
-  border-radius: 0;
-  outline: 0;
-  background-color: transparent;
-}
 .switch-on-off {
   padding: 0;
 }
 .radio-button__input {
-  opacity: 0;
+ 
+  -webkit-appearance: none;
+  appearance: none;
   position: absolute;
 }
-
+.radio-button__input_white {
+ 
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+}
 .radio-button__control {
   position: relative;
   display: block;
-  width: 25px;
+  width: 100%;
+  max-width: 25px;
   height: 25px;
   margin-right: 12px;
   vertical-align: middle;
@@ -2451,7 +2226,20 @@ input {
   border: 1px solid #000;
   border-radius: 50%;
 }
-
+.radio-button__control_white {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 25px;
+  height: 25px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background-color: inherit;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transform: scale(0.75);
+}
 .radio-button__input:checked + .radio-button__control:after {
   content: "";
   display: block;
@@ -2463,14 +2251,27 @@ input {
   background-color: #000;
   border-radius: 50%;
 }
-
+.radio-button__input_white:checked + .radio-button__control_white:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
 .radio-button__input:checked + .radio-button__control {
   border-color: #000;
 }
-
+.radio-button__input_white:checked + .radio-button__control_white {
+  border-color: #fff;
+}
 .radio-button__control {
   transform: scale(0.75);
 }
+
 
 /* END OF RADIO-BUTTON */
 
@@ -2661,6 +2462,7 @@ input {
   grid-template-columns: 30% 27% 27%;
   grid-template-rows: 58% 30%;
   column-gap: 5%;
+  margin-bottom: 130px;
 }
 .card-item-text-spa-2 {
   grid-column: 1 / 2;
@@ -2766,16 +2568,16 @@ input {
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 129.84px;
-  height: 133.26px;
-  transition: 0.1s ease-out;
-  
+  width: 100%;
+  max-width: 125px;
+  height: 130px;
+  transition: 0.2s ease-in-out;
+  transform: scale(1);
 }
 
 .enroll-online-btn:hover {
   background-color: #d4d626;
-  width: 129.84px;
-  height: 133.26px;
+  transform: scale(1.1);
   border-radius: 100%;
  
 }
@@ -2783,15 +2585,30 @@ input {
   border: 1px solid #fff;
   border-radius: 100%;
 }
-
-
-
+.map {
+  max-height: 649px;
+  width: 100%;
+  height: max(649px, 310px);
+}
+.map__balloon {
+  display: flex;
+}
+.ymaps-2-1-79-i-custom-scroll {
+  height: fit-content;
+}
+.map__burger-img {
+  max-height: 300px;  
+  margin-right: 10px;
+}
+.map__title-hero, .map__title-span {
+  display: block;
+  font-family: "Philosopher", sans-serif;
+  font-size: min(25px, 1rem);
+  line-height: 1.3;
+font-weight: 700;
+}
 /* END of ENROLL_ONLINE PAGE */
-
 /* MEDIA  */
-
-
-
 @media (max-width: 1400px) {
   .container {
       max-width: 1320px;
@@ -3115,6 +2932,9 @@ input {
   .search-box {
     display: none;
   }
+  .burger-btn {
+    display: block;
+}
   .services-title {
     font-size: 55px;
   }
@@ -3483,6 +3303,9 @@ input[type="radio"] + label::after {
 .col-right {
   max-width: 280px;
 }
+.map {
+  max-height: 310px;
+}
 }
 @media (max-width: 737px) {
   .time-price {
@@ -3732,6 +3555,9 @@ input[type="radio"] + label::after {
 .container._form {
     background: #F9F8F6;
 }
+.container._form._white {
+  background: #fff;
+}
 .enroll-form {
   order: 2;
 }
@@ -3835,6 +3661,7 @@ input[type="radio"] + label::after {
   position: absolute;
   top: 5%;
   right: 5%;
+  display: block;
 }
 .contacts {
   position: relative;

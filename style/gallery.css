@@ -141,45 +141,105 @@ img {
   display: none;
 }
 
-.form_radio._black label {
-color: #000;
+
+/* FORM BLACK */
+.registration-contacts._gallery .online-reg-left {
+  background-color: #F9F8F6;
+  border: 1px solid #000;
 }
-.online-reg-btn._black {
-color: #000;
-border: 1px solid #000;
+.registration-contacts._gallery .online-reg-title {
+  color: #000;
 }
-.online-reg-confirm._black {
-color: #000;
-}
-.online-reg-form._black {
-  max-width: 38vw;
+.form-group._black {
+  position: relative;
+  transition: all .3s;
+  cursor: text;
+  color: #000;
+ 
 }
 
-.form-input._black::placeholder {
-  color: transparent;
+.form-group._black .form-input-name {
+  top: 0;
+}
+.form-group._black .form-input-email {
+  top: 45px;
+}
+.form-group._black .form-input-phone {
+  top: 90px;
+}
+.form-group._black .form-input-text {
+  top: 125px;
+}
+.form-group._black input {
+  background: transparent;
+  border-bottom: 1px solid #000;
+  color: #000;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  
+}
+.form-group._black label {
+  position: absolute;
+  text-transform: uppercase;
+  transition: 0.3s ease-out;
+}
+.form-group._black textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  position: absolute;
+  color: #000;
+  border-bottom: 1px solid #000;
+  width: 100%;
+}
+.form-group._black .form-label._name {
+  top: 0;
+}
+.form-group._black .form-label._email {
+  top: 45px;
+}
+.form-group._black .form-label._phone {
+  top: 90px;
+}
+.form-group._black .form-label._message {
+  top: 135px;
+}
+.online-reg-btn._black {
+  border: 1px solid #000;
+  color: #000;
+}
+.online-reg-confirm._black {
+  color: #000;
+}
+.form-group._black .form-input:focus ~ .form-label,
+.form-group._black .form-input:not(:placeholder-shown) ~ .form-label  {
+  transform:  translateY(-20px) translateX(-0.5vw) scale(0.8);
+}
+
+
+.online-reg-form._black .certificate-form_radio {
+  margin-top: 180px;
 }
 @media (max-width: 1360px) {
   .container {
     padding: 0 40px;
-  }
-
+}
   .swiper-slide-active-mod img {
     transform: scale(1.6);
-  }
-
+}
   .service-flex {
     gap: 20px;
     justify-content: space-between;
-  }
-
+}
   .select-big {
     margin-right: 6%;
   }
-
   h1 {
     font-size: 60px;
   }
-
   .search-txt {
     font-size: 18px;
     width: 33vw;
@@ -231,6 +291,12 @@ color: #000;
     right: 20%;
   }
 }
+@media (max-width: 1300px) {
+  .form-group._black .form-input:focus ~ .form-label,
+.form-group._black .form-input:not(:placeholder-shown) ~ .form-label  {
+  transform:  translateY(-20px) translateX(-0.7vw) scale(0.8);
+}
+}
 
 @media (max-width: 1200px) {
   .swiper-button-next {
@@ -270,6 +336,12 @@ color: #000;
 }
 
 @media (max-width: 900px) {
+  .header-nav {
+    display: none;
+  }
+  .burger-btn {
+    display: block;
+}
   .enroll-online-wrapper {
     margin-left: 3%;
   }
@@ -286,9 +358,7 @@ color: #000;
     max-width: 90%;
   }
 
-  .search-box {
-    display: block;
-  }
+ 
   .reg-left-wrapper {
     margin-left: 40px;
     margin-top: 40px;
@@ -302,10 +372,42 @@ color: #000;
 }
 .online-reg-btn {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 }
-
+@media (max-width: 866px) {
+  .online-reg-confirm._black {
+    position: absolute;
+    top: 60px;
+    left: 40%;
+    max-width: 100px;
+  }
+}
+@media (max-width: 830px) {
+  .registration-contacts._gallery .online-reg-title {
+    font-size: 1.875rem;
+    max-width: 100px;
+}
+.online-reg-confirm._black {
+  left: 35%;
+}
+.form-group._black .form-input-name {
+  top: 5px;
+}
+.form-group._black .form-input-email {
+  top: 50px;
+}
+.form-group._black .form-input-phone {
+  top: 95px;
+}
+.form-group._black .form-input-text {
+  top: 124px;
+}
+.form-group._black .form-input:focus ~ .form-label,
+.form-group._black .form-input:not(:placeholder-shown) ~ .form-label  {
+  transform:  translateY(-20px) translateX(-1vw) scale(0.8);
+}
+}
 @media (max-width: 768px) {
   .header {
     padding: 0 25px;
@@ -423,10 +525,18 @@ color: #000;
 @media(max-width: 678px) {
   .online-reg-form._black {
     max-width: 71vw;
+    
   }
+  .online-reg-confirm._black {
+    left: 75%;
+}
   .reg-left-wrapper {
     margin-left: 50px;
     margin-top: 50px;
+}
+.registration-contacts._gallery .online-reg-left {
+ 
+  border-radius: 10px;
 }
 }
 @media (max-width: 570px) {
@@ -508,19 +618,20 @@ color: #000;
   .drop-down {
     margin-top: 6px;
   }
-  .burger-btn {
-    /* background: url('../img/burger_menu-black.svg');
-    background-size: auto;
-    background-size: auto;
+  /* .burger-btn {
+    background: url('../img/burger_menu-black.svg');
+   
     background-size: cover;
     width: 24px;
     height: 9.5px;
     position: absolute;
     right: 6%;
-    top: 12px; */
+    top: 12px;
 
-  }
-
+  } */
+  .online-reg-confirm._black {
+    left: 65%;
+}
   .small-bg {
     height: auto;
   }
@@ -568,6 +679,13 @@ color: #000;
 }
 
 @media (max-width: 420px) {
+  .reg-left-wrapper {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.form-group._black .form-label {
+  font-size: 15px;
+}
   .enroll-online-wrapper {
     flex-direction: column;
   }
@@ -597,4 +715,19 @@ color: #000;
     padding-top: 5%;
     padding-bottom: 5%;
   }
+}
+@media (max-width: 375px) {
+  .online-reg-confirm._black {
+    font-size: 10px;
+  }
+
+.registration-contacts._gallery .online-reg-title {
+    font-size: 1.5rem;
+}
+.form-group._black .form-label {
+  font-size: 11px;
+}
+.radio-button__label {
+  font-size: 10px;
+}
 }

@@ -18,6 +18,7 @@
     <script defer src="js/gallery.js"></script>
     <link rel="stylesheet" href="style/gallery.css" />
     <link rel="stylesheet" href="style/animation.css">
+    
     <link rel="stylesheet" href="style/anim-custom.css">
     
   </head>
@@ -61,7 +62,7 @@
                 </li>
               </ul>
               <div class="form_wrap">
-                <form class="search-box" action="" method="get">
+                <form class="search-box" action="search" method="get">
                   <input class="search-txt" name=""
                     placeholder="введите слово или фразу"
                     type="search"/>
@@ -164,27 +165,31 @@
           <div class="online-reg-left">
              <div class="reg-left-wrapper">
                   <h2 class="online-reg-title">Запись онлайн</h2>
-                  <form class="online-reg-form _black" action="" method="POST" class="form">
-                    <div class="form-group">
-                      <input type="text" class="form-input _black form-input-name" placeholder="ваше имя" name="name" required>
-                      <label for="name" class="form-label _black">ваше имя</label>
-                    </div>
+                  <form class="online-reg-form _black" action="#" method="POST" enctype="miltipart/form-data">
+                    
+                      <div class="form-group _black">
+                        <input type="text" class="form-input form-input-name" name="name" value=""
+                          placeholder=" " required>
+                        <label for="name" class="form-label _name">ваше имя</label>
+                      </div>
 
-                    <div class="form-group">
-                      <input type="email" class="form-input _black form-input-email" name="email" placeholder="jane@firefly.com" required>
-                      <label for="email" class="form-label _black">почта</label>
-                    </div>
+                      <div class="form-group _black">
+                        <input type="email" name="email" id="input-email" class="form-input form-input-email" 
+                          placeholder=" " required>
+                        <label for="input-email" class="form-label _email">почта</label>
+                      </div>
 
-                   <div class="form-group">
-                    <input type="tel" class="form-input _black form-input-phone" placeholder="телефон">
-                    <label for="phone" class="form-label _black">телефон</label>
-                   </div>
+                      <div class="form-group _black">
+                        <input type="tel" name="tel" id="input-tel" class="form-input form-input-phone" 
+                        placeholder=" ">
+                        <label for="input-tel" class="form-label _phone">телефон</label>
+                      </div>
 
-                   <div class="form-group">
-                    <textarea class="form-input _black form-input-text" name="text" rows="2" placeholder="сообщение"></textarea>
-                    <label for="message" class="form-label _black">сообщение</label>
-                   </div>
-
+                      <div class="form-group _black">
+                        <textarea type="text" name="message" id="input-message" class="form-input form-input-text" name="message" rows="2"
+                          placeholder=" "></textarea>
+                        <label for="message" class="form-label _message">сообщение</label>
+                      </div>
 
                    <div class="certificate-form_radio">
                     <label class="radio-button">

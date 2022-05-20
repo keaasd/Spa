@@ -18,55 +18,55 @@
 </head>
 <body>
     <div class="small-bg">
-        <header class="header">
-            <div class="container">
-                <div class="header-flex">
-                    <div class="header-box">
-                        <div class="header-logo">
-                            <a href="index.html" class="logo"></a>
-                        </div>
-                       
-                        <!-- <div class="drop-down">
-                            <div class="drop-down_pin">
-                                <img src="./img/pin.svg" class="pin">
-                            </div>
-                            <select class="menu-select _desk">
-                                <option value="">в Павшинской пойме</option>
-                                <option value="down">Проспект Маршала Жукова</option>
-                            </select>
-                        </div> -->
+      <header class="header">
+        <div class="container">
+            <div class="header-flex">
+                <div class="header-box">
+                    <div class="header-logo">
+                        <a href="index.html" class="logo"></a>
                     </div>
-                    <nav class="navbar">
-                        <ul class="header-nav">
-                            <li class="header-nav_list"><a class="header-nav_link" href="services.html">Услуги</a></li>
-                            <li class="header-nav_list"><a class="header-nav_link" href="gallery.html">Галерея</a></li>
-                            <li class="header-nav_list"><a class="header-nav_link" href="offers.html">Акции</a></li>
-                            <li class="header-nav_list"><a class="header-nav_link" href="certificate.html">Сертификаты</a></li>
-                            <li class="header-nav_list"><a class="header-nav_link" href="contacts.html">Контакты</a></li>
-                        </ul>
-                        <div class="form_wrap">
-                            <form class="search-box" action="" method="get">
-                              <input class="search-txt" name=""
-                                placeholder="введите слово или фразу"
-                                type="search"/>
-                              <div class="search-btn_contain">
-                                <button class="search-btn" type="submit"></button>
-                              </div>
-                            </form>
-                            <button
-                              class="burger-btn header-burger"
-                              onclick="openModal()"
-                              type="button"
-                            ></button>
-                          </div>
-                    </nav>
+                   
+                    <!-- <div class="drop-down">
+                        <div class="drop-down_pin">
+                            <img src="./img/pin.svg" class="pin">
+                        </div>
+                        <select class="menu-select _desk">
+                            <option value="">в Павшинской пойме</option>
+                            <option value="down">Проспект Маршала Жукова</option>
+                        </select>
+                    </div> -->
                 </div>
-                <div class="service-flex">
-                    <h1 class="services-title">Текущие акции</h1>
-                    <p class="services-descriprion">Мы&nbsp;заботимся о&nbsp;наших клиентах и&nbsp;даем возможность со&nbsp;скидкой пройти новую программу или получить услугу в&nbsp;подарок. Также можно закать сертификат в&nbsp;подарок близкому</p>
-                </div>
+                <nav class="navbar">
+                    <ul class="header-nav">
+                        <li class="header-nav_list"><a class="header-nav_link" href="services.html">Услуги</a></li>
+                        <li class="header-nav_list"><a class="header-nav_link" href="gallery.html">Галерея</a></li>
+                        <li class="header-nav_list"><a class="header-nav_link" href="offers.html">Акции</a></li>
+                        <li class="header-nav_list"><a class="header-nav_link" href="certificate.html">Сертификаты</a></li>
+                        <li class="header-nav_list"><a class="header-nav_link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <div class="form_wrap">
+                      <form class="search-box" action="" method="get">
+                        <input class="search-txt" name=""
+                          placeholder="введите слово или фразу"
+                          type="search"/>
+                        <div class="search-btn_contain">
+                          <button class="search-btn" type="submit"></button>
+                        </div>
+                      </form>
+                      <button
+                        class="burger-btn header-burger"
+                        onclick="openModal()"
+                        type="button"
+                      ></button>
+                    </div>
+                </nav>
             </div>
-        </header> 
+            <div class="service-flex">
+                <h1 class="services-title">Текущие&nbsp; акции</h1>
+                <p class="services-descriprion">Мы&nbsp;заботимся о&nbsp;наших клиентах и&nbsp;даем возможность со&nbsp;скидкой пройти новую программу или получить услугу в&nbsp;подарок. Также можно закать сертификат в&nbsp;подарок близкому</p>
+            </div>
+        </div>
+    </header> 
     </div>
     <div class="gray-bg">
         <section class="current-offers">
@@ -132,8 +132,17 @@
                   <p class="online-reg-confirm online-reg-moby">Наш оператор перезвонит вам в&nbsp;течение часа</p>
                   <form class="online-reg-form">
                     <div class="online-reg_input">
-                      <input type="text" class="form-input form-input-name" placeholder="ваше имя" required>
-                      <input type="email" class="form-input form-input-email" placeholder="почта" required>
+                      <div class="form-group">
+                        <input type="text" class="form-input form-input-name" name="name" value=""
+                          placeholder=" " required>
+                        <label for="name" class="form-label _name">ваше имя</label>
+                      </div>
+                     
+                      <div class="form-group">
+                        <input type="email" name="email" id="input-email" class="form-input form-input-email" 
+                          placeholder=" " required>
+                        <label for="input-email" class="form-label _email">почта</label>
+                      </div>
     
                       <div class="checkbox-square">
                         <label class="checkbox-button">
@@ -148,7 +157,11 @@
                         </label>
                       </div>
     
-                      <input type="tel" class="form-input form-input-phone" placeholder="на какую сумму/услугу">
+                      <div class="form-group">
+                        <input type="sum" name="sum" class="form-input form-input-sum" 
+                          placeholder=" " required>
+                        <label for="sum" class="form-label _sum">на какую сумму/услугу</label>
+                      </div>
     
                     </div>
     
